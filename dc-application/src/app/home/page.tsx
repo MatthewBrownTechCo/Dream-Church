@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Logo />
-      <header className="text-center">
+      <header className="text-center mt-[70px]">
         <h1 className="text-4xl font-bold">Dream Church Columbia</h1>
         <h2 className="text-2xl">Columbia, SC</h2>
         <h2 className="text-2xl">Sundays @ 10AM EST</h2>
@@ -29,6 +29,37 @@ export default function Home() {
           ONLINE
         </button>
       </div>
+      <section className="text-center mt-[100px]">
+        <h1 className="text-4xl font-bold">Watch the latest sermon.</h1>
+        <h2 className="mt-[20px]">
+          Check out the latest sermon from Dream Church Pastor Joshua Brown
+        </h2>
+        <h2 className="mt-[50px]">
+          Other content can be found on our social media pages, our YouTube
+          channel, or by podcast
+        </h2>
+      </section>
+      <section className="text-center mt-[100px]">
+        <h1 className="text-4xl font-bold">Join our livestream.</h1>
+        <h2 className="mt-[20px]">
+          We livestream our Sunday Service at 10 AM EST
+        </h2>
+        <h2 className="mt-[50px]">
+          To watch previous livestreams, visit our YouTube channel{" "}
+          <a
+            className="underline text-blue-500"
+            href="https://www.youtube.com/@dreamchurchcola"
+          >
+            here
+          </a>
+        </h2>
+      </section>
+      <section className="text-center mt-[100px]">
+        <h2 className="text-2xl font-bold">
+          Dream Church is a family being formed in the love of Jesus and the
+          ways of his Kingdom
+        </h2>
+      </section>
     </>
   );
 }
