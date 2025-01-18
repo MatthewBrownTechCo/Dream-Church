@@ -1,8 +1,8 @@
 "use client";
 
-import Logo from "../components/logos";
-import { useNavigate } from "../components/buttons";
-import Footer from "../components/footer";
+import Logo from "./components/logos";
+import { useNavigate } from "./components/buttons";
+import Footer from "./components/footer";
 
 export default function Home() {
   const inPersonNavigate = useNavigate("/inperson.tsx");
@@ -52,6 +52,7 @@ export default function Home() {
           <a
             className="underline text-blue-500"
             href="https://www.youtube.com/@dreamchurchcola"
+            target="_blank"
           >
             here
           </a>
@@ -139,27 +140,6 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex space-x-[10%]">
-          <div>
-            <label htmlFor="phone" className="block font-medium mr-2">
-              Call
-            </label>
-            <input
-              type="checkbox"
-              className="form-checkbox h-5 w-5 bg-transparent checked:bg-black checked:text-white"
-            />
-          </div>
-          <div>
-            <label htmlFor="phone" className="block font-medium mr-2">
-              Text
-            </label>
-            <input
-              type="checkbox"
-              className="form-checkbox h-5 w-5 bg-transparent checked:bg-black checked:text-white"
-            />
-          </div>
-        </div>
-
         <div className="space-y-2">
           <label htmlFor="email" className="block font-medium">
             Email
@@ -171,6 +151,45 @@ export default function Home() {
             className="border border-black w-[55%] p-2"
             required={true}
           />
+        </div>
+
+        <div className="space-y-3.5">
+          <label>Preferred Method of Contact</label>
+          <div className="flex space-x-[10%]">
+            <div>
+              <label htmlFor="call" className="block font-medium mr-2">
+                Call
+              </label>
+              <input
+                type="checkbox"
+                id="call"
+                name="preferredContact"
+                className="form-checkbox h-5 w-5 bg-transparent checked:bg-black checked:text-white"
+              />
+            </div>
+            <div>
+              <label htmlFor="text" className="block font-medium mr-2">
+                Text
+              </label>
+              <input
+                type="checkbox"
+                id="text"
+                name="preferredContact"
+                className="form-checkbox h-5 w-5 bg-transparent checked:bg-black checked:text-white"
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="block font-medium mr-2">
+                Email
+              </label>
+              <input
+                type="checkbox"
+                id="email"
+                name="preferredContact"
+                className="form-checkbox h-5 w-5 bg-transparent checked:bg-black checked:text-white"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="space-y-2">

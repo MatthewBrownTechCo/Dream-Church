@@ -1,10 +1,10 @@
 import Image from "next/image";
-import image from "../../../src/logos/GitHub-logo.png";
+import dreamLogo from "../../../src/logos/dream-logo.jpg";
 
 const Logo = () => {
   return (
     <Image
-      src={image}
+      src={dreamLogo}
       alt="Dream Church Logo"
       width={100}
       height={100}
