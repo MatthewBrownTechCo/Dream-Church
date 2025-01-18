@@ -25,22 +25,22 @@ const Footer = () => {
           <Image
             src={instagram}
             alt="Instagram Logo"
-            className="h-12 w-auto object-contain"
+            className="h-8 w-auto object-contain"
           />
           <Image
             src={facebook}
             alt="Facebook Logo"
-            className="h-[55px] w-auto object-contain"
+            className="h-[38px] w-auto object-contain"
           />
           <Image
             src={applePodcasts}
             alt="Apple Podcasts Logo"
-            className="h-12 w-auto object-contain"
+            className="h-8 w-auto object-contain"
           />
           <Image
             src={spotify}
             alt="Spotify Logo"
-            className="h-12 w-auto object-contain"
+            className="h-8 w-auto object-contain"
           />
         </div>
       </div>
