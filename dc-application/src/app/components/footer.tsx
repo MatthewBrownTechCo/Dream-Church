@@ -6,7 +6,7 @@ import spotify from "../../logos/Spotify_Primary_Logo_RGB_White.png";
 
 const Footer = () => {
   return (
-    <footer className="flex text-center bg-black mt-[100px] text-white">
+    <footer className="flex text-center bg-black mt-[100px] text-white p-8">
       <div className="flex-1">
         <h1 className="text-2xl font-bold">Contact Info</h1>
         <p>hello@dreamcolumbia.com</p>
@@ -30,7 +30,7 @@ const Footer = () => {
           <Image
             src={facebook}
             alt="Facebook Logo"
-            className="h-[38px] w-auto object-contain"
+            className="h-[37px] w-auto object-contain"
           />
           <Image
             src={applePodcasts}
