@@ -1,88 +1,26 @@
 "use client";
+import CustomHead from "../components/head";
+import Logo from "../components/logos";
+import Footer from "../components/footer";
 
-import Logo from "./components/logos";
-import Footer from "./components/footer";
-import CustomHead from "./components/head";
-import { useRouter } from "next/navigation";
-
-export default function Home() {
-  const router = useRouter();
-
-  const planVisitNavigate = () => router.push("/planvisit");
-  const aboutNavigate = () => router.push("/about");
-  const teamNavigate = () => router.push("/team");
-
+export default function PlanVisit() {
   return (
     <>
       <CustomHead />
       <Logo />
       <header className="text-center mt-[70px]">
-        <h1 className="text-4xl font-bold">Dream Church Columbia</h1>
-        <h2 className="text-2xl">Columbia, SC</h2>
-        <h2 className="text-2xl">Sundays @ 10AM EST</h2>
+        <h1 className="text-4xl font-bold">Plan Your Visit!</h1>
       </header>
-      <div className="flex justify-center items-center flex-col mt-[20px] gap-4">
-        <button
-          className="bg-transparent border border-black py-[20px] w-[500px] hover:bg-gray-100"
-          onClick={planVisitNavigate}
-        >
-          Plan Your Visit
-        </button>
-      </div>
-      <section className="text-center mt-[100px]">
-        <h1 className="text-4xl font-bold">Watch the latest sermon.</h1>
-        <h2 className="mt-[20px]">
-          Check out the latest sermon from Dream Church Pastor Joshua Brown
-        </h2>
-        <h2 className="mt-[50px]">
-          Other content can be found on our social media pages, our YouTube
-          channel, or by podcast
-        </h2>
+      <section className="text-center mt-[50px]">
+        <h1 className="text-2xl font-bold">
+          We are so honored that you chose to have church with us!
+        </h1>
       </section>
-      <section className="text-center mt-[100px]">
-        <h1 className="text-4xl font-bold">Join our livestream.</h1>
-        <h2 className="mt-[20px]">
-          We livestream our Sunday Service at 10 AM EST
-        </h2>
-        <h2 className="mt-[50px]">
-          To watch previous livestreams, visit our YouTube channel{" "}
-          <a
-            className="underline text-blue-500"
-            href="https://www.youtube.com/@dreamchurchcola"
-            target="_blank"
-          >
-            here
-          </a>
-        </h2>
-      </section>
-      <section className="text-center mt-[100px]">
-        <h2 className="text-2xl font-bold">
-          Dream Church is a family being formed in the love of Jesus and the
-          ways of his Kingdom
-        </h2>
-      </section>
-      <div className="flex justify-center items-center flex-col mt-[20px] gap-4">
-        <button
-          className="bg-transparent border border-black py-[20px] w-[500px] hover:bg-gray-100"
-          onClick={aboutNavigate}
-        >
-          ABOUT US
-        </button>
-        <button
-          className="bg-transparent border border-black py-[20px] w-[500px] hover:bg-gray-100"
-          onClick={teamNavigate}
-        >
-          MEET THE TEAM
-        </button>
-      </div>
-      <section className="text-center mt-[100px]">
-        <h2 className="text-2xl font-bold">Follow us on social media</h2>
-        <p>(Social Media buttons will go here)</p>
-      </section>
-      <form className="mt-[100px] ml-[30%] space-y-6">
+      <form className="mt-[50px] ml-[30%] space-y-6">
         <h2 className="text-2xl font-bold">Contact Us</h2>
-        <h3 className="font-bold">
-          We'd love to hear from you. Fill out the form below to get started.
+        <h3 className="font-bold mr-[45.5%]">
+          If you could, please fill out the form below to let us know that you
+          are coming. We'll save you a seat!
         </h3>
 
         <div className="space-y-2">
