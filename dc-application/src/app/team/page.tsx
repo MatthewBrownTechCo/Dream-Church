@@ -29,8 +29,66 @@ export default function PlanVisit() {
           alt="Dream Church Logo"
           width={100}
           height={100}
-          className="ml-[100px] rounded-full w-32 h-32"
+          className="rounded-full w-32 h-32 mx-auto"
         />
+        <h1 className="text-4xl font-bold">Joshua Brown</h1>
+        <h2 className="text-2xl font-bold">Lead Pastor</h2>
+        <p>*Place Bio Here*</p>
+
+        <Image
+          src={dreamLogo}
+          alt="Dream Church Logo"
+          width={100}
+          height={100}
+          className="rounded-full w-32 h-32 mx-auto"
+        />
+        <h1 className="text-4xl font-bold">Matthew Brown</h1>
+        <h2 className="text-2xl font-bold">Associate Pastor</h2>
+        <p>*Place Bio Here*</p>
+
+        <Image
+          src={dreamLogo}
+          alt="Dream Church Logo"
+          width={100}
+          height={100}
+          className="rounded-full w-32 h-32 mx-auto"
+        />
+        <h1 className="text-4xl font-bold">Evan Rouleau</h1>
+        <h2 className="text-2xl font-bold">Chairman of Elder Board</h2>
+        <p>*Place Bio Here*</p>
+
+        <Image
+          src={dreamLogo}
+          alt="Dream Church Logo"
+          width={100}
+          height={100}
+          className="rounded-full w-32 h-32 mx-auto"
+        />
+        <h1 className="text-4xl font-bold">Jenna Rouleau</h1>
+        <h2 className="text-2xl font-bold">Administrative Elder</h2>
+        <p>*Place Bio Here*</p>
+
+        <Image
+          src={dreamLogo}
+          alt="Dream Church Logo"
+          width={100}
+          height={100}
+          className="rounded-full w-32 h-32 mx-auto"
+        />
+        <h1 className="text-4xl font-bold">Anita Cruz</h1>
+        <h2 className="text-2xl font-bold">Elder of Hospitality</h2>
+        <p>*Place Bio Here*</p>
+
+        <Image
+          src={dreamLogo}
+          alt="Dream Church Logo"
+          width={100}
+          height={100}
+          className="rounded-full w-32 h-32 mx-auto"
+        />
+        <h1 className="text-4xl font-bold">Ray Cruz</h1>
+        <h2 className="text-2xl font-bold">Elder of Treasury</h2>
+        <p>*Place Bio Here*</p>
       </section>
       <div className="text-center mt-[50px]">
         <button
