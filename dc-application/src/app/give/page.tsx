@@ -1,14 +1,10 @@
 "use client";
+
 import CustomHead from "../components/head";
 import Logo from "../components/logos";
 import Footer from "../components/footer";
-import { useRouter } from "next/navigation";
 
 export default function PlanVisit() {
-  const router = useRouter();
-
-  const teamNavigate = () => router.push("/team");
-
   return (
     <>
       <CustomHead />
