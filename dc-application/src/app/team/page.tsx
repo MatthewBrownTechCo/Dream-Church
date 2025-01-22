@@ -65,7 +65,29 @@ export default function PlanVisit() {
           className="rounded-full w-32 h-32 mx-auto"
         />
         <h1 className="text-4xl font-bold">Jenna Rouleau</h1>
-        <h2 className="text-2xl font-bold">Administrative Elder</h2>
+        <h2 className="text-2xl font-bold">Elder</h2>
+        <p>*Place Bio Here*</p>
+
+        <Image
+          src={dreamLogo}
+          alt="Dream Church Logo"
+          width={100}
+          height={100}
+          className="rounded-full w-32 h-32 mx-auto"
+        />
+        <h1 className="text-4xl font-bold">Michael Davis</h1>
+        <h2 className="text-2xl font-bold">Elder</h2>
+        <p>*Place Bio Here*</p>
+
+        <Image
+          src={dreamLogo}
+          alt="Dream Church Logo"
+          width={100}
+          height={100}
+          className="rounded-full w-32 h-32 mx-auto"
+        />
+        <h1 className="text-4xl font-bold">Emily Harmon</h1>
+        <h2 className="text-2xl font-bold">Elder</h2>
         <p>*Place Bio Here*</p>
 
         <Image
@@ -76,7 +98,7 @@ export default function PlanVisit() {
           className="rounded-full w-32 h-32 mx-auto"
         />
         <h1 className="text-4xl font-bold">Anita Cruz</h1>
-        <h2 className="text-2xl font-bold">Elder of Hospitality</h2>
+        <h2 className="text-2xl font-bold">Elder</h2>
         <p>*Place Bio Here*</p>
 
         <Image
@@ -87,7 +109,7 @@ export default function PlanVisit() {
           className="rounded-full w-32 h-32 mx-auto"
         />
         <h1 className="text-4xl font-bold">Ray Cruz</h1>
-        <h2 className="text-2xl font-bold">Elder of Treasury</h2>
+        <h2 className="text-2xl font-bold">Elder</h2>
         <p>*Place Bio Here*</p>
       </section>
       <div className="text-center mt-[50px]">

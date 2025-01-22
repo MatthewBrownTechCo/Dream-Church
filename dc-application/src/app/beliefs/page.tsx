@@ -1,0 +1,119 @@
+"use client";
+import CustomHead from "../components/head";
+import Logo from "../components/logos";
+import Footer from "../components/footer";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
+import dreamLogo from "../../../src/logos/dream-logo.jpg";
+
+export default function PlanVisit() {
+  const router = useRouter();
+
+  const teamNavigate = () => router.push("/about");
+
+  return (
+    <>
+      <CustomHead />
+      <Logo />
+      <header className="text-center mt-[70px]">
+        <h1 className="text-8xl font-bold">Beliefs</h1>
+        <br />
+        <h2 className="text-2xl mx-[20%]">
+          What <i>the</i> Church believes has been handed down to us throughout
+          the generations. Dream Church holds to the Church truths in their
+          purest form, as stated in the <b>Nicene Creed</b> and the{" "}
+          <b>Apostle's Creed.</b>
+        </h2>
+      </header>
+
+      <section className="text-center mt-[40px]">
+        <h1 className="text-6xl font-bold">Nicene Creed</h1>
+        <br />
+        <div>
+          {[
+            "We believe in one God",
+            "the Father, the Almighty",
+            "maker of heaven and earth",
+            "of all that is, seen and unseen",
+            "",
+            "We believe in one Lord, Jesus Christ,",
+            "the only Son of God",
+            "eternally begotten of the Father,",
+            "God from God, Light from Light",
+            "true God from true God",
+            "begotten, not made,",
+            "of one Being with the Father.",
+            "Through him all things were made.",
+            "",
+            "For us and for our salvation",
+            "he came down from heaven:",
+            "by the power of the Holy Spirit",
+            "he became incarnate from the Virgin Mary,",
+            "and was made man.",
+            "For our sake he was crucified under Pontius Pilate;",
+            "he suffered death and was buried.",
+            "",
+            "On the third day, he rose again",
+            "in accordance with the Scriptures;",
+            "he ascended into heaven",
+            "and is seated at the right hand of the Father",
+            "",
+            "He will come again in glory",
+            "to judge the living and the dead,",
+            "and his kingdom will have no end.",
+            "",
+            "We believe in the Holy Spirit, the Lord, the giver of life",
+            "who proceeds from the Father and the Son",
+            "With the Father and the Son he is worshiped and glorified.",
+            "",
+            "He has spoken through the Prophets.",
+            "We believe in one holy and apostolic Church.",
+            "We acknowledge one baptism for the forgiveness of sins.",
+            "We look for the resurrection of the dead,",
+            "and the life of the world to come. Amen.",
+          ].map((line, index) => (
+            <p key={index} className={line === "" ? "mb-4" : ""}>
+              {line}
+            </p>
+          ))}
+        </div>
+      </section>
+
+      <br />
+
+      <section className="text-center mt-[70]">
+        <h1 className="text-6xl font-bold">Apostle's Creed</h1>
+        <br />
+        <div>
+          {[
+            "I believe in God, the Father Almighty",
+            "Creator of heaven and earth",
+            "I believe in Jesus Christ, his only Son, our Lord",
+            "He was conceived by the power of the Holy Spirit",
+            "",
+            "And born of the Virgin Mary",
+            "He suffered under Pontius Pilate",
+            "Was crucified, died, and was buried.",
+            "He descended to the dead.",
+            "On the third day he rose again.",
+            "He ascended into heaven,",
+            "And is seated at the right hand of the Father.",
+            "He will come again to judge the living and the dead.",
+            "",
+            "I believe in the Holy Spirit,",
+            "The holy Church",
+            "The communion of saints",
+            "The forgiveness of sins",
+            "The resurrection of the body",
+            "And the life everlasting. Amen.",
+          ].map((line, index) => (
+            <p key={index} className={line === "" ? "mb-4" : ""}>
+              {line}
+            </p>
+          ))}
+        </div>
+      </section>
+      <Footer />
+    </>
+  );
+}
