@@ -14,7 +14,7 @@ const Footer = () => {
     e.preventDefault();
     setLoading(true);
 
-    // Use the Next.js API route
+    // Retrieves api middleware to bypass CORS
     const scriptUrl = "/api/newsletter";
 
     try {

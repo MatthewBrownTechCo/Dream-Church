@@ -6,7 +6,7 @@ export async function POST(req: Request) {
 
     // URL of your Google Apps Script endpoint
     const scriptUrl =
-      "https://script.google.com/macros/s/AKfycbxGQ6hyn_wheAQky0voU_5cwFTOrcGOa0YIURtuaXnPWfQe4Zv2c2oY2D1oW3RMcJ3Q/exec";
+      "https://script.google.com/macros/s/AKfycbzmw22sWmqEENHrnds2G3QJE8Nxs2H5Qz_skWTGtzWjCJIjsvIqFRydaNxczuQ_tIqW/exec";
 
     // Send the email data to Google Apps Script
     const response = await fetch(scriptUrl, {
