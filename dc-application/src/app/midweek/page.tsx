@@ -3,6 +3,7 @@
 import Logo from "../components/logos";
 import Footer from "../components/footer";
 import CustomHead from "../components/head";
+import TextBtn from "../components/textbtn";
 
 export default function Home() {
   return (
@@ -29,11 +30,7 @@ export default function Home() {
           </b>{" "}
           us by clicking the button below.
         </p>
-        <div className="text-center">
-          <button className="bg-transparent border border-black py-[15px] w-[20%] hover:bg-gray-100">
-            <a href="sms:8035675336">Text Us Here</a>
-          </button>
-        </div>
+        <TextBtn />
       </section>
       <Footer />
     </>
