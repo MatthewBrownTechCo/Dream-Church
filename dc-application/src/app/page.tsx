@@ -10,7 +10,7 @@ export default function Home() {
 
   const planVisitNavigate = () => router.push("/planvisit");
   const aboutNavigate = () => router.push("/about");
-  const teamNavigate = () => router.push("/team");
+  const leadersNavigate = () => router.push("/leaders");
 
   return (
     <>
@@ -70,7 +70,7 @@ export default function Home() {
         </button>
         <button
           className="bg-transparent border border-black py-[20px] w-[500px] hover:bg-gray-100"
-          onClick={teamNavigate}
+          onClick={leadersNavigate}
         >
           MEET THE TEAM
         </button>
