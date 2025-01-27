@@ -3,6 +3,7 @@
 import Logo from "./components/logos";
 import Footer from "./components/footer";
 import CustomHead from "./components/head";
+import NavBar from "./components/navbar";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
     <>
       <CustomHead />
       <Logo />
+      <NavBar />
       <header className="text-center mt-[70px]">
         <h1 className="text-4xl font-bold">Dream Church Columbia</h1>
         <h2 className="text-2xl">Columbia, SC</h2>
