@@ -2,7 +2,6 @@
 
 import Logo from "./components/logos";
 import Footer from "./components/footer";
-import CustomHead from "./components/head";
 import NavBar from "./components/navbar";
 import { useRouter } from "next/navigation";
 
@@ -15,7 +14,6 @@ export default function Home() {
 
   return (
     <>
-      <CustomHead />
       <Logo />
       <NavBar />
       <header className="text-center mt-[70px]">

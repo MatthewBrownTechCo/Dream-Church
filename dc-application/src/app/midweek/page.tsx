@@ -2,14 +2,14 @@
 
 import Logo from "../components/logos";
 import Footer from "../components/footer";
-import CustomHead from "../components/head";
 import TextBtn from "../components/textbtn";
+import NavBar from "../components/navbar";
 
 export default function Home() {
   return (
     <>
-      <CustomHead />
       <Logo />
+      <NavBar />
       <header className="text-center mt-[70px] space-y-8">
         <h1 className="text-4xl font-bold">Midweek</h1>
         <br />

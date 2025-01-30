@@ -1,9 +1,9 @@
 "use client";
 
-import CustomHead from "../components/head";
 import Logo from "../components/logos";
 import Footer from "../components/footer";
 import React, { useState } from "react";
+import NavBar from "../components/navbar";
 
 export default function PlanVisit() {
   const [formData, setFormData] = useState({
@@ -89,8 +89,8 @@ export default function PlanVisit() {
 
   return (
     <>
-      <CustomHead />
       <Logo />
+      <NavBar />
       <header className="text-center mt-[70px]">
         <h3 className="text-xl font-bold">
           At Dream Church, you are <u>family</u>.

@@ -1,8 +1,9 @@
 "use client";
-import CustomHead from "../components/head";
+
 import Logo from "../components/logos";
 import Footer from "../components/footer";
 import { useRouter } from "next/navigation";
+import NavBar from "../components/navbar";
 
 export default function PlanVisit() {
   const router = useRouter();
@@ -11,8 +12,8 @@ export default function PlanVisit() {
 
   return (
     <>
-      <CustomHead />
       <Logo />
+      <NavBar />
       <header className="text-center mt-[70px]">
         <h1 className="text-4xl font-bold">About Dream Church</h1>
         <br />
