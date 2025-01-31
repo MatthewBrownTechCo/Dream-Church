@@ -2,11 +2,11 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
-    const { email } = await req.json(); // Parse incoming JSON from the request
+    const { fName, lName, email } = await req.json(); // Parse incoming JSON from the request
 
     // URL of your Google Apps Script endpoint
     const scriptUrl =
-      "https://script.google.com/macros/s/AKfycbzmw22sWmqEENHrnds2G3QJE8Nxs2H5Qz_skWTGtzWjCJIjsvIqFRydaNxczuQ_tIqW/exec";
+      "https://script.google.com/macros/s/AKfycbxGkosor0ZMYrDlXnucllgzlcu58j3rzGOw8RRvU3Zg8QG2IGqnlmC8xWqLN_duFXKs/exec";
 
     // Send the email data to Google Apps Script
     const response = await fetch(scriptUrl, {
@@ -14,7 +14,7 @@ export async function POST(req: Request) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ fName, lName, email }),
     });
 
     const data = await response.json(); // Get the JSON response

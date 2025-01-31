@@ -1,5 +1,5 @@
 import Image from "next/image";
-import dreamLogo from "../../../src/logos/dream-logo.jpg";
+import dreamLogo from "../../logos/dream-logo.jpg";
 
 const Logo = () => {
   return (

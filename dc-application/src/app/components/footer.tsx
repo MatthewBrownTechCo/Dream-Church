@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import instagram from "../../logos/instagram.png";
-import facebook from "../../logos/facebook.png";
-import applePodcasts from "../../logos/apple-podcast-icon-932x1024-dnug5zi2.png";
-import spotify from "../../logos/Spotify_Primary_Logo_RGB_White.png";
+import facebook from "../../logos/facebooklogo.png";
+import youtube from "../../logos/youtube-app-white-icon.webp";
 
 const Footer = () => {
+  const [fName, setfName] = useState("");
+  const [lName, setlName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
@@ -23,7 +24,7 @@ const Footer = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ fName, lName, email }),
       });
 
       const data = await response.json();
@@ -39,6 +40,8 @@ const Footer = () => {
       setMessage("An error occurred. Please try again later.");
     } finally {
       setLoading(false);
+      setfName("");
+      setlName("");
       setEmail("");
     }
   };
@@ -54,14 +57,32 @@ const Footer = () => {
         </p>
       </div>
       <form onSubmit={handleSubmit} className="space-y-7">
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email Address"
-          className="text-black block border rounded-md border-black p-2 w-64 mx-auto"
-          required
-        />
+        <div className="flex flex-row justify-center">
+          <input
+            type="text"
+            value={fName}
+            onChange={(e) => setfName(e.target.value)}
+            placeholder="First Name"
+            className="text-black block border rounded-md border-black p-2 w-64 mx-[1%]"
+            required
+          />
+          <input
+            type="text"
+            value={lName}
+            onChange={(e) => setlName(e.target.value)}
+            placeholder="Last Name"
+            className="text-black block border rounded-md border-black p-2 w-64 mx-[1%]"
+            required
+          />
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email Address"
+            className="text-black block border rounded-md border-black p-2 w-64 mx-[1%]"
+            required
+          />
+        </div>
         <button
           type="submit"
           disabled={loading}
@@ -72,26 +93,27 @@ const Footer = () => {
       </form>
       {message && <p className="mt-4">{message}</p>}
       <div className="flex justify-center gap-x-8 items-center mt-[70px]">
-        <Image
-          src={instagram}
-          alt="Instagram Logo"
-          className="h-8 w-auto object-contain"
-        />
-        <Image
-          src={facebook}
-          alt="Facebook Logo"
-          className="h-[37px] w-auto object-contain"
-        />
-        <Image
-          src={applePodcasts}
-          alt="Apple Podcasts Logo"
-          className="h-8 w-auto object-contain"
-        />
-        <Image
-          src={spotify}
-          alt="Spotify Logo"
-          className="h-8 w-auto object-contain"
-        />
+        <a href="https://www.instagram.com/dreamchurchcola/" target="_blank">
+          <Image
+            src={instagram}
+            alt="Instagram Logo"
+            className="h-8 w-auto object-contain"
+          />
+        </a>
+        <a href="https://www.facebook.com/dreamchurchcola" target="_blank">
+          <Image
+            src={facebook}
+            alt="Facebook Logo"
+            className="h-8 w-auto object-contain"
+          />
+        </a>
+        <a href="https://www.youtube.com/@dreamchurchcola" target="_blank">
+          <Image
+            src={youtube}
+            alt="YouTube Logo"
+            className="h-8 w-auto object-contain"
+          />
+        </a>
       </div>
       <p className="mt-[50px]">
         <i>&copy; Dream Church Columbia. All rights reserved.</i>
