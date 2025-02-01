@@ -19,7 +19,7 @@ export default function Home() {
       <header className="text-center mt-[70px]">
         <h1 className="text-4xl font-bold">Dream Church Columbia</h1>
         <h2 className="text-2xl">Columbia, SC</h2>
-        <h2 className="text-2xl">Sundays @ 10AM EST</h2>
+        <h2 className="text-2xl">Services Sundays @ 10AM EST</h2>
       </header>
       <div className="flex justify-center items-center flex-col mt-[20px] gap-4">
         <button
