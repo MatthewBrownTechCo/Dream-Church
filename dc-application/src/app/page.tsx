@@ -14,7 +14,6 @@ export default function Home() {
 
   return (
     <>
-      <Logo />
       <NavBar />
       <header className="text-center mt-[70px]">
         <h1 className="text-4xl font-bold">Dream Church Columbia</h1>
