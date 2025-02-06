@@ -4,7 +4,7 @@ import Logo from "../components/logos";
 import Footer from "../components/footer";
 import NavBar from "../components/navbar";
 
-export default function PlanVisit() {
+export default function Beliefs() {
   return (
     <>
       <Logo />

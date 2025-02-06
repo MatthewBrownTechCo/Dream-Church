@@ -7,7 +7,7 @@ import Image from "next/image";
 import dreamLogo from "../../../src/logos/dream-logo.jpg";
 import NavBar from "../components/navbar";
 
-export default function PlanVisit() {
+export default function Leaders() {
   const router = useRouter();
 
   const teamNavigate = () => router.push("/about");

@@ -4,7 +4,7 @@ import Logo from "../components/logos";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 
-export default function PlanVisit() {
+export default function Give() {
   return (
     <>
       <Logo />

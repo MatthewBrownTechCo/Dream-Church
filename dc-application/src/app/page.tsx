@@ -1,8 +1,7 @@
 "use client";
 
-import Logo from "./components/logos";
-import Footer from "./components/footer";
 import NavBar from "./components/navbar";
+import Footer from "./components/footer";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -13,20 +12,23 @@ export default function Home() {
   const leadersNavigate = () => router.push("/leaders");
 
   return (
-    <>
+    <div className="bg-[rgb(28,28,28)] text-white">
       <NavBar />
-      <header className="text-center mt-[70px]">
-        <h1 className="text-4xl font-bold">Dream Church Columbia</h1>
-        <h2 className="text-2xl">Columbia, SC</h2>
-        <h2 className="text-2xl">Services Sundays @ 10AM EST</h2>
-      </header>
-      <div className="flex justify-center items-center flex-col mt-[20px] gap-4">
-        <button
-          className="bg-transparent border border-black py-[20px] w-[500px] hover:bg-gray-100"
-          onClick={planVisitNavigate}
-        >
-          Plan Your Visit
-        </button>
+      <div className="relative bg-[url('/images/josh-lh-matt-piano-ps.jpg')] bg-cover bg-center px-[7%] py-[15%] text-white">
+        <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
+        <header className="relative text-left my-[70px] z-10 space-y-6">
+          <h1 className="text-6xl">Dream Church</h1>
+          <h2 className="text-xl">Columbia, South Carolina</h2>
+          <h2 className="text-xl">Services Sundays @ 10AM EST</h2>
+        </header>
+        <div className="relative mt-[20px] z-10">
+          <button
+            className="bg-white text-black border border-white py-[20px] w-[30%] hover:bg-gray-100"
+            onClick={planVisitNavigate}
+          >
+            <b>Plan Your Visit</b>
+          </button>
+        </div>
       </div>
       <section className="text-center mt-[100px]">
         <h1 className="text-4xl font-bold">Watch the latest sermon.</h1>
@@ -79,6 +81,6 @@ export default function Home() {
         <p>(Social Media buttons will go here)</p>
       </section>
       <Footer />
-    </>
+    </div>
   );
 }

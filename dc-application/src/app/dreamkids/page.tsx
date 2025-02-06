@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 import TextBtn from "../components/textbtn";
 import NavBar from "../components/navbar";
 
-export default function Home() {
+export default function DreamKids() {
   return (
     <>
       <Logo />

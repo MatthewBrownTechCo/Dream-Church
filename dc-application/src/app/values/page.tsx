@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 import { useRouter } from "next/navigation";
 import NavBar from "../components/navbar";
 
-export default function PlanVisit() {
+export default function Values() {
   const router = useRouter();
 
   const teamNavigate = () => router.push("/team");
