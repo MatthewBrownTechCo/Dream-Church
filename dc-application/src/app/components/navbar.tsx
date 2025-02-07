@@ -16,24 +16,36 @@ const NavBar = () => {
   const planVisitNav = () => router.push("/planvisit");
   const giveNav = () => router.push("/give");
 
-  const getLinkClass = (path: string) => {
-    return pathname === path
-      ? "cursor-pointer text-center hover:text-gray-200 underline" // Active state
+  const getLinkClass = (paths: string | string[]) => {
+    const isActive = Array.isArray(paths)
+      ? paths.includes(pathname)
+      : pathname === paths;
+    return isActive
+      ? "cursor-pointer text-center hover:text-gray-200 underline underline-offset-4" // Active state
       : "cursor-pointer text-center hover:text-gray-200"; // Inactive state
   };
 
   return (
-    <div className="bg-[rgb(28,28,28)] p-10 sticky top-0 z-20 py-6">
+    <div className="bg-[rgb(28,28,28)] px-10 py-4 sticky top-0 z-20">
       <div className="flex justify-between relative text-white">
         <Logo />
-        <div className="flex items-center space-x-10">
+        <div className="text-[13px] flex items-center space-x-10">
           <div onClick={homeNav} className={getLinkClass("/")}>
             Home
           </div>
 
           {/* About with hover dropdown */}
           <div className="relative text-center group">
-            <div className={getLinkClass("/about")}>About</div>
+            <div
+              className={getLinkClass([
+                "/about",
+                "/leaders",
+                "/values",
+                "/beliefs",
+              ])}
+            >
+              About
+            </div>
             <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-40 bg-[rgb(28,28,28)] rounded-lg shadow-lg hidden group-hover:block">
               <div
                 onClick={leadersNav}
@@ -59,9 +71,7 @@ const NavBar = () => {
           <div onClick={midweekNav} className={getLinkClass("/midweek")}>
             Midweek
           </div>
-          <div onClick={liveStreamNav} className={getLinkClass("/livestream")}>
-            Live Stream
-          </div>
+          <div onClick={liveStreamNav}>Live Stream</div>
           <div onClick={planVisitNav} className={getLinkClass("/planvisit")}>
             Plan Your Visit
           </div>

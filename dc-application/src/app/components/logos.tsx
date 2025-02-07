@@ -3,7 +3,7 @@ import dreamLogo from "../../logos/dream-logo.jpg";
 
 const Logo = () => {
   return (
-    <a href="/" className="ml-[100px] mt-[-1%] inline-block">
+    <a href="/" className="ml-[0px] mt-[-1%] inline-block">
       <Image
         src={dreamLogo}
         alt="Dream Church Logo"
