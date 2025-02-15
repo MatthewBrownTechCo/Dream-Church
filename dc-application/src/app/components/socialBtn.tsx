@@ -1,7 +1,7 @@
 import Image from "next/image";
-import instaLogo from "../../logos/instagram.png";
-import fbLogo from "../../logos/facebooklogo.png";
-import youtubeLogo from "../../logos/youtube-app-white-icon.webp";
+import instagram from "../../../public/logos/instagram.png";
+import facebook from "../../../public/logos/facebooklogo.png";
+import youtube from "../../../public/logos/youtube-app-white-icon.webp";
 
 const socialBtn = () => {
   return (
@@ -9,7 +9,7 @@ const socialBtn = () => {
       <button className="bg-transparent border border-black py-[15px] w-[20%] hover:bg-gray-100">
         <a href="/">
           <Image
-            src={instaLogo}
+            src={instagram}
             alt="Instagram Logo"
             width={100}
             height={100}
@@ -20,7 +20,7 @@ const socialBtn = () => {
       <button className="bg-transparent border border-black py-[15px] w-[20%] hover:bg-gray-100">
         <a href="/">
           <Image
-            src={fbLogo}
+            src={facebook}
             alt="Facebook Logo"
             width={100}
             height={100}
@@ -31,7 +31,7 @@ const socialBtn = () => {
       <button className="bg-transparent border border-black py-[15px] w-[20%] hover:bg-gray-100">
         <a href="/">
           <Image
-            src={youtubeLogo}
+            src={youtube}
             alt="YouTube Logo"
             width={100}
             height={100}

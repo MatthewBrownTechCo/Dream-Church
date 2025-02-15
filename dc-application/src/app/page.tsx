@@ -4,6 +4,7 @@ import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 import { useRouter } from "next/navigation";
 import PodcastEmbed from "./components/podcast-embed";
+import Accordion from "./components/accordion";
 
 export default function Home() {
   const router = useRouter();
@@ -84,20 +85,8 @@ export default function Home() {
         <PodcastEmbed />
       </div>
       <section className="text-center mt-[100px]">
-        <h1 className="text-4xl font-bold">Join our livestream.</h1>
-        <h2 className="mt-[20px]">
-          We livestream our Sunday Service at 10 AM EST
-        </h2>
-        <h2 className="mt-[50px]">
-          To watch previous livestreams, visit our YouTube channel{" "}
-          <a
-            className="underline text-blue-500"
-            href="https://www.youtube.com/@dreamchurchcola"
-            target="_blank"
-          >
-            here
-          </a>
-        </h2>
+        <h1 className="text-6xl font-bold">Our Values</h1>
+        <Accordion />
       </section>
       <div className="flex justify-center items-center flex-col mt-[20px] gap-4">
         <button

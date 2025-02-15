@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import instagram from "../../logos/instagram.png";
-import facebook from "../../logos/facebooklogo.png";
-import youtube from "../../logos/youtube-app-white-icon.webp";
+import instagram from "../../../public/logos/instagram.png";
+import facebook from "../../../public/logos/facebooklogo.png";
+import youtube from "../../../public/logos/youtube-app-white-icon.webp";
 
 const Footer = () => {
   const [fName, setfName] = useState("");
