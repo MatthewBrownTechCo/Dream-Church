@@ -81,7 +81,9 @@ export default function Accordion() {
             }}
           >
             <div
-              ref={(el) => (contentRefs.current[index] = el)}
+              ref={(el) => {
+                contentRefs.current[index] = el;
+              }}
               className="p-4 bg-gray-800 text-white"
               dangerouslySetInnerHTML={{ __html: item.content }}
             />
