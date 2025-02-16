@@ -3,40 +3,22 @@ import instagram from "../../../public/logos/instagram.png";
 import facebook from "../../../public/logos/facebooklogo.png";
 import youtube from "../../../public/logos/youtube-app-white-icon.webp";
 
-const socialBtn = () => {
+export const SocialBtn = () => {
   return (
-    <div className="flex flex-row justify-center">
-      <button className="bg-transparent border border-black py-[15px] w-[20%] hover:bg-gray-100">
+    <div className="flex flex-row justify-center gap-4">
+      <button className="bg-[rgb(28,28,28)] flex justify-center items-center w-16 h-16 hover:bg-gray-700">
         <a href="/">
-          <Image
-            src={instagram}
-            alt="Instagram Logo"
-            width={100}
-            height={100}
-            className="w-32 h-32"
-          />
+          <Image src={instagram} alt="Instagram Logo" width={30} height={30} />
         </a>
       </button>
-      <button className="bg-transparent border border-black py-[15px] w-[20%] hover:bg-gray-100">
+      <button className="bg-[rgb(28,28,28)] flex justify-center items-center w-16 h-16 hover:bg-gray-700">
         <a href="/">
-          <Image
-            src={facebook}
-            alt="Facebook Logo"
-            width={100}
-            height={100}
-            className="w-32 h-32"
-          />
+          <Image src={facebook} alt="Facebook Logo" width={30} height={30} />
         </a>
       </button>
-      <button className="bg-transparent border border-black py-[15px] w-[20%] hover:bg-gray-100">
+      <button className="bg-[rgb(28,28,28)] flex justify-center items-center w-16 h-16 hover:bg-gray-700">
         <a href="/">
-          <Image
-            src={youtube}
-            alt="YouTube Logo"
-            width={100}
-            height={100}
-            className="w-32 h-32"
-          />
+          <Image src={youtube} alt="YouTube Logo" width={30} height={30} />
         </a>
       </button>
     </div>

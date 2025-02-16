@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import { useRouter } from "next/navigation";
 import PodcastEmbed from "./components/podcast-embed";
 import Accordion from "./components/accordion";
+import { SocialBtn } from "./components/socialBtn";
 
 export default function Home() {
   const router = useRouter();
@@ -14,7 +15,7 @@ export default function Home() {
   const leadersNavigate = () => router.push("/leaders");
 
   return (
-    <div className="bg-[rgb(28,28,28)] text-white">
+    <div className="text-white">
       <NavBar />
       <div className="relative bg-[url('/images/josh-lh-matt-piano-ps.jpg')] bg-cover bg-center px-[7%] py-[15%] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
@@ -84,27 +85,50 @@ export default function Home() {
         </section>
         <PodcastEmbed />
       </div>
-      <section className="text-center mt-[100px]">
+      <section className="text-center py-[100px]">
         <h1 className="text-6xl font-bold">Our Values</h1>
         <Accordion />
       </section>
-      <div className="flex justify-center items-center flex-col mt-[20px] gap-4">
-        <button
-          className="bg-transparent border border-black py-[20px] w-[500px] hover:bg-gray-100"
-          onClick={aboutNavigate}
-        >
-          ABOUT US
-        </button>
-        <button
-          className="bg-transparent border border-black py-[20px] w-[500px] hover:bg-gray-100"
-          onClick={leadersNavigate}
-        >
-          MEET THE TEAM
-        </button>
-      </div>
-      <section className="text-center mt-[100px]">
-        <h2 className="text-2xl font-bold">Follow Us Online</h2>
-        <p>(Social Media buttons will go here)</p>
+      <section className="relative flex justify-between px-[6%] bg-[url('/images/preservice-christmas.jpg')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
+        <div className="flex justify-center items-center flex-col z-10 space-y-8 py-[10%]">
+          <h1 className="text-6xl font-bold">1633 Main Street</h1>
+          <h1 className="text-6xl font-bold">Columbia, SC</h1>
+        </div>
+        <div className="space-y-5 py-[5%] w-[35%] z-10">
+          <h1 className="font-bold">
+            <u>1633 Main Street</u>
+          </h1>
+          <p>Sundays at 10 AM EST</p>
+          <p>
+            Tuesdays at 6 PM EST (We meet at homes.{" "}
+            <a
+              href="/midweek"
+              className="underline underline-offset-4 hover:text-gray-200"
+            >
+              Click here
+            </a>{" "}
+            for more information)
+          </p>
+          <br />
+          <h1 className="font-bold">
+            <u>Contact Us with Questions:</u>
+          </h1>
+          <p>hello@dreamcolumbia.com</p>
+          <p>
+            or{" "}
+            <a
+              href="sms:8035675336"
+              className="underline underline-offset-4 hover:text-gray-200"
+            >
+              text 803-567-5336 (click here to text us)
+            </a>
+          </p>
+        </div>
+      </section>
+      <section className="text-center py-[5%] bg-white text-black space-y-8">
+        <h2 className="text-5xl font-bold">Follow Us Online</h2>
+        <SocialBtn />
       </section>
       <Footer />
     </div>
