@@ -47,7 +47,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="text-center bg-[rgb(28,28,28)] mt-[100px] text-white p-8 space-y-8">
+    <footer className="text-center bg-[rgb(28,28,28)] mt-[50px] text-white p-8 space-y-8">
       <div>
         <h2 className="text-2xl font-bold">Stay in the loop</h2>
         <br />

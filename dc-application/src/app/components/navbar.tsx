@@ -6,15 +6,18 @@ const NavBar = () => {
   const router = useRouter();
   const pathname = usePathname();
 
+  const beliefsNav = () => router.push("/beliefs");
+  const contactNav = () => router.push("/contact");
+  const dreamKidsNav = () => router.push("/dreamkids");
+  const giveNav = () => router.push("/give");
   const homeNav = () => router.push("/");
   const leadersNav = () => router.push("/leaders");
-  const valuesNav = () => router.push("/values");
-  const beliefsNav = () => router.push("/beliefs");
-  const midweekNav = () => router.push("/midweek");
+  const locationNav = () => router.push("/location");
   const liveStreamNav = () =>
     window.open("https://www.youtube.com/dreamchurchcola", "_blank");
+  const midweekNav = () => router.push("/midweek");
   const planVisitNav = () => router.push("/planvisit");
-  const giveNav = () => router.push("/give");
+  const serveNav = () => router.push("/serve");
 
   const getLinkClass = (paths: string | string[]) => {
     const isActive = Array.isArray(paths)
@@ -39,31 +42,64 @@ const NavBar = () => {
             <div
               className={getLinkClass([
                 "/about",
+                "/location",
+                "/dreamkids",
+                "/serve",
                 "/leaders",
-                "/values",
                 "/beliefs",
+                "/contact",
               ])}
             >
               About
             </div>
-            <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-40 bg-[rgb(28,28,28)] rounded-lg shadow-lg hidden group-hover:block">
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-40 bg-[rgb(28,28,28)] hidden group-hover:block">
+              <div
+                onClick={locationNav}
+                className={`${getLinkClass(
+                  "/location"
+                )} cursor-pointer px-2 py-1 hover:text-gray-200`}
+              >
+                Location & Times
+              </div>
+              <div
+                onClick={dreamKidsNav}
+                className={`${getLinkClass(
+                  "/dreamkids"
+                )} cursor-pointer px-2 py-1 hover:text-gray-200`}
+              >
+                Dream Kids
+              </div>
+              <div
+                onClick={serveNav}
+                className={`${getLinkClass(
+                  "/serve"
+                )} cursor-pointer px-2 py-1 hover:text-gray-200`}
+              >
+                Serve
+              </div>
               <div
                 onClick={leadersNav}
-                className="cursor-pointer px-4 py-2 border border-transparent hover:text-gray-200"
+                className={`${getLinkClass(
+                  "/leaders"
+                )} cursor-pointer px-2 py-1 hover:text-gray-200`}
               >
                 Leaders
               </div>
               <div
-                onClick={valuesNav}
-                className="cursor-pointer px-4 py-2 border border-transparent hover:text-gray-200"
-              >
-                Values
-              </div>
-              <div
                 onClick={beliefsNav}
-                className="cursor-pointer px-4 py-2 border border-transparent hover:text-gray-200"
+                className={`${getLinkClass(
+                  "/beliefs"
+                )} cursor-pointer px-2 py-1 hover:text-gray-200`}
               >
                 Beliefs
+              </div>
+              <div
+                onClick={contactNav}
+                className={`${getLinkClass(
+                  "/contact"
+                )} cursor-pointer px-2 py-1 hover:text-gray-200`}
+              >
+                Contact Us
               </div>
             </div>
           </div>

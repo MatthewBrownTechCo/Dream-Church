@@ -1,10 +1,9 @@
 "use client";
 
-import Logo from "../components/logos";
 import Footer from "../components/footer";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import dreamLogo from "../../../src/logos/dream-logo.jpg";
+import dreamLogo from "../../../public/logos/dream-logo.jpg";
 import NavBar from "../components/navbar";
 
 export default function Leaders() {
@@ -14,7 +13,6 @@ export default function Leaders() {
 
   return (
     <>
-      <Logo />
       <NavBar />
       <header className="text-center mt-[70px]">
         <h1 className="text-4xl font-bold">Leadership</h1>
