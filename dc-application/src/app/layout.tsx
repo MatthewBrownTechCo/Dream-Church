@@ -10,6 +10,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Dream Church Columbia",
   description: "A church being deeply formed in the image of Christ.",
+  icons: {
+    icon: "/logos/dream-logo.jpg",
+  },
 };
 
 export default function RootLayout({

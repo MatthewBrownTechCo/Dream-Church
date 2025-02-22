@@ -40,6 +40,7 @@ const NavBar = () => {
           {/* About with hover dropdown */}
           <div className="relative text-center group">
             <div
+              onClick={locationNav}
               className={getLinkClass([
                 "/about",
                 "/location",

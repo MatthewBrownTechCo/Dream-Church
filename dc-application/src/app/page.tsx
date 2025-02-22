@@ -11,11 +11,9 @@ export default function Home() {
   const router = useRouter();
 
   const planVisitNavigate = () => router.push("/planvisit");
-  const aboutNavigate = () => router.push("/about");
-  const leadersNavigate = () => router.push("/leaders");
 
   return (
-    <div className="text-white">
+    <div>
       <NavBar />
       <div className="relative bg-[url('/images/josh-lh-matt-piano-ps.jpg')] bg-cover bg-center px-[7%] py-[15%] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
