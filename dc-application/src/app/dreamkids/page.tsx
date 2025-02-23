@@ -1,14 +1,12 @@
 "use client";
 
-import Logo from "../components/logos";
 import Footer from "../components/footer";
 import TextBtn from "../components/textbtn";
 import NavBar from "../components/navbar";
 
 export default function DreamKids() {
   return (
-    <>
-      <Logo />
+    <div>
       <NavBar />
       <header className="text-center mt-[70px] space-y-8">
         <h1 className="text-4xl font-bold">Dream Kids</h1>
@@ -37,6 +35,6 @@ export default function DreamKids() {
         <TextBtn />
       </section>
       <Footer />
-    </>
+    </div>
   );
 }

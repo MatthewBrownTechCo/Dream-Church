@@ -24,7 +24,7 @@ export default function Home() {
         </header>
         <div className="relative mt-[20px] z-10">
           <button
-            className="bg-white text-black border border-white py-[20px] w-[30%] hover:bg-gray-100"
+            className="bg-white text-black border border-white py-[20px] w-[30%] hover:bg-gray-200"
             onClick={planVisitNavigate}
           >
             <b>Plan Your Visit</b>

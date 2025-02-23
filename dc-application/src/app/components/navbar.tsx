@@ -58,7 +58,7 @@ const NavBar = () => {
                 onClick={locationNav}
                 className={`${getLinkClass(
                   "/location"
-                )} cursor-pointer px-2 py-1 hover:text-gray-200`}
+                )} cursor-pointer px-2 py-1 pt-2 hover:text-gray-200`}
               >
                 Location & Times
               </div>
