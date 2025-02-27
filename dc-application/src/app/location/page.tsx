@@ -12,7 +12,7 @@ export default function location() {
   return (
     <div>
       <NavBar />
-      <div className="relative bg-[url('/images/pastor-study-back.jpg')] bg-cover bg-center px-[7%] py-[10%] text-white">
+      <div className="relative bg-[url('/images/pastor-study-back.jpg')] bg-cover bg-[center_bottom_45%] px-[7%] py-[8%] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center py-[80px] z-10">
           <h1 className="text-7xl font-bold">Location and Times</h1>
@@ -99,7 +99,7 @@ export default function location() {
           </div>
           <div className="flex justify-center relative mt-[50px] z-10">
             <button
-              className="bg-white text-black border border-white py-[20px] w-[30%] hover:bg-gray-200"
+              className="bg-white text-black border border-white py-[20px] w-[300px] hover:bg-gray-200"
               onClick={planVisitNavigate}
             >
               <b>Plan Your Visit</b>

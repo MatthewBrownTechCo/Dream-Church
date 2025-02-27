@@ -64,7 +64,6 @@ const Footer = () => {
             onChange={(e) => setfName(e.target.value)}
             placeholder="First Name"
             className="text-black block border rounded-md border-black p-2 w-64 mx-[1%]"
-            required
           />
           <input
             type="text"
@@ -72,7 +71,6 @@ const Footer = () => {
             onChange={(e) => setlName(e.target.value)}
             placeholder="Last Name"
             className="text-black block border rounded-md border-black p-2 w-64 mx-[1%]"
-            required
           />
           <input
             type="email"
@@ -86,7 +84,7 @@ const Footer = () => {
         <button
           type="submit"
           disabled={loading}
-          className="text-center text-black font-bold bg-white border border-white w-[150px] h-[50px] hover:bg-gray-100 disabled:opacity-50"
+          className="text-center text-black font-bold bg-white border border-white w-[150px] h-[50px] hover:bg-gray-200 disabled:opacity-50"
         >
           {loading ? "Signing Up..." : "Sign Up"}
         </button>
