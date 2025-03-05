@@ -1,6 +1,5 @@
 "use client";
 
-import Logo from "../components/logos";
 import Footer from "../components/footer";
 import React, { useState } from "react";
 import NavBar from "../components/navbar";
@@ -67,7 +66,7 @@ export default function Serve() {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/plan-visit", {
+      const response = await fetch("/api/serve", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -102,19 +101,19 @@ export default function Serve() {
   };
 
   return (
-    <>
-      <Logo />
+    <div>
       <NavBar />
-      <header className="text-center mt-[70px]">
+      <header className="bg-contain bg-no-repeat bg-center bg-[url('/images/serving-outside.png')] p-[200px]"></header>
+      <header className="text-center mt-[50px]">
         <h1 className="text-8xl font-bold">Serve</h1>
         <br />
-        <p>
-          We are doing impactful kingdom ministry, and we want you to step into
-          the vital part of the body that you are called to. If you are
-          interested in serving, fill out this short form and we will reach out
-          to answer any questions you have and help you get plugged in!
-        </p>
       </header>
+      <p className="px-[300px] text-center mt-[30px]">
+        We are doing impactful kingdom ministry, and we want you to step into
+        the vital part of the body that you are called to. If you are interested
+        in serving, fill out this short form and we will reach out to answer any
+        questions you have and help you get plugged in!
+      </p>
       <form
         onSubmit={handleSubmit}
         className="mt-[50px] py-10 mx-[20%] space-y-6 bg-white text-black"
@@ -223,9 +222,9 @@ export default function Serve() {
             {loading ? "Submitting..." : "SUBMIT"}
           </button>
         </div>
+        {message && <p className="text-center mt-4">{message}</p>}
       </form>
-      {message && <p className="text-center mt-4">{message}</p>}
       <Footer />
-    </>
+    </div>
   );
 }

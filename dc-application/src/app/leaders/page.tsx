@@ -3,6 +3,7 @@
 import Footer from "../components/footer";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import joshHeadshot from "../../../public/images/josh-headshot.jpeg";
 import dreamLogo from "../../../public/logos/dream-logo.jpg";
 import NavBar from "../components/navbar";
 
@@ -41,11 +42,11 @@ export default function Leaders() {
           </div>
           <div className="flex-1">
             <Image
-              src={dreamLogo}
-              alt="Dream Church Logo"
-              width={100}
-              height={100}
-              className="w-auto h-[100%] mx-auto"
+              src={joshHeadshot}
+              alt="Josh Headshot"
+              width={500}
+              height={500}
+              className="mx-auto"
             />
           </div>
         </div>
