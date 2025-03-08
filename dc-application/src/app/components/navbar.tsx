@@ -58,7 +58,7 @@ const NavBar = () => {
                 onClick={locationNav}
                 className={`${getLinkClass(
                   "/location"
-                )} cursor-pointer px-2 py-1 pt-2 hover:text-gray-200`}
+                )} cursor-pointer hover:text-gray-200`}
               >
                 Location & Times
               </div>
@@ -66,7 +66,7 @@ const NavBar = () => {
                 onClick={dreamKidsNav}
                 className={`${getLinkClass(
                   "/dreamkids"
-                )} cursor-pointer px-2 py-1 hover:text-gray-200`}
+                )} cursor-pointer hover:text-gray-200`}
               >
                 Dream Kids
               </div>
@@ -74,7 +74,7 @@ const NavBar = () => {
                 onClick={serveNav}
                 className={`${getLinkClass(
                   "/serve"
-                )} cursor-pointer px-2 py-1 hover:text-gray-200`}
+                )} cursor-pointer hover:text-gray-200`}
               >
                 Serve
               </div>
@@ -82,7 +82,7 @@ const NavBar = () => {
                 onClick={leadersNav}
                 className={`${getLinkClass(
                   "/leaders"
-                )} cursor-pointer px-2 py-1 hover:text-gray-200`}
+                )} cursor-pointer hover:text-gray-200`}
               >
                 Leaders
               </div>
@@ -90,7 +90,7 @@ const NavBar = () => {
                 onClick={beliefsNav}
                 className={`${getLinkClass(
                   "/beliefs"
-                )} cursor-pointer px-2 py-1 hover:text-gray-200`}
+                )} cursor-pointer hover:text-gray-200`}
               >
                 Beliefs
               </div>
@@ -98,18 +98,33 @@ const NavBar = () => {
                 onClick={contactNav}
                 className={`${getLinkClass(
                   "/contact"
-                )} cursor-pointer px-2 py-1 hover:text-gray-200`}
+                )} cursor-pointer hover:text-gray-200`}
               >
                 Contact Us
               </div>
             </div>
           </div>
 
-          <div onClick={midweekNav} className={getLinkClass("/midweek")}>
+          <div
+            onClick={midweekNav}
+            className={`${getLinkClass(
+              "/midweek"
+            )} cursor-pointer hover:text-gray-200`}
+          >
             Midweek
           </div>
-          <div onClick={liveStreamNav}>Live Stream</div>
-          <div onClick={planVisitNav} className={getLinkClass("/planvisit")}>
+          <div
+            onClick={liveStreamNav}
+            className="cursor-pointer hover:text-gray-200"
+          >
+            Live Stream
+          </div>
+          <div
+            onClick={planVisitNav}
+            className={`${getLinkClass(
+              "/planvisit"
+            )} cursor-pointer hover:text-gray-200`}
+          >
             Plan Your Visit
           </div>
           <div className="text-center">
