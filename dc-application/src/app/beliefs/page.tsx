@@ -1,29 +1,29 @@
 "use client";
 
-import Logo from "../components/logos";
 import Footer from "../components/footer";
 import NavBar from "../components/navbar";
 
 export default function Beliefs() {
   return (
     <>
-      <Logo />
       <NavBar />
-      <header className="text-center mt-[70px]">
-        <h1 className="text-8xl font-bold">Beliefs</h1>
-        <br />
-        <h2 className="text-2xl mx-[20%]">
-          What <i>the</i> Church believes has been handed down to us throughout
-          the generations. Dream Church holds to the Church truths in their
-          purest form, as stated in the <b>Nicene Creed</b> and the{" "}
-          <b>Apostle's Creed.</b>
-        </h2>
-      </header>
+      <div className="relative text-black bg-[url('/images/josh-outside-teach.jpg')] bg-cover bg-center px-[70px] py-[120px]">
+        <div className="absolute inset-0 bg-white opacity-75 z-0"></div>
+        <header className="relative text-center z-10 space-y-10">
+          <h1 className="text-8xl font-bold">Beliefs</h1>
+          <h2 className="text-xl px-[350px]">
+            What <i>the</i> Church believes has been handed down to us
+            throughout the generations. Dream Church holds to the Church truths
+            in their purest form, as stated in the <b>Nicene Creed</b> and the{" "}
+            <b>Apostle's Creed.</b>
+          </h2>
+        </header>
+      </div>
 
-      <section className="text-center mt-[40px]">
-        <h1 className="text-6xl font-bold">Nicene Creed</h1>
+      <section className="text-center bg-[rgb(28,28,28)] py-[40px]">
+        <h1 className="text-7xl font-bold">Nicene Creed</h1>
         <br />
-        <div>
+        <div className="text-xl border border-white mx-[300px] py-5">
           {[
             "We believe in one God",
             "the Father, the Almighty",
@@ -75,10 +75,10 @@ export default function Beliefs() {
 
       <br />
 
-      <section className="text-center mt-[70]">
-        <h1 className="text-6xl font-bold">Apostle's Creed</h1>
+      <section className="text-center">
+        <h1 className="text-7xl font-bold">Apostle's Creed</h1>
         <br />
-        <div>
+        <div className="text-xl border border-white mx-[300px] py-5">
           {[
             "I believe in God, the Father Almighty",
             "Creator of heaven and earth",

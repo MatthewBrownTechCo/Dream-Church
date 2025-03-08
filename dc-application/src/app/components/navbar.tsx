@@ -29,10 +29,10 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-[rgb(28,28,28)] px-10 py-4 sticky top-0 z-20">
+    <div className="bg-[rgb(28,28,28)] px-10 pl-[60px] py-6 sticky top-0 z-20">
       <div className="flex justify-between relative text-white">
         <Logo />
-        <div className="text-[13px] flex items-center space-x-10">
+        <div className="text-[18px] flex items-center space-x-10">
           <div onClick={homeNav} className={getLinkClass("/")}>
             Home
           </div>
@@ -115,7 +115,7 @@ const NavBar = () => {
           <div className="text-center">
             <button
               onClick={giveNav}
-              className="cursor-pointer bg-white text-[rgb(21,31,38)] border border-[rgb(21,31,38)] h-[40px] w-[80px] hover:bg-gray-100"
+              className="cursor-pointer bg-white text-[rgb(21,31,38)] border border-[rgb(21,31,38)] h-[40px] w-[80px] hover:bg-gray-200"
             >
               Give
             </button>

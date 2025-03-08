@@ -108,7 +108,7 @@ export default function Serve() {
         <h1 className="text-8xl font-bold">Serve</h1>
         <br />
       </header>
-      <p className="px-[300px] text-center mt-[30px]">
+      <p className="px-[300px] text-center mt-[30px] text-xl">
         We are doing impactful kingdom ministry, and we want you to step into
         the vital part of the body that you are called to. If you are interested
         in serving, fill out this short form and we will reach out to answer any
@@ -116,7 +116,7 @@ export default function Serve() {
       </p>
       <form
         onSubmit={handleSubmit}
-        className="mt-[50px] py-10 mx-[20%] space-y-6 bg-white text-black"
+        className="mt-[50px] py-10 mx-[20%] space-y-6 bg-white text-black text-xl"
       >
         <div className="space-y-2 px-10 w-full">
           <label htmlFor="f-name" className="block font-medium">

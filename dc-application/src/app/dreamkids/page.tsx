@@ -11,14 +11,14 @@ export default function DreamKids() {
       <div className="relative bg-[url('/images/dream-kids.webp')] bg-cover bg-[center_bottom_45%] px-[7%] py-[5%] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center py-[80px] z-10">
-          <h1 className="text-7xl font-bold">Dream Kids</h1>
+          <h1 className="text-8xl font-bold">Dream Kids</h1>
           <br />
-          <p className="text-xl font-bold">For Children Ages 2-8</p>
+          <p className="text-3xl font-bold">For Children Ages 2-8</p>
         </header>
       </div>
       <section className="bg-white text-black text-center py-[85px] px-[25%] space-y-8">
-        <h2 className="text-4xl font-bold">Need to Know</h2>
-        <p>
+        <h2 className="text-6xl font-bold">Need to Know</h2>
+        <p className="text-xl">
           Dream Kids takes place every Sunday during the sermon for children
           ages 2-8. We created this space to allow our kids to engage in a
           lesson on their level and experience community with one another. All

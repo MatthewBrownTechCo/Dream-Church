@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 interface AccordionItem {
   title: string;
@@ -59,7 +59,7 @@ export default function Accordion() {
             className="flex justify-between w-full p-4 text-left text-white hover:bg-gray-700"
             onClick={() => toggleAccordion(index)}
           >
-            <span className="font-bold">{item.title}</span>
+            <span className="font-bold text-2xl">{item.title}</span>
             <span
               className={`transition-transform duration-300 transform ${
                 openIndex === index ? "-rotate-180" : ""
@@ -81,7 +81,7 @@ export default function Accordion() {
               ref={(el) => {
                 contentRefs.current[index] = el;
               }}
-              className="p-6 text-left text-white"
+              className="p-6 text-left text-white text-xl"
               dangerouslySetInnerHTML={{ __html: item.content }}
             />
           </div>

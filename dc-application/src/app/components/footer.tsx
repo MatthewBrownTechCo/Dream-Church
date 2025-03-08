@@ -49,9 +49,9 @@ const Footer = () => {
   return (
     <footer className="text-center bg-[rgb(28,28,28)] mt-[50px] text-white p-8 space-y-8">
       <div>
-        <h2 className="text-2xl font-bold">Stay in the loop</h2>
+        <h2 className="text-3xl font-bold">Stay in the loop</h2>
         <br />
-        <p className="20%">
+        <p className="text-xl">
           Sign up with your email address to receive news and updates from Dream
           Church.
         </p>
@@ -84,7 +84,7 @@ const Footer = () => {
         <button
           type="submit"
           disabled={loading}
-          className="text-center text-black font-bold bg-white border border-white w-[150px] h-[50px] hover:bg-gray-200 disabled:opacity-50"
+          className="text-center text-xl text-black font-bold bg-white border border-white w-[150px] h-[50px] hover:bg-gray-200 disabled:opacity-50"
         >
           {loading ? "Signing Up..." : "Sign Up"}
         </button>
@@ -113,7 +113,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <p className="mt-[50px]">
+      <p className="text-xl mt-[50px]">
         <i>&copy; Dream Church Columbia. All rights reserved.</i>
       </p>
     </footer>

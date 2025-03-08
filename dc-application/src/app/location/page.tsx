@@ -15,17 +15,17 @@ export default function location() {
       <div className="relative bg-[url('/images/pastor-study-back.jpg')] bg-cover bg-[center_bottom_45%] px-[7%] py-[8%] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center py-[80px] z-10">
-          <h1 className="text-7xl font-bold">Location and Times</h1>
+          <h1 className="text-8xl font-bold">Location and Times</h1>
         </header>
       </div>
       <div className="flex flex-row justify-between items-center text-center bg-white text-black">
         <div className="flex-1 space-y-6">
-          <header className="text-4xl font-bold">Sunday Services</header>
-          <p>
+          <header className="text-5xl font-bold">Sunday Services</header>
+          <p className="text-xl">
             <b>The Pastor's Study:</b> 1633 Main Street, Columbia, SC
           </p>
-          <p className="underline underline-offset-2">10 AM EST</p>
-          <div className="w-full flex justify-center space-x-4 mt-[75px]">
+          <p className="underline underline-offset-2 text-xl">10 AM EST</p>
+          <div className="w-full flex justify-center space-x-4 mt-[75px] text-xl">
             <div className="text-center">
               <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[200px] hover:bg-gray-700 text-white font-bold">
                 <a
@@ -62,7 +62,7 @@ export default function location() {
           <header className="relative text-center py-[30px] z-10">
             <h1 className="text-6xl font-bold">What To Expect</h1>
           </header>
-          <div className="relative z-10 text-center px-[20%]">
+          <div className="relative z-10 text-center px-[20%] text-xl">
             <p>
               At Dream, you'll find an immediate sense of belonging! We are
               dedicated to creating a warm, welcoming atmosphere where everyone
