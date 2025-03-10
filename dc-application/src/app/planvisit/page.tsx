@@ -120,7 +120,7 @@ export default function PlanVisit() {
             value={formData.fname}
             onChange={handleInputChange}
             placeholder="First Name"
-            className="border border-black w-full p-2"
+            className="border border-black w-full p-2 text-black"
             required={true}
           />
         </div>
@@ -135,7 +135,7 @@ export default function PlanVisit() {
             value={formData.lname}
             onChange={handleInputChange}
             placeholder="Last Name"
-            className="border border-black w-full p-2"
+            className="border border-black w-full p-2 text-black"
             required={true}
           />
         </div>
@@ -165,7 +165,7 @@ export default function PlanVisit() {
             value={formData.phone}
             onChange={handleInputChange}
             placeholder="XXX-XXX-XXXX"
-            className="border border-black w-full p-2"
+            className="border border-black w-full p-2 text-black"
             required={true}
           />
         </div>
@@ -180,7 +180,7 @@ export default function PlanVisit() {
             value={formData.visitDate}
             onChange={handleInputChange}
             placeholder="Choose Date"
-            className="border border-black w-[20%] p-2"
+            className="border border-black w-[20%] p-2 text-black"
             required={true}
           />
         </div>
@@ -243,7 +243,7 @@ export default function PlanVisit() {
             value={formData.message}
             onChange={handleTextAreaChange}
             placeholder="Enter your message here"
-            className="border border-black w-full p-2"
+            className="border border-black w-full p-2 text-black"
           ></textarea>
         </div>
 
