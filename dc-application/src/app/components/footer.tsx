@@ -49,7 +49,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="text-center bg-[rgb(28,28,28)] mt-[50px] text-white p-8 space-y-8">
+    <footer className="text-center bg-[rgb(28,28,28)] mt-[50px] text-white p-8">
       <div>
         <h2 className="text-3xl font-bold">Stay in the loop</h2>
         <br />
@@ -58,7 +58,7 @@ const Footer = () => {
           Church.
         </p>
       </div>
-      <form onSubmit={handleSubmit} className="space-y-7">
+      <form onSubmit={handleSubmit} className="space-y-10 mt-[40px]">
         <div className="flex flex-row justify-center">
           <input
             type="text"
@@ -92,7 +92,7 @@ const Footer = () => {
         </button>
       </form>
       {message && <p className="mt-4">{message}</p>}
-      <div className="flex justify-center gap-x-8 items-center mt-[70px]">
+      <div className="flex justify-center gap-x-6 mt-[50px]">
         <a href="https://www.instagram.com/dreamchurchcola/" target="_blank">
           <Image
             src={instagram}
@@ -115,7 +115,16 @@ const Footer = () => {
           />
         </a>
       </div>
-      <p className="text-xl mt-[50px]">
+      <p className="font-bold mt-[20px]">
+        <a href="/contact" className="underline underline-offset-4">
+          Contact
+        </a>{" "}
+        |{" "}
+        <a href="/give" className="underline underline-offset-4">
+          Give
+        </a>
+      </p>
+      <p className="text-xl mt-[60px]">
         <i>&copy; Dream Church Columbia. All rights reserved.</i>
       </p>
     </footer>

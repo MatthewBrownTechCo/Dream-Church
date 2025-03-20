@@ -17,6 +17,7 @@ const NavBar = () => {
     window.open("https://www.youtube.com/dreamchurchcola", "_blank");
   const midweekNav = () => router.push("/midweek");
   const planVisitNav = () => router.push("/planvisit");
+  const prayerNav = () => router.push("/prayer");
   const serveNav = () => router.push("/serve");
 
   const getLinkClass = (paths: string | string[]) => {
@@ -118,6 +119,14 @@ const NavBar = () => {
             className="cursor-pointer hover:text-gray-200"
           >
             Live Stream
+          </div>
+          <div
+            onClick={prayerNav}
+            className={`${getLinkClass(
+              "/prayer"
+            )} cursor-pointer hover:text-gray-200`}
+          >
+            Prayer
           </div>
           <div
             onClick={planVisitNav}

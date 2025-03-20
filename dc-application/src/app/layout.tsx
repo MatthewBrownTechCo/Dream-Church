@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cormorantGaramond.className} antialiased bg-[rgb(28,28,28)] text-white`}
+        className={`${cormorantGaramond.className} antialiased bg-[rgb(28,28,28)] text-white text-xl`}
         style={{ letterSpacing: "-0.5px" }}
       >
         {children}

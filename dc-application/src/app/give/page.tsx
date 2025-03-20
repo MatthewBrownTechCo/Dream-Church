@@ -1,15 +1,13 @@
 "use client";
 
-import Logo from "../components/logos";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 
 export default function Give() {
   return (
     <>
-      <Logo />
       <NavBar />
-      <header className="text-center mt-[70px]">
+      <header className="text-center px-[200px] py-[70px] bg-white text-black">
         <h1 className="text-8xl font-bold">Give</h1>
         <br />
         <p className="text-xl mx-[20%]">

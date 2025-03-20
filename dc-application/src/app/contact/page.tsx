@@ -185,7 +185,7 @@ export default function Contact() {
 
           <div className="space-y-2 w-[80%]">
             <label htmlFor="message" className="block font-medium">
-              <b>What would you'd like us to know?</b>
+              <b>What would you'd like us to know?</b> (required)
             </label>
             <textarea
               rows={5}
@@ -194,6 +194,7 @@ export default function Contact() {
               onChange={handleTextAreaChange}
               placeholder="Enter your message here"
               className="border border-black w-full p-2 text-black"
+              required={true}
             ></textarea>
           </div>
 
