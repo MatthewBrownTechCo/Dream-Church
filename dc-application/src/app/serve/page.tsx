@@ -1,3 +1,4 @@
+// add photo like other web pages
 "use client";
 
 import Footer from "../components/footer";
