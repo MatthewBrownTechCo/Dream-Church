@@ -81,7 +81,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="flex justify-center md:justify-center mt-10 md:mt-0">
+        <div className="flex justify-center mt-10 md:mt-0">
           <PodcastEmbed />
         </div>
       </div>
