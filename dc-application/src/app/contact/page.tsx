@@ -25,15 +25,6 @@ export default function Contact() {
     }));
   };
 
-//   For later use should we decide to add select blocks later
-//   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-//     const { name, value } = e.target;
-//     setFormData((prev) => ({
-//       ...prev,
-//       [name]: value,
-//     }));
-//   };
-
   const handleTextAreaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -86,8 +77,9 @@ export default function Contact() {
   return (
     <div>
       <NavBar />
-      <div className="flex mb-[300px]">
-        <div className="flex-1 flex flex-col justify-center text-left pl-[100px]">
+      <div className="flex flex-col md:flex-row mb-[300px]">
+        {/* Contact Info Section */}
+        <div className="flex-1 flex flex-col justify-center text-left pl-[100px] mb-10 md:mb-0">
           <h1 className="text-6xl">Contact Us.</h1>
           <br />
           <p>hello@dreamcolumbia.com</p>
@@ -122,8 +114,13 @@ export default function Contact() {
             </a>
           </div>
         </div>
-        <form onSubmit={handleSubmit} className="flex-1 mt-[50px] space-y-3">
-          <div className="space-y-2 w-[80%]">
+
+        {/* Contact Form Section */}
+        <form
+          onSubmit={handleSubmit}
+          className="flex-1 mt-[50px] space-y-3 px-6 md:px-6"
+        >
+          <div className="space-y-2 w-full">
             <label htmlFor="f-name" className="block font-medium">
               <b>First Name</b> (required)
             </label>
@@ -134,11 +131,11 @@ export default function Contact() {
               onChange={handleInputChange}
               placeholder="First Name"
               className="border border-black w-full p-2 text-black"
-              required={true}
+              required
             />
           </div>
 
-          <div className="space-y-2 w-[80%]">
+          <div className="space-y-2 w-full">
             <label htmlFor="l-name" className="block font-medium">
               <b>Last Name</b> (required)
             </label>
@@ -149,11 +146,11 @@ export default function Contact() {
               onChange={handleInputChange}
               placeholder="Last Name"
               className="border border-black w-full p-2 text-black"
-              required={true}
+              required
             />
           </div>
 
-          <div className="space-y-2 w-[80%]">
+          <div className="space-y-2 w-full">
             <label htmlFor="email" className="block font-medium">
               <b>Email</b> (required)
             </label>
@@ -164,11 +161,11 @@ export default function Contact() {
               onChange={handleInputChange}
               placeholder="example@email.com"
               className="border border-black w-full p-2 text-black"
-              required={true}
+              required
             />
           </div>
 
-          <div className="space-y-2 w-[80%]">
+          <div className="space-y-2 w-full">
             <label htmlFor="phone" className="block font-medium">
               <b>Phone</b> (required)
             </label>
@@ -179,11 +176,11 @@ export default function Contact() {
               onChange={handleInputChange}
               placeholder="XXX-XXX-XXXX"
               className="border border-black w-full p-2 text-black"
-              required={true}
+              required
             />
           </div>
 
-          <div className="space-y-2 w-[80%]">
+          <div className="space-y-2 w-full">
             <label htmlFor="message" className="block font-medium">
               <b>What would you'd like us to know?</b> (required)
             </label>
@@ -194,15 +191,15 @@ export default function Contact() {
               onChange={handleTextAreaChange}
               placeholder="Enter your message here"
               className="border border-black w-full p-2 text-black"
-              required={true}
+              required
             ></textarea>
           </div>
 
-          <div className="">
+          <div>
             <button
               type="submit"
               disabled={loading}
-              className="bg-white text-black font-bold border border-black py-[15px] w-[200px] hover:bg-gray-200"
+              className="bg-white text-black font-bold border border-black py-[15px] w-full sm:w-[200px] hover:bg-gray-200"
             >
               {loading ? "Submitting..." : "SUBMIT"}
             </button>

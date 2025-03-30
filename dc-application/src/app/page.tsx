@@ -38,7 +38,7 @@ export default function Home() {
           love of Jesus and the ways of his Kingdom.
         </h2>
       </section>
-      <div className="flex items-center space-x-10 p-10 bg-white text-black">
+      <div className="flex flex-col md:flex-row items-center p-10 bg-white text-black">
         <section className="text-left">
           <h1 className="text-7xl font-bold">Latest Message</h1>
           <h2 className="mt-[40px] text-2xl">
@@ -81,7 +81,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <PodcastEmbed />
+        <div className="flex justify-center md:justify-center mt-10 md:mt-0">
+          <PodcastEmbed />
+        </div>
       </div>
       <section className="text-center py-[100px]">
         <h1 className="text-6xl font-bold">Our Values</h1>
@@ -93,7 +95,7 @@ export default function Home() {
           <h1 className="text-7xl font-bold">1633 Main Street</h1>
           <h1 className="text-7xl font-bold">Columbia, SC</h1>
         </div>
-        <div className="space-y-5 py-[5%] w-[35%] z-10">
+        <div className="space-y-3 py-[5%] w-[35%] z-10">
           <h1 className="font-bold text-2xl">
             <u>1633 Main Street</u>
           </h1>
