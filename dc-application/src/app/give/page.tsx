@@ -7,7 +7,7 @@ export default function Give() {
   return (
     <>
       <NavBar />
-      <header className="text-center px-[200px] py-[70px] bg-white text-black">
+      <header className="text-center px-[200px] pt-[120px] pb-[80px] bg-white text-black">
         <h1 className="text-8xl font-bold">Give</h1>
         <br />
         <p className="text-xl mx-[20%]">
@@ -30,6 +30,9 @@ export default function Give() {
         height="630"
         className="border-0 overflow-hidden"
       ></iframe>
+      <p className="text-center bg-white text-black font-bold pb-20">
+        <i>All donations are tax-deductible</i>
+      </p>
       <Footer />
     </>
   );

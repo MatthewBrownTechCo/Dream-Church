@@ -88,7 +88,7 @@ export default function Contact() {
           <br />
           <p className="relative">1633 Main Street</p>
           <p className="relative">Columbia, SC</p>
-          <div className="flex gap-x-8 items-center mt-[20px]">
+          <div className="relative flex gap-x-8 items-center mt-[20px]">
             <a
               href="https://www.instagram.com/dreamchurchcola/"
               target="_blank"
