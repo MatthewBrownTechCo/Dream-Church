@@ -77,16 +77,17 @@ export default function Contact() {
   return (
     <div>
       <NavBar />
-      <div className="flex flex-col md:flex-row mb-[300px]">
+      <div className="flex flex-col md:flex-row mb-[200px]">
         {/* Contact Info Section */}
-        <div className="flex-1 flex flex-col justify-center text-left pl-[100px] mb-10 md:mb-0">
-          <h1 className="text-6xl">Contact Us.</h1>
+        <div className="relative flex-1 flex flex-col justify-center text-left pl-[100px] mb-10 md:mb-0 bg-[url('/images/pastor-study-front-door.jpg')] bg-center bg-cover">
+          <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
+          <h1 className="relative text-6xl">Contact Us.</h1>
           <br />
-          <p>hello@dreamcolumbia.com</p>
-          <p>(803) 567-5336</p>
+          <p className="relative">hello@dreamcolumbia.com</p>
+          <p className="relative">(803) 567-5336</p>
           <br />
-          <p>1633 Main Street</p>
-          <p>Columbia, SC</p>
+          <p className="relative">1633 Main Street</p>
+          <p className="relative">Columbia, SC</p>
           <div className="flex gap-x-8 items-center mt-[20px]">
             <a
               href="https://www.instagram.com/dreamchurchcola/"
@@ -118,7 +119,7 @@ export default function Contact() {
         {/* Contact Form Section */}
         <form
           onSubmit={handleSubmit}
-          className="flex-1 mt-[50px] space-y-3 px-6 md:px-6"
+          className="flex-1 my-[50px] space-y-3 px-6 md:px-6"
         >
           <div className="space-y-2 w-full">
             <label htmlFor="f-name" className="block font-medium">
@@ -182,10 +183,10 @@ export default function Contact() {
 
           <div className="space-y-2 w-full">
             <label htmlFor="message" className="block font-medium">
-              <b>What would you'd like us to know?</b> (required)
+              <b>What would you&apos;d like us to know?</b> (required)
             </label>
             <textarea
-              rows={5}
+              rows={3}
               name="message"
               value={formData.message}
               onChange={handleTextAreaChange}

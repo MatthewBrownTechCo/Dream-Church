@@ -4,7 +4,7 @@ import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 import { useRouter } from "next/navigation";
 
-export default function location() {
+export default function Location() {
   const router = useRouter();
 
   const planVisitNavigate = () => router.push("/planvisit");
@@ -22,7 +22,7 @@ export default function location() {
         <div className="flex-1 space-y-6">
           <header className="text-5xl font-bold">Sunday Services</header>
           <p className="text-xl">
-            <b>The Pastor's Study:</b> 1633 Main Street, Columbia, SC
+            <b>The Pastor&apos;s Study:</b> 1633 Main Street, Columbia, SC
           </p>
           <p className="underline underline-offset-2 text-xl">10 AM EST</p>
           <div className="w-full flex justify-center space-x-4 mt-[75px] text-xl">
@@ -64,7 +64,7 @@ export default function location() {
           </header>
           <div className="relative z-10 text-center px-[20%] text-xl">
             <p>
-              At Dream, you'll find an immediate sense of belonging! We are
+              At Dream, you&apos;ll find an immediate sense of belonging! We are
               dedicated to creating a warm, welcoming atmosphere where everyone
               is embraced like family. Every Sunday begins with a breakfast at
               9:30 AM, half an hour before our service starts. At 10 AM, we
@@ -72,7 +72,7 @@ export default function location() {
               worship that includes singing, giving, prayer, and communion (on
               the first Sunday of the month). Following this, our Senior Pastor,
               Joshua Brown, shares an insightful sermon that explores the depths
-              of the scriptures for spiritual formation. It's a great
+              of the scriptures for spiritual formation. It&apos;s a great
               opportunity to reflect and grow!
             </p>
             <br />
@@ -93,7 +93,7 @@ export default function location() {
               ensure you feel welcomed! Just click the button below to plan your
               visit. Our team will reach out to answer any questions and ensure
               someone is there to greet you and your family upon arrival. We
-              can't wait to meet you and share this incredible experience
+              can&apos;t wait to meet you and share this incredible experience
               together!
             </p>
           </div>

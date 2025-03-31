@@ -13,10 +13,11 @@ export default function Give() {
         <p className="text-xl mx-[20%]">
           We believe giving our tithe (10% or more of your pre-tax income) is an
           act of worship and spiritual formation. It is a sacrament sign of
-          God's generosity toward us and allows us to participate in it by
+          God&apos;s generosity toward us and allows us to participate in it by
           giving back to him the first and best portion of what has been given
           to us. We also give to support our church and leaders, believing in
-          this house's mission and wanting it to thrive for generations to come.
+          this house&apos;s mission and wanting it to thrive for generations to
+          come.
         </p>
         <br />
         <p className="text-xl mx-[20%]">

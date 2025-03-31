@@ -87,7 +87,7 @@ export default function PlanVisit() {
   };
 
   return (
-    <div className='bg-white text-black'>
+    <div className="bg-white text-black">
       <NavBar />
       <div className="relative bg-[url('/images/thanksgiving-table.jpg')] bg-cover bg-center px-[100px] py-[200px] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
@@ -100,7 +100,7 @@ export default function PlanVisit() {
         </header>
       </div>
       <section className="text-center pt-[50px]">
-        <h1 className="text-6xl font-bold">We can't wait to meet you!</h1>
+        <h1 className="text-6xl font-bold">We can&apos;t wait to meet you!</h1>
       </section>
       <form onSubmit={handleSubmit} className="mt-[50px] space-y-6">
         <p className="text-center font-bold mx-[30%]">
@@ -172,7 +172,7 @@ export default function PlanVisit() {
         </div>
 
         <div className="space-y-2 mx-auto w-[45%]">
-          <label htmlFor="visitDate" className="block font-medium">
+          <label htmlFor="visitDate" className="block">
             <b>Date You Plan on Visiting a Service</b> (required)
           </label>
           <input
@@ -181,7 +181,7 @@ export default function PlanVisit() {
             value={formData.visitDate}
             onChange={handleInputChange}
             placeholder="Choose Date"
-            className="border border-black w-[20%] p-2 text-black"
+            className="border border-black w-[25%] p-2 text-black"
             required={true}
           />
         </div>
@@ -195,7 +195,7 @@ export default function PlanVisit() {
             name="extras"
             value={formData.extras}
             onChange={handleSelectChange}
-            className="w-[20%] px-1 py-2 border border-black"
+            className="w-[25%] px-1 py-2 border border-black"
             required={true}
           >
             <option value="" disabled>
@@ -211,7 +211,7 @@ export default function PlanVisit() {
         </div>
 
         <div className="space-y-2 mx-auto w-[45%]">
-          <label htmlFor="kids" className="block font-medium">
+          <label htmlFor="kids" className="block">
             <b>Children (ages 8 and under) Visiting With You</b> (required)
           </label>
           <select
@@ -219,7 +219,7 @@ export default function PlanVisit() {
             name="kids"
             value={formData.kids}
             onChange={handleSelectChange}
-            className="w-[20%] px-1 py-2 border border-black"
+            className="w-[25%] px-1 py-2 border border-black"
             required={true}
           >
             <option value="" disabled>
@@ -235,8 +235,8 @@ export default function PlanVisit() {
         </div>
 
         <div className="space-y-2 mx-auto w-[45%]">
-          <label htmlFor="message" className="block font-medium">
-            <b>Anything You'd Like Us To Know?</b>
+          <label htmlFor="message" className="block">
+            <b>Anything You&apos;d Like Us To Know?</b>
           </label>
           <textarea
             rows={5}
@@ -249,7 +249,7 @@ export default function PlanVisit() {
         </div>
 
         <div className="space-y-2 mx-auto w-[45%]">
-          <label htmlFor="heardAbout" className="block font-medium">
+          <label htmlFor="heardAbout" className="block">
             <b>How Did You Hear About Dream?</b>
           </label>
           <select

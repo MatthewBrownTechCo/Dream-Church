@@ -20,10 +20,10 @@ export default function Leaders() {
             <br />
             <p className="text-xl">
               <b>Joshua Brown</b> is the founder and Senior Pastor of Dream
-              Church. He will soon hold a Master's Degree in Biblical Studies
-              from Western Theological Seminary in Holland, MI. He has been
-              married to Jordyn for 10 years, and his family is everything to
-              him. Outside of church and family, Joshua is a huge college
+              Church. He will soon hold a Master&apos;s Degree in Biblical
+              Studies from Western Theological Seminary in Holland, MI. He has
+              been married to Jordyn for 10 years, and his family is everything
+              to him. Outside of church and family, Joshua is a huge college
               football guy, a coffee enthusiast, a lover of books, and writes
               extensively on theological studies. You can find some of his
               contributions on his website below.
@@ -31,7 +31,7 @@ export default function Leaders() {
             <br />
             <button className="bg-white text-black p-[15px] w-auto hover:bg-gray-200 mt-5 text-xl font-bold">
               <a href="https://www.joshuabrown.org" target="_blank">
-                Joshua Brown's website
+                Joshua Brown&apos;s website
               </a>
             </button>
           </div>

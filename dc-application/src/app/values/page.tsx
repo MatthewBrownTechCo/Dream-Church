@@ -35,11 +35,11 @@ export default function Values() {
           <li>Formative Community</li>
           <p>
             We are a community formed by Christ, committed to discipleship and
-            deep relationships. Together, we celebrate life's joys, carry one
-            another's burdens, and actively participate in the mission of the
-            church. Rooted in faith, we embrace the call to shape and be shaped
-            for God's purposes, leaving a legacy of love and transformation for
-            future generations.
+            deep relationships. Together, we celebrate life&apos;s joys, carry
+            one another&apos;s burdens, and actively participate in the mission
+            of the church. Rooted in faith, we embrace the call to shape and be
+            shaped for God&apos;s purposes, leaving a legacy of love and
+            transformation for future generations.
           </p>
           <li>Liturgy</li>
           <p>
@@ -51,11 +51,11 @@ export default function Values() {
           </p>
           <li>The Institution of the Church</li>
           <p>
-            We honor the Church as God's instrument in the world, cherishing its
-            role in shaping society and guiding hearts to Christ. Rooted in the
-            richness of church history, we seek to carry forward its legacy with
-            reverence, faithfulness, and a commitment to being a light in our
-            communities.
+            We honor the Church as God&apos;s instrument in the world,
+            cherishing its role in shaping society and guiding hearts to Christ.
+            Rooted in the richness of church history, we seek to carry forward
+            its legacy with reverence, faithfulness, and a commitment to being a
+            light in our communities.
           </p>
         </ol>
       </section>

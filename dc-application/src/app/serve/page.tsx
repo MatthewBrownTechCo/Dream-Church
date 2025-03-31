@@ -1,4 +1,3 @@
-// add photo like other web pages
 "use client";
 
 import Footer from "../components/footer";
@@ -104,11 +103,12 @@ export default function Serve() {
   return (
     <div>
       <NavBar />
-      <header className="bg-contain bg-no-repeat bg-center bg-[url('/images/serving-outside.png')] p-[200px]"></header>
-      <header className="text-center mt-[50px]">
-        <h1 className="text-8xl font-bold">Serve</h1>
-        <br />
-      </header>
+      <div className="relative bg-[url('/images/serving-outside.png')] bg-cover bg-[center_20%] px-[100px] py-[200px] text-white">
+        <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
+        <header className="relative text-center">
+          <h1 className="text-8xl font-bold">Serve</h1>
+        </header>
+      </div>
       <p className="px-[300px] text-center mt-[30px] text-xl">
         We are doing impactful kingdom ministry, and we want you to step into
         the vital part of the body that you are called to. If you are interested
@@ -202,7 +202,7 @@ export default function Serve() {
 
         <div className="space-y-2 px-10 w-full">
           <label htmlFor="message" className="block font-medium">
-            <b>Anything You'd Like Us To Know?</b>
+            <b>Anything You&apos;d Like Us To Know?</b>
           </label>
           <textarea
             rows={5}

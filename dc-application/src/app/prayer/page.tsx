@@ -185,8 +185,8 @@ export default function PlanVisit() {
             <b>Prayer Request</b> (required)
           </label>
           <p>
-            Fell free to share as much or as little as you'd like. You may also
-            put, "Unspoken".
+            Fell free to share as much or as little as you&apos;d like. You may
+            also put, &quot;Unspoken&quot;.
           </p>
           <textarea
             rows={5}

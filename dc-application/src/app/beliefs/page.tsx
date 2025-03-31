@@ -15,7 +15,7 @@ export default function Beliefs() {
             What <i>the</i> Church believes has been handed down to us
             throughout the generations. Dream Church holds to the Church truths
             in their purest form, as stated in the <b>Nicene Creed</b> and the{" "}
-            <b>Apostle's Creed.</b>
+            <b>Apostle&apos;s Creed.</b>
           </h2>
         </header>
       </div>
@@ -76,7 +76,7 @@ export default function Beliefs() {
       <br />
 
       <section className="text-center">
-        <h1 className="text-7xl font-bold">Apostle's Creed</h1>
+        <h1 className="text-7xl font-bold">Apostle&apos;s Creed</h1>
         <br />
         <div className="text-xl border border-white mx-[300px] py-5">
           {[

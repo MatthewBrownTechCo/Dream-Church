@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export const POST = async (req: any) => {
+export const POST = async (req: Request) => {
   let requestData;
   try {
     // Parse the JSON request body only once
