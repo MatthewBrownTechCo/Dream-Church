@@ -10,7 +10,7 @@ import { SocialBtn } from "./components/socialBtn";
 export default function Home() {
   const router = useRouter();
 
-  const planVisitNavigate = () => router.push("/planvisit");
+  const planYourVisitNavigate = () => router.push("/planyourvisit");
 
   return (
     <div>
@@ -25,7 +25,7 @@ export default function Home() {
         <div className="relative mt-[10px] z-10">
           <button
             className="bg-white text-black border border-white py-[20px] w-[30%] text-xl font-bold hover:bg-gray-200"
-            onClick={planVisitNavigate}
+            onClick={planYourVisitNavigate}
           >
             <b>Plan Your Visit</b>
           </button>

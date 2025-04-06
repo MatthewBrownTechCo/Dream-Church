@@ -20,6 +20,12 @@ const NavBar = () => {
     setOriginalMenu(true); // Return to main menu when navigating
   };
 
+  const calendarNav = () =>
+    window.open(
+      "https://www.canva.com/design/DAGjZAcL9Nc/Ft_cN9rUWWy2uG25fqAm9w/view?utm_content=DAGjZAcL9Nc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8828f26d98",
+      "_blank"
+    );
+
   const liveStreamNav = () =>
     window.open("https://www.youtube.com/dreamchurchcola", "_blank");
 
@@ -50,28 +56,29 @@ const NavBar = () => {
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex text-[18px] space-x-8 items-center pr-5">
-          <div onClick={() => navigate("/")} className={getLinkClass("/")}>
+        <div className="hidden md:flex text-[18px] items-center pr-5">
+          <div
+            onClick={() => navigate("/")}
+            className={`px-4 {getLinkClass("/")}`}
+          >
             Home
           </div>
 
-          <div className="relative group text-center">
+          <div className="relative group text-left">
             <div
               onClick={() => navigate("/location")}
-              className={getLinkClass([
+              className={`px-4 {getLinkClass([
                 "/location",
                 "/dreamkids",
                 "/serve",
                 "/leaders",
                 "/beliefs",
-                "/contact",
-              ])}
+                "/contactus",
+              ])}`}
             >
               About
             </div>
-            <div
-              className={`absolute left-1/2 transform -translate-x-1/2 top-full w-40 bg-[rgb(28,28,28)] hidden group-hover:block`}
-            >
+            <div className="absolute left-0 top-full w-48 bg-[rgb(28,28,28)] hidden group-hover:block pl-4">
               <div
                 onClick={() => navigate("/location")}
                 className={getLinkClass("/location")}
@@ -103,8 +110,8 @@ const NavBar = () => {
                 Beliefs
               </div>
               <div
-                onClick={() => navigate("/contact")}
-                className={getLinkClass("/contact")}
+                onClick={() => navigate("/contactus")}
+                className={getLinkClass("/contactus")}
               >
                 Contact Us
               </div>
@@ -113,32 +120,38 @@ const NavBar = () => {
 
           <div
             onClick={() => navigate("/midweek")}
-            className={getLinkClass("/midweek")}
+            className={`px-4 {getLinkClass("/midweek")}`}
           >
             Midweek
           </div>
           <div
             onClick={liveStreamNav}
-            className="cursor-pointer hover:text-gray-200"
+            className="px-4 cursor-pointer hover:text-gray-200"
           >
             Live Stream
           </div>
           <div
             onClick={() => navigate("/prayer")}
-            className={getLinkClass("/prayer")}
+            className={`px-4 {getLinkClass("/prayer")}`}
           >
             Prayer
           </div>
           <div
-            onClick={() => navigate("/planvisit")}
-            className={getLinkClass("/planvisit")}
+            onClick={calendarNav}
+            className={`px-4 cursor-pointer hover:text-gray-200`}
+          >
+            Calendar
+          </div>
+          <div
+            onClick={() => navigate("/planyourvisit")}
+            className={`px-4 {getLinkClass("/planyourvisit")}`}
           >
             Plan Your Visit
           </div>
           <div className="text-center">
             <button
               onClick={() => navigate("/give")}
-              className="cursor-pointer bg-white text-[rgb(21,31,38)] border border-[rgb(21,31,38)] h-[40px] w-[80px] hover:bg-gray-200"
+              className="px-4 cursor-pointer bg-white text-[rgb(21,31,38)] border border-[rgb(21,31,38)] h-[40px] w-[80px] hover:bg-gray-200"
             >
               Give
             </button>
@@ -189,8 +202,8 @@ const NavBar = () => {
             Prayer
           </div>
           <div
-            onClick={() => navigate("/planvisit")}
-            className={getLinkClass("/planvisit")}
+            onClick={() => navigate("/planyourvisit")}
+            className={getLinkClass("/planyourvisit")}
           >
             Plan Your Visit
           </div>
@@ -254,8 +267,8 @@ const NavBar = () => {
               Beliefs
             </div>
             <div
-              onClick={() => navigate("/contact")}
-              className={getLinkClass("/contact")}
+              onClick={() => navigate("/contactus")}
+              className={getLinkClass("/contactus")}
             >
               Contact Us
             </div>

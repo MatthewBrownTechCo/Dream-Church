@@ -1,8 +1,9 @@
 "use client";
 
 import Footer from "../components/footer";
-import React, { useState } from "react";
+import Head from "next/head";
 import NavBar from "../components/navbar";
+import React, { useState } from "react";
 
 export default function Serve() {
   const [formData, setFormData] = useState<{
@@ -101,7 +102,16 @@ export default function Serve() {
   };
 
   return (
-    <div>
+    <>
+      <Head>
+        <title>
+          Volunteer Opportunities - Dream Church | Church in Columbia, SC
+        </title>
+        <meta
+          name="description"
+          content="Serve in the mission of deeply forming people in the love of Jesus and the ways of his kingdom."
+        />
+      </Head>
       <NavBar />
       <div className="relative bg-[url('/images/serving-outside.png')] bg-cover bg-[center_20%] px-[100px] py-[200px] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
@@ -226,6 +236,6 @@ export default function Serve() {
         {message && <p className="text-center mt-4">{message}</p>}
       </form>
       <Footer />
-    </div>
+    </>
   );
 }

@@ -10,7 +10,7 @@ const cormorantGaramond = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: "Dream Church | Church in Columbia, SC",
-  description: "A church being deeply formed in the image of Christ.",
+  description: "Dream Church is a nondenominational church.",
   icons: {
     icon: "/logos/dream-logo.jpg",
   },

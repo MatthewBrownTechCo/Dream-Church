@@ -116,8 +116,8 @@ const Footer = () => {
         </a>
       </div>
       <p className="font-bold mt-[20px]">
-        <a href="/contact" className="underline underline-offset-4">
-          Contact
+        <a href="/contactus" className="underline underline-offset-4">
+          Contact Us
         </a>{" "}
         |{" "}
         <a href="/give" className="underline underline-offset-4">

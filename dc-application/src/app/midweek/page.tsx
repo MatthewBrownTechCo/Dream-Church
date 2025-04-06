@@ -1,7 +1,7 @@
 "use client";
 
 import Footer from "../components/footer";
-import {TextBtnAlt} from "../components/textbtn";
+import { TextBtnAlt } from "../components/textbtn";
 import NavBar from "../components/navbar";
 
 export default function Midweek() {

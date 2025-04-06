@@ -8,7 +8,7 @@ import facebook from "../../../public/logos/facebooklogo.png";
 import youtube from "../../../public/logos/youtube-app-white-icon.webp";
 import { useState } from "react";
 
-export default function Contact() {
+export default function ContactUs() {
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",
@@ -41,7 +41,7 @@ export default function Contact() {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/api/contactus", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

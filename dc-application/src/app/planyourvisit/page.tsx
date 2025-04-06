@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 import React, { useState } from "react";
 import NavBar from "../components/navbar";
 
-export default function PlanVisit() {
+export default function PlanYourVisit() {
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",

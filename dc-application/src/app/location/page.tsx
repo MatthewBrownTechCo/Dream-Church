@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 export default function Location() {
   const router = useRouter();
 
-  const planVisitNavigate = () => router.push("/planvisit");
+  const planYourVisitNavigate = () => router.push("/planyourvisit");
 
   return (
     <div>
@@ -100,7 +100,7 @@ export default function Location() {
           <div className="flex justify-center relative mt-[50px] z-10">
             <button
               className="bg-white text-black border border-white py-[20px] w-[300px] hover:bg-gray-200"
-              onClick={planVisitNavigate}
+              onClick={planYourVisitNavigate}
             >
               <b>Plan Your Visit</b>
             </button>
