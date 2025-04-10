@@ -105,10 +105,11 @@ export default function PlanYourVisit() {
       <form onSubmit={handleSubmit} className="mt-[50px] space-y-6">
         <p className="text-center font-bold mx-[30%]">
           Visiting a church for the first time can be daunting. We want to help
-          make it <u>enjoyable</u>! Sign up to plan your visit below, and we
-          will have someone reach out to you to answer any questions you have
-          about Dream, welcome you at church, and make sure you and your family
-          feel like a valuable part of our church family.
+          make it <u className="underline underline-offset-2">enjoyable</u>!
+          Sign up to plan your visit below, and we will have someone reach out
+          to you to answer any questions you have about Dream, welcome you at
+          church, and make sure you and your family feel like a valuable part of
+          our church family.
         </p>
 
         <div className="space-y-2 mx-auto w-[45%]">

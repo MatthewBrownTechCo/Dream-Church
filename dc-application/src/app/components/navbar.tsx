@@ -51,7 +51,7 @@ const NavBar = () => {
   return (
     <div className="bg-[rgb(28,28,28)] px-6 py-6 sticky top-0 z-20">
       <div className="flex justify-between items-center text-white">
-        <div className="pl-10">
+        <div className="pl-5">
           <Logo />
         </div>
 
@@ -59,7 +59,7 @@ const NavBar = () => {
         <div className="hidden md:flex text-[18px] items-center pr-5">
           <div
             onClick={() => navigate("/")}
-            className={`px-4 {getLinkClass("/")}`}
+            className={`px-4 hover:cursor-pointer hover:text-gray-200 {getLinkClass("/")}`}
           >
             Home
           </div>
@@ -67,7 +67,7 @@ const NavBar = () => {
           <div className="relative group text-left">
             <div
               onClick={() => navigate("/location")}
-              className={`px-4 {getLinkClass([
+              className={`px-4 hover:cursor-pointer hover:text-gray-200 {getLinkClass([
                 "/location",
                 "/dreamkids",
                 "/serve",
@@ -81,37 +81,37 @@ const NavBar = () => {
             <div className="absolute left-0 top-full w-48 bg-[rgb(28,28,28)] hidden group-hover:block pl-4">
               <div
                 onClick={() => navigate("/location")}
-                className={getLinkClass("/location")}
+                className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/location")}`}
               >
                 Location & Times
               </div>
               <div
                 onClick={() => navigate("/dreamkids")}
-                className={getLinkClass("/dreamkids")}
+                className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/dreamkids")}`}
               >
                 Dream Kids
               </div>
               <div
                 onClick={() => navigate("/serve")}
-                className={getLinkClass("/serve")}
+                className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/serve")}`}
               >
                 Serve
               </div>
               <div
                 onClick={() => navigate("/leaders")}
-                className={getLinkClass("/leaders")}
+                className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/leaders")}`}
               >
                 Leaders
               </div>
               <div
                 onClick={() => navigate("/beliefs")}
-                className={getLinkClass("/beliefs")}
+                className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/beliefs")}`}
               >
                 Beliefs
               </div>
               <div
                 onClick={() => navigate("/contactus")}
-                className={getLinkClass("/contactus")}
+                className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/contactus")}`}
               >
                 Contact Us
               </div>
@@ -120,7 +120,7 @@ const NavBar = () => {
 
           <div
             onClick={() => navigate("/midweek")}
-            className={`px-4 {getLinkClass("/midweek")}`}
+            className={`px-4 hover:cursor-pointer hover:text-gray-200 {getLinkClass("/midweek")}`}
           >
             Midweek
           </div>
@@ -132,7 +132,7 @@ const NavBar = () => {
           </div>
           <div
             onClick={() => navigate("/prayer")}
-            className={`px-4 {getLinkClass("/prayer")}`}
+            className={`px-4 hover:cursor-pointer hover:text-gray-200 {getLinkClass("/prayer")}`}
           >
             Prayer
           </div>
@@ -144,7 +144,7 @@ const NavBar = () => {
           </div>
           <div
             onClick={() => navigate("/planyourvisit")}
-            className={`px-4 {getLinkClass("/planyourvisit")}`}
+            className={`px-4 hover:cursor-pointer hover:text-gray-200 {getLinkClass("/planyourvisit")}`}
           >
             Plan Your Visit
           </div>
@@ -159,7 +159,10 @@ const NavBar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden text-2xl cursor-pointer" onClick={toggleMenu}>
+        <div
+          className="md:hidden text-2xl items-center cursor-pointer"
+          onClick={toggleMenu}
+        >
           {menuOpen ? <FiX /> : <FiMenu />}
         </div>
       </div>
@@ -169,7 +172,7 @@ const NavBar = () => {
         <div className="md:hidden bg-[rgb(28,28,28)] text-white flex flex-col items-center py-6 space-y-4 fixed top-0 left-0 w-full z-30 h-screen">
           {/* Logo and Close Button */}
           <div className="flex justify-between items-center w-full px-6">
-            <div className="pl-10">
+            <div className="pl-5">
               <Logo />
             </div>
             <div onClick={toggleMenu} className="cursor-pointer text-2xl">
@@ -177,15 +180,21 @@ const NavBar = () => {
             </div>
           </div>
 
-          <div onClick={() => navigate("/")} className={getLinkClass("/")}>
+          <div
+            onClick={() => navigate("/")}
+            className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/")}`}
+          >
             Home
           </div>
-          <div onClick={showAboutMenu} className={getLinkClass("/about")}>
+          <div
+            onClick={showAboutMenu}
+            className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/about")}`}
+          >
             About <span className="md:hidden"> &gt;</span>{" "}
           </div>
           <div
             onClick={() => navigate("/midweek")}
-            className={getLinkClass("/midweek")}
+            className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/midweek")}`}
           >
             Midweek
           </div>
@@ -197,13 +206,13 @@ const NavBar = () => {
           </div>
           <div
             onClick={() => navigate("/prayer")}
-            className={getLinkClass("/prayer")}
+            className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/prayer")}`}
           >
             Prayer
           </div>
           <div
             onClick={() => navigate("/planyourvisit")}
-            className={getLinkClass("/planyourvisit")}
+            className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/planyourvisit")}`}
           >
             Plan Your Visit
           </div>
@@ -218,10 +227,12 @@ const NavBar = () => {
 
       {/* Mobile About Menu */}
       {menuOpen && aboutOpen && (
-        <div className="md:hidden fixed top-0 left-0 w-full bg-[rgb(28,28,28)] z-30 overflow-y-auto h-screen">
+        <div className="md:hidden bg-[rgb(28,28,28)] text-white flex flex-col items-center py-6 space-y-4 fixed top-0 left-0 w-full z-30 h-screen">
           {/* Logo and Close Button */}
-          <div className="flex justify-between items-center p-6 text-white">
-            <Logo />
+          <div className="flex justify-between items-center w-full px-6">
+            <div className="pl-5">
+              <Logo />
+            </div>
             <div onClick={toggleMenu} className="cursor-pointer text-2xl">
               <FiX />
             </div>
@@ -230,7 +241,7 @@ const NavBar = () => {
           {/* Back Button */}
           <div
             onClick={showMainMenu}
-            className="cursor-pointer text-white text-2xl mb-6 text-center"
+            className="cursor-pointer text-white text-xl mb-6 text-center"
           >
             &lt; Back {/* Centered the back button */}
           </div>
