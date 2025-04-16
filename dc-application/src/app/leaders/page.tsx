@@ -1,10 +1,10 @@
 "use client";
 
-import Footer from "../components/footer";
+import Footer from "../../components/footer";
 import Image from "next/image";
 import joshHeadshot from "../../../public/images/josh-headshot.jpeg";
 import dreamLogoNavy from "../../../public/logos/Arch-Navy.png";
-import NavBar from "../components/navbar";
+import NavBar from "../../components/navbar";
 
 export default function Leaders() {
   return (

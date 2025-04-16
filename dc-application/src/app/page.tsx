@@ -1,11 +1,11 @@
 "use client";
 
-import NavBar from "./components/navbar";
-import Footer from "./components/footer";
+import NavBar from "../components/navbar";
+import Footer from "../components/footer";
 import { useRouter } from "next/navigation";
-import PodcastEmbed from "./components/podcast-embed";
-import Accordion from "./components/accordion";
-import { SocialBtn } from "./components/socialBtn";
+import PodcastEmbed from "../components/podcast-embed";
+import Accordion from "../components/accordion";
+import { SocialBtn } from "../components/socialBtn";
 
 export default function Home() {
   const router = useRouter();

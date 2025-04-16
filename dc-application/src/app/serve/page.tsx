@@ -1,8 +1,8 @@
 "use client";
 
-import Footer from "../components/footer";
+import Footer from "../../components/footer";
 import Head from "next/head";
-import NavBar from "../components/navbar";
+import NavBar from "../../components/navbar";
 import React, { useState } from "react";
 
 export default function Serve() {

@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import instagram from "../../../public/logos/instagram.png";
-import facebook from "../../../public/logos/facebooklogo.png";
-import youtube from "../../../public/logos/youtube-app-white-icon.webp";
+import instagram from "../../public/logos/instagram.png";
+import facebook from "../../public/logos/facebooklogo.png";
+import youtube from "../../public/logos/youtube-app-white-icon.webp";
 
 const Footer = () => {
   const [fName, setfName] = useState("");
@@ -97,7 +97,7 @@ const Footer = () => {
           <Image
             src={instagram}
             alt="Instagram Logo"
-            className="h-7 w-auto object-contain"
+            className="h-[31px] w-auto object-contain"
           />
         </a>
         <a href="https://www.facebook.com/dreamchurchcola" target="_blank">

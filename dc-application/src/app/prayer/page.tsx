@@ -1,8 +1,8 @@
 "use client";
 
-import Footer from "../components/footer";
+import Footer from "../../components/footer";
 import React, { useState } from "react";
-import NavBar from "../components/navbar";
+import NavBar from "../../components/navbar";
 
 export default function Prayer() {
   const [formData, setFormData] = useState({

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import dreamLogo from "../../../public/logos/Arch-WHT.png";
+import dreamLogo from "../../public/logos/Arch-WHT.png";
 import Link from "next/link";
 
 const Logo = () => {

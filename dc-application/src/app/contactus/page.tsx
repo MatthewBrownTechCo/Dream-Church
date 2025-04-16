@@ -1,7 +1,7 @@
 "use client";
 
-import NavBar from "../components/navbar";
-import Footer from "../components/footer";
+import NavBar from "../../components/navbar";
+import Footer from "../../components/footer";
 import Image from "next/image";
 import instagram from "../../../public/logos/instagram.png";
 import facebook from "../../../public/logos/facebooklogo.png";

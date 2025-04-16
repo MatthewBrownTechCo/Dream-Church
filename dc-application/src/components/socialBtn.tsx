@@ -1,7 +1,7 @@
 import Image from "next/image";
-import instagram from "../../../public/logos/instagram.png";
-import facebook from "../../../public/logos/facebooklogo.png";
-import youtube from "../../../public/logos/youtube-app-white-icon.webp";
+import instagram from "../../public/logos/instagram.png";
+import facebook from "../../public/logos/facebooklogo.png";
+import youtube from "../../public/logos/youtube-app-white-icon.webp";
 
 export const SocialBtn = () => {
   return (
