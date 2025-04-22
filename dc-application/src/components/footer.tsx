@@ -59,27 +59,27 @@ const Footer = () => {
         </p>
       </div>
       <form onSubmit={handleSubmit} className="space-y-10 mt-[40px]">
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-center">
           <input
             type="text"
             value={fName}
             onChange={(e) => setfName(e.target.value)}
             placeholder="First Name"
-            className="text-black block border rounded-md border-black p-2 w-64 mx-[1%]"
+            className="text-black block border rounded-md border-black p-2 w-full md:w-64 md:mx-[1%]"
           />
           <input
             type="text"
             value={lName}
             onChange={(e) => setlName(e.target.value)}
             placeholder="Last Name"
-            className="text-black block border rounded-md border-black p-2 w-64 mx-[1%]"
+            className="text-black block border rounded-md border-black p-2 w-full md:w-64 md:mx-[1%]"
           />
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email Address"
-            className="text-black block border rounded-md border-black p-2 w-64 mx-[1%]"
+            className="text-black block border rounded-md border-black p-2 w-full md:w-64 md:mx-[1%]"
             required
           />
         </div>

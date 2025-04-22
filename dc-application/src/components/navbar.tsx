@@ -59,7 +59,9 @@ const NavBar = () => {
         <div className="hidden md:flex text-[18px] items-center pr-5">
           <div
             onClick={() => navigate("/")}
-            className={`px-4 hover:cursor-pointer hover:text-gray-200 {getLinkClass("/")}`}
+            className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+              "/"
+            )}`}
           >
             Home
           </div>
@@ -67,51 +69,65 @@ const NavBar = () => {
           <div className="relative group text-left">
             <div
               onClick={() => navigate("/location")}
-              className={`px-4 hover:cursor-pointer hover:text-gray-200 {getLinkClass([
-                "/location",
-                "/dreamkids",
-                "/serve",
-                "/leaders",
-                "/beliefs",
-                "/contactus",
-              ])}`}
+              className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+                [
+                  "/location",
+                  "/dreamkids",
+                  "/serve",
+                  "/leaders",
+                  "/beliefs",
+                  "/contactus",
+                ]
+              )}`}
             >
               About
             </div>
             <div className="absolute left-0 top-full w-48 bg-[rgb(28,28,28)] hidden group-hover:block pl-4">
               <div
                 onClick={() => navigate("/location")}
-                className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/location")}`}
+                className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+                  "/location"
+                )}`}
               >
                 Location & Times
               </div>
               <div
                 onClick={() => navigate("/dreamkids")}
-                className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/dreamkids")}`}
+                className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+                  "/dreamkids"
+                )}`}
               >
                 Dream Kids
               </div>
               <div
                 onClick={() => navigate("/serve")}
-                className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/serve")}`}
+                className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+                  "/serve"
+                )}`}
               >
                 Serve
               </div>
               <div
                 onClick={() => navigate("/leaders")}
-                className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/leaders")}`}
+                className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+                  "/leaders"
+                )}`}
               >
                 Leaders
               </div>
               <div
                 onClick={() => navigate("/beliefs")}
-                className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/beliefs")}`}
+                className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+                  "/beliefs"
+                )}`}
               >
                 Beliefs
               </div>
               <div
                 onClick={() => navigate("/contactus")}
-                className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/contactus")}`}
+                className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+                  "/contactus"
+                )}`}
               >
                 Contact Us
               </div>
@@ -120,7 +136,9 @@ const NavBar = () => {
 
           <div
             onClick={() => navigate("/midweek")}
-            className={`px-4 hover:cursor-pointer hover:text-gray-200 {getLinkClass("/midweek")}`}
+            className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+              "/midweek"
+            )}`}
           >
             Midweek
           </div>
@@ -132,7 +150,9 @@ const NavBar = () => {
           </div>
           <div
             onClick={() => navigate("/prayer")}
-            className={`px-4 hover:cursor-pointer hover:text-gray-200 {getLinkClass("/prayer")}`}
+            className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+              "/prayer"
+            )}`}
           >
             Prayer
           </div>
@@ -144,7 +164,9 @@ const NavBar = () => {
           </div>
           <div
             onClick={() => navigate("/planyourvisit")}
-            className={`px-4 hover:cursor-pointer hover:text-gray-200 {getLinkClass("/planyourvisit")}`}
+            className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+              "/planyourvisit"
+            )}`}
           >
             Plan Your Visit
           </div>
@@ -168,66 +190,84 @@ const NavBar = () => {
       </div>
 
       {/* Mobile Dropdown Menu */}
-      {menuOpen && originalMenu && (
-        <div className="md:hidden bg-[rgb(28,28,28)] text-white flex flex-col items-center py-6 space-y-4 fixed top-0 left-0 w-full z-30 h-screen">
-          {/* Logo and Close Button */}
-          <div className="flex justify-between items-center w-full px-6">
-            <div className="pl-5">
-              <Logo />
-            </div>
-            <div onClick={toggleMenu} className="cursor-pointer text-2xl">
-              <FiX />
-            </div>
+      <div
+        className={`md:hidden bg-[rgb(28,28,28)] text-white flex flex-col items-center py-6 space-y-4 fixed top-0 left-0 w-full z-30 h-screen transition-opacity duration-300 ${
+          menuOpen ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        {/* Logo and Close Button */}
+        <div className="flex justify-between items-center w-full px-6">
+          <div className="pl-5">
+            <Logo />
           </div>
-
-          <div
-            onClick={() => navigate("/")}
-            className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/")}`}
-          >
-            Home
+          <div onClick={toggleMenu} className="cursor-pointer text-2xl">
+            <FiX />
           </div>
-          <div
-            onClick={showAboutMenu}
-            className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/about")}`}
-          >
-            About <span className="md:hidden"> &gt;</span>{" "}
-          </div>
-          <div
-            onClick={() => navigate("/midweek")}
-            className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/midweek")}`}
-          >
-            Midweek
-          </div>
-          <div
-            onClick={liveStreamNav}
-            className="cursor-pointer hover:text-gray-200"
-          >
-            Live Stream
-          </div>
-          <div
-            onClick={() => navigate("/prayer")}
-            className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/prayer")}`}
-          >
-            Prayer
-          </div>
-          <div
-            onClick={() => navigate("/planyourvisit")}
-            className={`hover:cursor-pointer hover:text-gray-200 {getLinkClass("/planyourvisit")}`}
-          >
-            Plan Your Visit
-          </div>
-          <button
-            onClick={() => navigate("/give")}
-            className="bg-white text-[rgb(21,31,38)] border border-[rgb(21,31,38)] h-[40px] w-[80px] hover:bg-gray-200"
-          >
-            Give
-          </button>
         </div>
-      )}
+
+        <div
+          onClick={() => navigate("/")}
+          className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+            "/"
+          )}`}
+        >
+          Home
+        </div>
+        <div
+          onClick={showAboutMenu}
+          className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+            "/about"
+          )}`}
+        >
+          About <span className="md:hidden"> &gt;</span>{" "}
+        </div>
+        <div
+          onClick={() => navigate("/midweek")}
+          className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+            "/midweek"
+          )}`}
+        >
+          Midweek
+        </div>
+        <div
+          onClick={liveStreamNav}
+          className="cursor-pointer hover:text-gray-200"
+        >
+          Live Stream
+        </div>
+        <div
+          onClick={() => navigate("/prayer")}
+          className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+            "/prayer"
+          )}`}
+        >
+          Prayer
+        </div>
+        <div
+          onClick={() => navigate("/planyourvisit")}
+          className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+            "/planyourvisit"
+          )}`}
+        >
+          Plan Your Visit
+        </div>
+        <button
+          onClick={() => navigate("/give")}
+          className="bg-white text-[rgb(21,31,38)] border border-[rgb(21,31,38)] h-[40px] w-[80px] hover:bg-gray-200"
+        >
+          Give
+        </button>
+      </div>
 
       {/* Mobile About Menu */}
       {menuOpen && aboutOpen && (
-        <div className="md:hidden bg-[rgb(28,28,28)] text-white flex flex-col items-center py-6 space-y-4 fixed top-0 left-0 w-full z-30 h-screen">
+        <div
+          className="md:hidden bg-[rgb(28,28,28)] text-white flex flex-col items-center py-6 space-y-4 fixed top-0 left-0 w-full z-30 h-screen transition-all duration-300"
+          style={{
+            transform: aboutOpen ? "translateX(0)" : "translateX(-100%)",
+            opacity: aboutOpen ? 1 : 0,
+          }}
+        >
           {/* Logo and Close Button */}
           <div className="flex justify-between items-center w-full px-6">
             <div className="pl-5">

@@ -28,7 +28,7 @@ const values: AccordionItem[] = [
     content: `
       <p>Liturgy refers to the specific words, music, and actions used during Christian services. Essentially, it is a way of expressing our beliefs. We value not just what we do but also how we do it. Here are some pieces of the Dream Church liturgy:</p>
       <br />
-      <ul class="list-disc pl-[6%]">
+      <ul class="list-disc pl-[15%] md:pl-[6%]">
         <li><b>Exegetical Teaching:</b> Our sermons and teachings begin and end with scripture. We long to be curious and allow these writings to guide us into truths that will inevitably give us a framework for our lives.</li>
         <li><b>Formational Worship:</b> We intentionally ensure that our worship is in harmony with who we are and what we believe.</li>
         <li><b>Scripture Reading:</b> We value reading scripture as an integral part of our worship expression.</li>
@@ -52,7 +52,7 @@ export default function Accordion() {
   };
 
   return (
-    <div className="w-full max-w-[70%] mx-auto mt-14">
+    <div className="w-full max-w-[90%] md:max-w-[70%] mx-auto mt-14">
       {values.map((item, index) => (
         <div key={index} className="border-y border-gray-500">
           <button
