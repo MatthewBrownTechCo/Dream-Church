@@ -15,12 +15,14 @@ export default function Location() {
       <div className="relative bg-[url('/images/pastor-study-back.jpg')] bg-cover bg-[center_bottom_45%] px-[7%] py-[8%] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center py-[80px] z-10">
-          <h1 className="text-8xl font-bold">Location and Times</h1>
+          <h1 className="text-6xl md:text-8xl font-bold">Location and Times</h1>
         </header>
       </div>
-      <div className="flex flex-row justify-between items-center text-center bg-white text-black">
-        <div className="flex-1 space-y-6">
-          <header className="text-5xl font-bold">Sunday Services</header>
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center text-center bg-white text-black py-10 md:py-0">
+        <div className="md:flex-1 space-y-6">
+          <header className="text-5xl md:text-5xl font-bold">
+            Sunday Services
+          </header>
           <p className="text-xl">
             <b>The Pastor&apos;s Study:</b> 1633 Main Street, Columbia, SC
           </p>
@@ -48,10 +50,10 @@ export default function Location() {
             </div>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="md:flex-1 mt-10 md:mt-0">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6614.843219691566!2d-81.03905142407854!3d34.00738727317387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8a4d47752cafd%3A0x454d3e5c23bf4b13!2s1633%20Main%20St%2C%20Columbia%2C%20SC%2029201!5e0!3m2!1sen!2sus!4v1740184103522!5m2!1sen!2sus"
-            className="border-none grayscale w-full h-[450px]"
+            className="border-none grayscale mx-auto w-[90%] md:w-full h-[250px] md:h-[450px]"
             loading="lazy"
           ></iframe>
         </div>

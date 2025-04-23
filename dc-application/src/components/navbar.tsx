@@ -8,8 +8,7 @@ const NavBar = () => {
   const router = useRouter();
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [aboutOpen, setAboutOpen] = useState(false); // For About menu
-  const [originalMenu, setOriginalMenu] = useState(true); // Tracks if we are on the main menu or About
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -17,7 +16,6 @@ const NavBar = () => {
     router.push(path);
     setMenuOpen(false);
     setAboutOpen(false);
-    setOriginalMenu(true); // Return to main menu when navigating
   };
 
   const calendarNav = () =>
@@ -36,16 +34,6 @@ const NavBar = () => {
     return isActive
       ? "cursor-pointer hover:text-gray-200 underline underline-offset-4"
       : "cursor-pointer hover:text-gray-200";
-  };
-
-  const showAboutMenu = () => {
-    setAboutOpen(true);
-    setOriginalMenu(false);
-  };
-
-  const showMainMenu = () => {
-    setAboutOpen(false);
-    setOriginalMenu(true);
   };
 
   return (
@@ -189,14 +177,16 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* MOBILE MENU OVERLAY */}
       <div
-        className={`md:hidden bg-[rgb(28,28,28)] text-white flex flex-col items-center py-6 space-y-4 fixed top-0 left-0 w-full z-30 h-screen transition-opacity duration-300 ${
-          menuOpen ? "opacity-100" : "opacity-0"
+        className={`md:hidden bg-[rgb(28,28,28)] text-white fixed top-0 left-0 w-full h-screen z-30 transition-opacity duration-300 ${
+          menuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
       >
-        {/* Logo and Close Button */}
-        <div className="flex justify-between items-center w-full px-6">
+        {/* Header: Logo + Close */}
+        <div className="flex justify-between items-center px-6 py-6">
           <div className="pl-5">
             <Logo />
           </div>
@@ -205,127 +195,125 @@ const NavBar = () => {
           </div>
         </div>
 
-        <div
-          onClick={() => navigate("/")}
-          className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
-            "/"
-          )}`}
-        >
-          Home
-        </div>
-        <div
-          onClick={showAboutMenu}
-          className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
-            "/about"
-          )}`}
-        >
-          About <span className="md:hidden"> &gt;</span>{" "}
-        </div>
-        <div
-          onClick={() => navigate("/midweek")}
-          className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
-            "/midweek"
-          )}`}
-        >
-          Midweek
-        </div>
-        <div
-          onClick={liveStreamNav}
-          className="cursor-pointer hover:text-gray-200"
-        >
-          Live Stream
-        </div>
-        <div
-          onClick={() => navigate("/prayer")}
-          className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
-            "/prayer"
-          )}`}
-        >
-          Prayer
-        </div>
-        <div
-          onClick={() => navigate("/planyourvisit")}
-          className={`hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
-            "/planyourvisit"
-          )}`}
-        >
-          Plan Your Visit
-        </div>
-        <button
-          onClick={() => navigate("/give")}
-          className="bg-white text-[rgb(21,31,38)] border border-[rgb(21,31,38)] h-[40px] w-[80px] hover:bg-gray-200"
-        >
-          Give
-        </button>
-      </div>
-
-      {/* Mobile About Menu */}
-      {menuOpen && aboutOpen && (
-        <div
-          className="md:hidden bg-[rgb(28,28,28)] text-white flex flex-col items-center py-6 space-y-4 fixed top-0 left-0 w-full z-30 h-screen transition-all duration-300"
-          style={{
-            transform: aboutOpen ? "translateX(0)" : "translateX(-100%)",
-            opacity: aboutOpen ? 1 : 0,
-          }}
-        >
-          {/* Logo and Close Button */}
-          <div className="flex justify-between items-center w-full px-6">
-            <div className="pl-5">
-              <Logo />
-            </div>
-            <div onClick={toggleMenu} className="cursor-pointer text-2xl">
-              <FiX />
-            </div>
-          </div>
-
-          {/* Back Button */}
+        {/* Mobile Menu Content Container */}
+        <div className="relative h-full w-full overflow-hidden mt-4">
           <div
-            onClick={showMainMenu}
-            className="cursor-pointer text-white text-xl mb-6 text-center"
+            className={`absolute top-0 left-0 w-full h-full flex flex-col items-center space-y-6 transition-transform duration-500 ease-in-out ${
+              aboutOpen ? "-translate-x-full" : "translate-x-0"
+            }`}
           >
-            &lt; Back {/* Centered the back button */}
+            <div
+              onClick={() => navigate("/")}
+              className={`hover:cursor-pointer hover:text-gray-200 text-5xl ${getLinkClass(
+                "/"
+              )}`}
+            >
+              Home
+            </div>
+            <div
+              onClick={() => setAboutOpen(true)}
+              className={`hover:cursor-pointer hover:text-gray-200 text-5xl ${getLinkClass(
+                "/about"
+              )}`}
+            >
+              About <span className="md:hidden">&gt;</span>
+            </div>
+            <div
+              onClick={() => navigate("/midweek")}
+              className={`hover:cursor-pointer hover:text-gray-200 text-5xl ${getLinkClass(
+                "/midweek"
+              )}`}
+            >
+              Midweek
+            </div>
+            <div
+              onClick={liveStreamNav}
+              className="cursor-pointer hover:text-gray-200 text-5xl"
+            >
+              Live Stream
+            </div>
+            <div
+              onClick={() => navigate("/prayer")}
+              className={`hover:cursor-pointer hover:text-gray-200 text-5xl ${getLinkClass(
+                "/prayer"
+              )}`}
+            >
+              Prayer
+            </div>
+            <div
+              onClick={calendarNav}
+              className="cursor-pointer hover:text-gray-200 text-5xl"
+            >
+              Calendar
+            </div>
+            <div
+              onClick={() => navigate("/planyourvisit")}
+              className={`hover:cursor-pointer hover:text-gray-200 text-5xl ${getLinkClass(
+                "/planyourvisit"
+              )}`}
+            >
+              Plan Your Visit
+            </div>
+            <br />
+            <button
+              onClick={() => navigate("/give")}
+              className="bg-white text-[rgb(21,31,38)] border border-[rgb(21,31,38)] text-5xl h-[70px] w-[250px] hover:bg-gray-200"
+            >
+              Give
+            </button>
           </div>
 
-          <div className="flex flex-col items-center py-6 space-y-4 text-white">
+          {/* About Slide Panel (slide in from right) */}
+          <div
+            className={`absolute top-0 left-0 w-full h-full flex flex-col items-center space-y-6 transition-transform duration-500 ease-in-out ${
+              aboutOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          >
+            <div
+              onClick={() => setAboutOpen(false)}
+              className="cursor-pointer text-zinc-500 text-5xl mb-6 text-center"
+            >
+              &lt; Back
+            </div>
             <div
               onClick={() => navigate("/location")}
-              className={getLinkClass("/location")}
+              className={`text-5xl {getLinkClass("/location")}`}
             >
               Location & Times
             </div>
             <div
               onClick={() => navigate("/dreamkids")}
-              className={getLinkClass("/dreamkids")}
+              className={`text-5xl {getLinkClass("/dreamkids")}`}
             >
               Dream Kids
             </div>
             <div
               onClick={() => navigate("/serve")}
-              className={getLinkClass("/serve")}
+              className={`text-5xl {getLinkClass("/serve")}`}
             >
               Serve
             </div>
             <div
               onClick={() => navigate("/leaders")}
-              className={getLinkClass("/leaders")}
+              className={`text-5xl {getLinkClass("/leaders")}`}
             >
               Leaders
             </div>
             <div
               onClick={() => navigate("/beliefs")}
-              className={getLinkClass("/beliefs")}
+              className={`text-5xl {getLinkClass("/beliefs")}`}
             >
               Beliefs
             </div>
             <div
               onClick={() => navigate("/contactus")}
-              className={getLinkClass("/contactus")}
+              className={`text-5xl {getLinkClass("/contactus")}`}
             >
               Contact Us
             </div>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };

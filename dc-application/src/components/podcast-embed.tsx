@@ -1,6 +1,6 @@
 const PodcastEmbed = () => {
   return (
-    <div className="flex justify-center mt-10 md:mt-0 w-[100%]">
+    <div className="flex justify-center mt-10 md:mt-0 w-[90%] mid:w-[100%]">
       <iframe
         allow="autoplay *; encrypted-media *"
         height="175"

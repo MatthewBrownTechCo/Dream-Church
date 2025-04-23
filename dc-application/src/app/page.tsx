@@ -17,12 +17,14 @@ export default function Home() {
       <NavBar />
       <div className="relative bg-[url('/images/josh-lh-matt-piano-ps.jpg')] bg-cover bg-center md:px-[100px] py-40 md:py-20 sm:py-[200px] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
-        <header className="relative text-center py-[50px] z-10 space-y-6">
-          <h1 className="text-6xl font-bold md:text-8xl">Dream Church</h1>
+        <header className="relative text-center md:text-left py-[50px] z-10 space-y-6">
+          <h1 className="text-6xl font-bold md:text-8xl md:font-normal">
+            Dream Church
+          </h1>
           <h2 className="text-2xl">Columbia, South Carolina</h2>
           <h2 className="text-2xl">Services Sundays @ 10AM EST</h2>
         </header>
-        <div className="relative text-center mt-[10px] z-10">
+        <div className="relative text-center md:text-left mt-[10px] z-10">
           <button
             className="bg-white text-black border border-white py-[20px] w-80 md:w-[300px] text-xl font-bold hover:bg-gray-200"
             onClick={planYourVisitNavigate}
