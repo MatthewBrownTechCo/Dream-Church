@@ -40,7 +40,7 @@ export default function Home() {
           love of Jesus and the ways of his Kingdom.
         </h2>
       </section>
-      <div className="flex flex-col md:flex-row items-center py-8 px-1 md:px-0 md:pt-0 md:p-10 bg-white text-black">
+      <div className="flex flex-col md:flex-row items-center md:justify-center py-8 px-1 md:pr-0 md:pt-10 bg-white text-black">
         <section className="text-center md:text-left">
           <h1 className="text-6xl md:text-7xl font-bold">Latest Message</h1>
           <h2 className="mt-[40px] md:text-2xl">
@@ -129,7 +129,7 @@ export default function Home() {
         </div>
       </section>
       <section className="text-center py-[5%] bg-white text-black space-y-8">
-        <h2 className="text-5xl font-bold">Follow Us Online</h2>
+        <h2 className="text-5xl md:text-6xl font-bold">Follow Us Online</h2>
         <SocialBtn />
       </section>
       <Footer />

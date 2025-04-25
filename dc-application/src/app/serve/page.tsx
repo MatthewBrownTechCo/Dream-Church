@@ -1,7 +1,6 @@
 "use client";
 
 import Footer from "../../components/footer";
-import Head from "next/head";
 import NavBar from "../../components/navbar";
 import React, { useState } from "react";
 
@@ -103,23 +102,14 @@ export default function Serve() {
 
   return (
     <>
-      <Head>
-        <title>
-          Volunteer Opportunities - Dream Church | Church in Columbia, SC
-        </title>
-        <meta
-          name="description"
-          content="Serve in the mission of deeply forming people in the love of Jesus and the ways of his kingdom."
-        />
-      </Head>
       <NavBar />
-      <div className="relative bg-[url('/images/serving-outside.png')] bg-cover bg-[center_20%] px-[100px] py-[200px] text-white">
+      <div className="relative bg-[url('/images/serving-outside.png')] bg-cover bg-[center_20%] py-[100px] md:py-[200px] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center">
-          <h1 className="text-8xl font-bold">Serve</h1>
+          <h1 className="text-6xl md:text-8xl font-bold">Serve</h1>
         </header>
       </div>
-      <p className="px-[300px] text-center mt-[30px] text-xl">
+      <p className="px-[50px] md:px-[300px] text-center mt-[30px] text-xl">
         We are doing impactful kingdom ministry, and we want you to step into
         the vital part of the body that you are called to. If you are interested
         in serving, fill out this short form and we will reach out to answer any
@@ -127,7 +117,7 @@ export default function Serve() {
       </p>
       <form
         onSubmit={handleSubmit}
-        className="mt-[50px] py-10 mx-[20%] space-y-6 bg-white text-black text-xl"
+        className="mt-[50px] py-10 mx-[7%] md:mx-[20%] space-y-6 bg-white text-black text-xl"
       >
         <div className="space-y-2 px-10 w-full">
           <label htmlFor="f-name" className="block font-medium">

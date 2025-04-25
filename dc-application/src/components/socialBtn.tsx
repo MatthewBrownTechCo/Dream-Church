@@ -6,17 +6,17 @@ import youtube from "../../public/logos/youtube-app-white-icon.webp";
 export const SocialBtn = () => {
   return (
     <div className="flex flex-row justify-center gap-4">
-      <button className="bg-[rgb(28,28,28)] flex justify-center items-center w-16 h-16 hover:bg-gray-700">
+      <button className="bg-[rgb(28,28,28)] flex justify-center items-center w-12 h-12 md:w-16 md:h-16 hover:bg-gray-700">
         <a href="https://www.instagram.com/dreamchurchcola/" target="_blank">
           <Image src={instagram} alt="Instagram Logo" width={30} height={30} />
         </a>
       </button>
-      <button className="bg-[rgb(28,28,28)] flex justify-center items-center w-16 h-16 hover:bg-gray-700">
+      <button className="bg-[rgb(28,28,28)] flex justify-center items-center w-12 h-12 md:w-16 md:h-16 hover:bg-gray-700">
         <a href="https://www.facebook.com/dreamchurchcola" target="_blank">
           <Image src={facebook} alt="Facebook Logo" width={30} height={30} />
         </a>
       </button>
-      <button className="bg-[rgb(28,28,28)] flex justify-center items-center w-16 h-16 hover:bg-gray-700">
+      <button className="bg-[rgb(28,28,28)] flex justify-center items-center w-12 h-12 md:w-16 md:h-16 hover:bg-gray-700">
         <a href="https://www.youtube.com/@dreamchurchcola" target="_blank">
           <Image src={youtube} alt="YouTube Logo" width={30} height={30} />
         </a>

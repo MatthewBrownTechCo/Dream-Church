@@ -39,7 +39,7 @@ const NavBar = () => {
   return (
     <div className="bg-[rgb(28,28,28)] px-6 py-6 sticky top-0 z-20">
       <div className="flex justify-between items-center text-white">
-        <div className="pl-5">
+        <div className="pl-5 md:pl-9">
           <Logo />
         </div>
 
@@ -271,43 +271,43 @@ const NavBar = () => {
           >
             <div
               onClick={() => setAboutOpen(false)}
-              className="cursor-pointer text-zinc-500 text-5xl mb-6 text-center"
+              className="cursor-pointer text-zinc-500 hover:text-zinc-400 text-5xl mb-6 text-center"
             >
               &lt; Back
             </div>
             <div
               onClick={() => navigate("/location")}
-              className={`text-5xl {getLinkClass("/location")}`}
+              className={`text-5xl hover:text-gray-200 {getLinkClass("/location")}`}
             >
               Location & Times
             </div>
             <div
               onClick={() => navigate("/dreamkids")}
-              className={`text-5xl {getLinkClass("/dreamkids")}`}
+              className={`text-5xl hover:text-gray-200 {getLinkClass("/dreamkids")}`}
             >
               Dream Kids
             </div>
             <div
               onClick={() => navigate("/serve")}
-              className={`text-5xl {getLinkClass("/serve")}`}
+              className={`text-5xl hover:text-gray-200 {getLinkClass("/serve")}`}
             >
               Serve
             </div>
             <div
               onClick={() => navigate("/leaders")}
-              className={`text-5xl {getLinkClass("/leaders")}`}
+              className={`text-5xl hover:text-gray-200 {getLinkClass("/leaders")}`}
             >
               Leaders
             </div>
             <div
               onClick={() => navigate("/beliefs")}
-              className={`text-5xl {getLinkClass("/beliefs")}`}
+              className={`text-5xl hover:text-gray-200 {getLinkClass("/beliefs")}`}
             >
               Beliefs
             </div>
             <div
               onClick={() => navigate("/contactus")}
-              className={`text-5xl {getLinkClass("/contactus")}`}
+              className={`text-5xl hover:text-gray-200 {getLinkClass("/contactus")}`}
             >
               Contact Us
             </div>

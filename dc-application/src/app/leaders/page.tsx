@@ -3,38 +3,23 @@
 import Footer from "../../components/footer";
 import Image from "next/image";
 import joshHeadshot from "../../../public/images/josh-headshot.jpeg";
-import dreamLogoNavy from "../../../public/logos/Arch-Navy.png";
+import mattElder from "../../../public/images/matt_elder.jpg";
+import emilyElder from "../../../public/images/emily.jpg";
+import michaelElder from "../../../public/images/michael.jpg";
+import rayAnitaElder from "../../../public/images/ray_anita.jpg";
+import evanJennaElder from "../../../public/images/evan_jenna.jpg";
 import NavBar from "../../components/navbar";
 
 export default function Leaders() {
   return (
     <>
       <NavBar />
-      <header className="text-center mt-[70px] py-[80px]">
-        <h1 className="text-7xl font-bold">Leadership</h1>
+      <header className="relative text-center py-[100px] md:py-[200px] bg-[url('/images/elders.jpg')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
+        <h1 className="relative text-6xl md:text-8xl font-bold">Leadership</h1>
       </header>
-      <section className="text-center mt-[50px] px-[5%] space-y-4">
-        <div className="flex">
-          <div className="flex-1 flex justify-center flex-col px-[75px]">
-            <h1 className="text-5xl font-bold">Joshua Brown, Senior Pastor</h1>
-            <br />
-            <p className="text-xl">
-              <b>Joshua Brown</b> is the founder and Senior Pastor of Dream
-              Church. He will soon hold a Master&apos;s Degree in Biblical
-              Studies from Western Theological Seminary in Holland, MI. He has
-              been married to Jordyn for 10 years, and his family is everything
-              to him. Outside of church and family, Joshua is a huge college
-              football guy, a coffee enthusiast, a lover of books, and writes
-              extensively on theological studies. You can find some of his
-              contributions on his website below.
-            </p>
-            <br />
-            <button className="bg-white text-black p-[15px] w-auto hover:bg-gray-200 mt-5 text-xl font-bold">
-              <a href="https://www.joshuabrown.org" target="_blank">
-                Joshua Brown&apos;s website
-              </a>
-            </button>
-          </div>
+      <section className="text-center py-[100px] px-[5%] space-y-4">
+        <div className="flex flex-col md:flex-row">
           <div className="flex-1">
             <Image
               src={joshHeadshot}
@@ -44,92 +29,82 @@ export default function Leaders() {
               className="mx-auto"
             />
           </div>
+          <div className="md:flex-1 flex justify-center flex-col px-[20px] md:px-[80px]">
+            <h1 className="text-5xl font-bold">Joshua Brown, Senior Pastor</h1>
+            <br />
+            <p>
+              <b>Joshua Brown</b> is the founder and Senior Pastor of Dream
+              Church. He will soon hold a Master&apos;s Degree in Biblical
+              Studies from Western Theological Seminary in Holland, MI. He has
+              been married to Jordyn for 10 years, and his family is everything
+              to him. Outside of church and family, Joshua is a huge college
+              football guy, a coffee enthusiast, a lover of books, and writes
+              extensively on theological studies. You can find some of his
+              contributions on his website below.
+            </p>
+          </div>
         </div>
       </section>
-      <section className="mt-[125px] py-[80px] bg-white text-black">
+      <section className="py-[80px] bg-white text-black">
         <h1 className="text-center text-6xl font-bold">Elders</h1>
         <div className="mt-[85px] flex">
           <div className="text-center flex-1">
             <Image
-              src={dreamLogoNavy}
+              src={mattElder}
               alt="Dream Church Logo"
-              width={100}
-              height={100}
-              className="rounded-full w-32 h-32 mx-auto"
+              width={1000}
+              height={1000}
+              className="rounded-full w-32 h-32 md:w-64 md:h-64 mx-auto"
             />
             <h1 className="mt-4 text-4xl font-bold">Matthew Brown</h1>
             <h2 className="text-2xl font-bold">Associate Pastor</h2>
           </div>
           <div className="text-center flex-1">
             <Image
-              src={dreamLogoNavy}
+              src={evanJennaElder}
               alt="Dream Church Logo"
-              width={100}
-              height={100}
-              className="rounded-full w-32 h-32 mx-auto"
+              width={1000}
+              height={1000}
+              className="rounded-full w-32 h-32 md:w-64 md:h-64 mx-auto"
             />
-            <h1 className="mt-4 text-4xl font-bold">Evan Rouleau</h1>
-            <h2 className="text-2xl font-bold">Chairman of Elder Board</h2>
-          </div>
-          <div className="text-center flex-1">
-            <Image
-              src={dreamLogoNavy}
-              alt="Dream Church Logo"
-              width={100}
-              height={100}
-              className="rounded-full w-32 h-32 mx-auto"
-            />
-            <h1 className="mt-4 text-4xl font-bold">Jenna Rouleau</h1>
-            <h2 className="text-2xl font-bold">Elder / Administration</h2>
+            <h1 className="mt-4 text-4xl font-bold">Evan & Jenna Rouleau</h1>
+            <h2 className="text-2xl font-bold">Elders</h2>
           </div>
         </div>
         <br />
-        <div className="mt-[5%] flex">
+        <div className="mt-[10%] flex space-x-6 md:space-x-0">
           <div className="text-center flex-1">
             <Image
-              src={dreamLogoNavy}
+              src={michaelElder}
               alt="Dream Church Logo"
-              width={100}
-              height={100}
-              className="rounded-full w-32 h-32 mx-auto"
+              width={1000}
+              height={1000}
+              className="rounded-full w-32 h-32 md:w-64 md:h-64 mx-auto"
             />
             <h1 className="mt-4 text-4xl font-bold">Michael Davis</h1>
-            <h2 className="text-2xl font-bold">
-              Elder / Oversight & Discipleship
-            </h2>
+            <h2 className="text-2xl font-bold">Elder</h2>
           </div>
           <div className="text-center flex-1">
             <Image
-              src={dreamLogoNavy}
+              src={emilyElder}
               alt="Dream Church Logo"
-              width={100}
-              height={100}
-              className="rounded-full w-32 h-32 mx-auto"
+              width={1000}
+              height={1000}
+              className="rounded-full w-32 h-32 md:w-64 md:h-64 mx-auto"
             />
             <h1 className="mt-4 text-4xl font-bold">Emily Harmon</h1>
-            <h2 className="text-2xl font-bold">Elder / Hospitality</h2>
+            <h2 className="text-2xl font-bold">Elder</h2>
           </div>
           <div className="text-center flex-1">
             <Image
-              src={dreamLogoNavy}
+              src={rayAnitaElder}
               alt="Dream Church Logo"
-              width={100}
-              height={100}
-              className="rounded-full w-32 h-32 mx-auto"
+              width={1000}
+              height={1000}
+              className="rounded-full w-32 h-32 md:w-64 md:h-64 mx-auto"
             />
-            <h1 className="mt-4 text-4xl font-bold">Anita Cruz</h1>
-            <h2 className="text-2xl font-bold">Elder / Hospitality</h2>
-          </div>
-          <div className="text-center flex-1">
-            <Image
-              src={dreamLogoNavy}
-              alt="Dream Church Logo"
-              width={100}
-              height={100}
-              className="rounded-full w-32 h-32 mx-auto"
-            />
-            <h1 className="mt-4 text-4xl font-bold">Ray Cruz</h1>
-            <h2 className="text-2xl font-bold">Elder / Finance</h2>
+            <h1 className="mt-4 text-4xl font-bold">Ray & Anita Cruz</h1>
+            <h2 className="text-2xl font-bold">Elders</h2>
           </div>
         </div>
       </section>
