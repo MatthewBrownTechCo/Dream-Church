@@ -42,7 +42,7 @@ export default function Home() {
       </section>
       <div className="flex flex-col md:flex-row items-center md:justify-center py-8 px-1 md:pr-0 md:pt-10 bg-white text-black">
         <section className="text-center md:text-left">
-          <h1 className="text-6xl md:text-7xl font-bold">Latest Message</h1>
+          <h1 className="text-5xl md:text-7xl font-bold">Latest Message</h1>
           <h2 className="mt-[40px] md:text-2xl">
             Check out the latest sermon from Dream Church pastor Joshua Brown
             and other pastors.
