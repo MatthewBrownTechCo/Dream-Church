@@ -7,11 +7,11 @@ export default function Beliefs() {
   return (
     <>
       <NavBar />
-      <div className="relative text-black bg-[url('/images/josh-outside-teach.jpg')] bg-cover bg-center px-[70px] py-[120px]">
+      <div className="relative text-black bg-[url('/images/josh-outside-teach.jpg')] bg-cover bg-center md:px-[70px] py-[120px]">
         <div className="absolute inset-0 bg-white opacity-75 z-0"></div>
         <header className="relative text-center z-10 space-y-10">
           <h1 className="text-8xl font-bold">Beliefs</h1>
-          <h2 className="text-xl px-[350px]">
+          <h2 className="text-xl px-6 md:px-[350px]">
             What <i>the</i> Church believes has been handed down to us
             throughout the generations. Dream Church holds to the Church truths
             in their purest form, as stated in the <b>Nicene Creed</b> and the{" "}
@@ -21,9 +21,9 @@ export default function Beliefs() {
       </div>
 
       <section className="text-center bg-[rgb(28,28,28)] py-[40px]">
-        <h1 className="text-7xl font-bold">Nicene Creed</h1>
+        <h1 className="text-6xl md:text-7xl font-bold">Nicene Creed</h1>
         <br />
-        <div className="text-xl border border-white mx-[300px] py-5">
+        <div className="border border-white px-4 mx-4 md:px-0 md:mx-[300px] py-5">
           {[
             "We believe in one God",
             "the Father, the Almighty",
@@ -76,9 +76,9 @@ export default function Beliefs() {
       <br />
 
       <section className="text-center">
-        <h1 className="text-7xl font-bold">Apostle&apos;s Creed</h1>
+        <h1 className="text-6xl md:text-7xl font-bold">Apostle&apos;s Creed</h1>
         <br />
-        <div className="text-xl border border-white mx-[300px] py-5">
+        <div className="border border-white px-4 mx-4 md:px-0 md:mx-[300px] py-5">
           {[
             "I believe in God, the Father Almighty",
             "Creator of heaven and earth",

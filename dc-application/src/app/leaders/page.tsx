@@ -46,62 +46,61 @@ export default function Leaders() {
         </div>
       </section>
       <section className="py-[80px] bg-white text-black">
-        <h1 className="text-center text-6xl font-bold">Elders</h1>
-        <div className="mt-[85px] flex">
-          <div className="text-center flex-1">
+        <h1 className="text-center text-7xl md:text-8xl font-bold">Elders</h1>
+        <div className="mt-[85px] flex flex-col md:flex-row space-y-10 md:space-y-0 md:justify-center md:gap-[200px] md:max-w-[800px] md:mx-auto">
+          <div className="text-center">
             <Image
               src={mattElder}
-              alt="Dream Church Logo"
+              alt="Matt Elder Photo"
               width={1000}
               height={1000}
-              className="rounded-full w-32 h-32 md:w-64 md:h-64 mx-auto"
+              className="rounded-full w-64 h-64 mx-auto"
             />
             <h1 className="mt-4 text-4xl font-bold">Matthew Brown</h1>
             <h2 className="text-2xl font-bold">Associate Pastor</h2>
           </div>
-          <div className="text-center flex-1">
+          <div className="text-center">
             <Image
               src={evanJennaElder}
               alt="Dream Church Logo"
               width={1000}
               height={1000}
-              className="rounded-full w-32 h-32 md:w-64 md:h-64 mx-auto"
+              className="rounded-full w-64 h-64 mx-auto"
             />
             <h1 className="mt-4 text-4xl font-bold">Evan & Jenna Rouleau</h1>
             <h2 className="text-2xl font-bold">Elders</h2>
           </div>
         </div>
-        <br />
-        <div className="mt-[10%] flex space-x-6 md:space-x-0">
-          <div className="text-center flex-1">
+        <div className="mt-[10%] flex flex-col md:flex-row space-y-10 md:space-y-0 md:justify-center md:gap-[200px] md:max-w-[1200px] md:mx-auto">
+          <div className="text-center">
             <Image
               src={michaelElder}
               alt="Dream Church Logo"
               width={1000}
               height={1000}
-              className="rounded-full w-32 h-32 md:w-64 md:h-64 mx-auto"
+              className="rounded-full w-64 h-64 mx-auto"
             />
             <h1 className="mt-4 text-4xl font-bold">Michael Davis</h1>
             <h2 className="text-2xl font-bold">Elder</h2>
           </div>
-          <div className="text-center flex-1">
+          <div className="text-center">
             <Image
               src={emilyElder}
               alt="Dream Church Logo"
               width={1000}
               height={1000}
-              className="rounded-full w-32 h-32 md:w-64 md:h-64 mx-auto"
+              className="rounded-full w-64 h-64 mx-auto"
             />
             <h1 className="mt-4 text-4xl font-bold">Emily Harmon</h1>
             <h2 className="text-2xl font-bold">Elder</h2>
           </div>
-          <div className="text-center flex-1">
+          <div className="text-center">
             <Image
               src={rayAnitaElder}
               alt="Dream Church Logo"
               width={1000}
               height={1000}
-              className="rounded-full w-32 h-32 md:w-64 md:h-64 mx-auto"
+              className="rounded-full w-64 h-64 mx-auto"
             />
             <h1 className="mt-4 text-4xl font-bold">Ray & Anita Cruz</h1>
             <h2 className="text-2xl font-bold">Elders</h2>

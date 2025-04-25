@@ -81,25 +81,27 @@ export default function Prayer() {
   };
 
   return (
-    <div className="bg-white text-black">
+    <div className="text-black">
       <NavBar />
-      <div className="relative bg-[url('/images/prayer-cross.jpg')] bg-cover bg-center px-[100px] py-[200px] text-white">
+      <div className="relative bg-[url('/images/prayer-cross.jpg')] bg-cover bg-center py-[100px] md:py-[200px] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center">
-          <h1 className="text-8xl font-bold">Prayer</h1>
+          <h1 className="text-6xl md:text-8xl font-bold">Prayer</h1>
         </header>
       </div>
-      <section className="text-center mt-[50px]">
-        <h1 className="text-6xl font-bold">How can we pray for you?</h1>
-      </section>
-      <form onSubmit={handleSubmit} className="mt-[50px] space-y-6">
-        <p className="text-center font-bold mx-[30%]">
+      <div className="bg-white text-center pt-10 px-8 md:px-0">
+        <h1 className="text-5xl md:text-6xl font-bold">
+          How can we pray for you?
+        </h1>
+      </div>
+      <form onSubmit={handleSubmit} className="pt-[50px] space-y-6 bg-white">
+        <p className="text-center font-bold px-[10%] md:px-[30%]">
           You were never meant to walk through life alone. We want to walk with
           you by being a partner in prayer. Let us know how we can pray for you
           below.
         </p>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="f-name" className="block font-medium">
             <b>First Name</b> (required)
           </label>
@@ -114,7 +116,7 @@ export default function Prayer() {
           />
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="l-name" className="block font-medium">
             <b>Last Name</b> (required)
           </label>
@@ -129,7 +131,7 @@ export default function Prayer() {
           />
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="email" className="block font-medium">
             <b>Email</b> (required)
           </label>
@@ -144,7 +146,7 @@ export default function Prayer() {
           />
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="phone" className="block font-medium">
             <b>Phone</b> (required)
           </label>
@@ -159,7 +161,7 @@ export default function Prayer() {
           />
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="extras" className="block font-medium">
             <b>Preferred Method of Contact</b> (required)
           </label>
@@ -180,7 +182,7 @@ export default function Prayer() {
           </select>
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="message" className="block font-medium">
             <b>Prayer Request</b> (required)
           </label>
@@ -203,7 +205,7 @@ export default function Prayer() {
           <button
             type="submit"
             disabled={loading}
-            className="bg-transparent border border-black py-[15px] w-[20%] hover:bg-gray-100"
+            className="bg-transparent border border-black py-[15px] w-[80%] md:w-[20%] hover:bg-gray-100 mb-10"
           >
             {loading ? "Submitting..." : "SUBMIT"}
           </button>

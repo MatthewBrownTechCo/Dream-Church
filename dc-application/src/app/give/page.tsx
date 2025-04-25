@@ -7,10 +7,10 @@ export default function Give() {
   return (
     <>
       <NavBar />
-      <header className="text-center px-[200px] pt-[120px] pb-[80px] bg-white text-black">
-        <h1 className="text-8xl font-bold">Give</h1>
+      <header className="text-center md:px-[200px] pt-[120px] pb-[80px] bg-white text-black">
+        <h1 className="text-7xl md:text-8xl font-bold">Give</h1>
         <br />
-        <p className="text-xl mx-[20%]">
+        <p className="px-10 md:px-[20%]">
           We believe giving our tithe (10% or more of your pre-tax income) is an
           act of worship and spiritual formation. It is a sacrament sign of
           God&apos;s generosity toward us and allows us to participate in it by
@@ -20,7 +20,7 @@ export default function Give() {
           come.
         </p>
         <br />
-        <p className="text-xl mx-[20%]">
+        <p className="px-10 md:px-[20%]">
           Thank you so much for your generosity! You can give below:
         </p>
       </header>

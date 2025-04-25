@@ -87,23 +87,25 @@ export default function PlanYourVisit() {
   };
 
   return (
-    <div className="bg-white text-black">
+    <div className="text-black">
       <NavBar />
-      <div className="relative bg-[url('/images/thanksgiving-table.jpg')] bg-cover bg-center px-[100px] py-[200px] text-white">
+      <div className="relative bg-[url('/images/thanksgiving-table.jpg')] bg-cover bg-center py-[100px] md:py-[200px] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center">
-          <h3 className="text-2xl font-bold">
+          <h3 className="md:text-2xl font-bold">
             At Dream Church, you are <u>family</u>.
           </h3>
           <br />
-          <h1 className="text-8xl font-bold">Plan Your Visit!</h1>
+          <h1 className="text-6xl md:text-8xl font-bold">Plan Your Visit!</h1>
         </header>
       </div>
-      <section className="text-center pt-[50px]">
-        <h1 className="text-6xl font-bold">We can&apos;t wait to meet you!</h1>
-      </section>
-      <form onSubmit={handleSubmit} className="mt-[50px] space-y-6">
-        <p className="text-center font-bold mx-[30%]">
+      <div className="text-center pt-[50px] px-8 md:px-0 bg-white">
+        <h1 className="text-5xl md:text-6xl font-bold">
+          We can&apos;t wait to meet you!
+        </h1>
+      </div>
+      <form onSubmit={handleSubmit} className="pt-[50px] space-y-6 bg-white">
+        <p className="text-center font-bold px-[10%] md:px-[30%]">
           Visiting a church for the first time can be daunting. We want to help
           make it <u className="underline underline-offset-2">enjoyable</u>!
           Sign up to plan your visit below, and we will have someone reach out
@@ -112,7 +114,7 @@ export default function PlanYourVisit() {
           our church family.
         </p>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="f-name" className="block font-medium">
             <b>First Name</b> (required)
           </label>
@@ -127,7 +129,7 @@ export default function PlanYourVisit() {
           />
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="l-name" className="block font-medium">
             <b>Last Name</b> (required)
           </label>
@@ -142,7 +144,7 @@ export default function PlanYourVisit() {
           />
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="email" className="block font-medium">
             <b>Email</b> (required)
           </label>
@@ -157,7 +159,7 @@ export default function PlanYourVisit() {
           />
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="phone" className="block font-medium">
             <b>Phone</b> (required)
           </label>
@@ -172,7 +174,7 @@ export default function PlanYourVisit() {
           />
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="visitDate" className="block">
             <b>Date You Plan on Visiting a Service</b> (required)
           </label>
@@ -187,7 +189,7 @@ export default function PlanYourVisit() {
           />
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="extras" className="block font-medium">
             <b>People (ages 8 and up) Visiting With You</b> (required)
           </label>
@@ -211,7 +213,7 @@ export default function PlanYourVisit() {
           </select>
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="kids" className="block">
             <b>Children (ages 8 and under) Visiting With You</b> (required)
           </label>
@@ -235,7 +237,7 @@ export default function PlanYourVisit() {
           </select>
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="message" className="block">
             <b>Anything You&apos;d Like Us To Know?</b>
           </label>
@@ -249,7 +251,7 @@ export default function PlanYourVisit() {
           ></textarea>
         </div>
 
-        <div className="space-y-2 mx-auto w-[45%]">
+        <div className="space-y-2 mx-auto w-[80%] md:w-[45%]">
           <label htmlFor="heardAbout" className="block">
             <b>How Did You Hear About Dream?</b>
           </label>
@@ -275,7 +277,7 @@ export default function PlanYourVisit() {
           <button
             type="submit"
             disabled={loading}
-            className="bg-transparent border border-black py-[15px] w-[20%] hover:bg-gray-100"
+            className="bg-transparent border border-black py-[15px] w-[80%] md:w-[20%] hover:bg-gray-100 mb-10"
           >
             {loading ? "Submitting..." : "SUBMIT"}
           </button>

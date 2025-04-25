@@ -94,8 +94,8 @@ export default function Home() {
       <section className="relative flex flex-col md:flex-row md:justify-between px-4 md:px-[6%] bg-[url('/images/preservice-christmas.jpg')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <div className="flex justify-center text-center md:text-left flex-col z-10 space-y-8 py-[10%]">
-          <h1 className="text-6xl md:text-7xl font-bold">1633 Main Street</h1>
-          <h1 className="text-6xl md:text-7xl font-bold">Columbia, SC</h1>
+          <h1 className="text-5xl md:text-7xl font-bold">1633 Main Street</h1>
+          <h1 className="text-5xl md:text-7xl font-bold">Columbia, SC</h1>
         </div>
         <div className="space-y-3 pb-8 md:pb-0 md:py-[5%] text-center w-full md:w-[35%] z-10">
           <h1 className="font-bold text-2xl">
@@ -118,13 +118,14 @@ export default function Home() {
           </h1>
           <p className="text-2xl">hello@dreamcolumbia.com</p>
           <p className="text-2xl">
-            or{" "}
+            or text 803-567-5336 (
             <a
               href="sms:8035675336"
               className="underline underline-offset-4 hover:text-gray-200"
             >
-              text 803-567-5336 (click here to text us)
-            </a>
+              click here
+            </a>{" "}
+            to text us)
           </p>
         </div>
       </section>

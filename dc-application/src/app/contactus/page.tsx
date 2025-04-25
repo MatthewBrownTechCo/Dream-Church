@@ -78,10 +78,9 @@ export default function ContactUs() {
     <div>
       <NavBar />
       <div className="flex flex-col md:flex-row mb-[200px]">
-        {/* Contact Info Section */}
-        <div className="relative flex-1 flex flex-col justify-center text-left pl-[100px] mb-10 md:mb-0 bg-[url('/images/pastor-study-front-door.jpg')] bg-center bg-cover">
+        <div className="relative flex-1 flex flex-col items-center md:items-start md:justify-center text-center md:text-left md:pl-[100px] mb-10 md:mb-0 bg-[url('/images/pastor-study-front-door.jpg')] bg-center bg-cover py-10 md:py-0">
           <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
-          <h1 className="relative text-6xl">Contact Us.</h1>
+          <h1 className="relative text-5xl md:text-6xl">Contact Us.</h1>
           <br />
           <p className="relative">hello@dreamcolumbia.com</p>
           <p className="relative">(803) 567-5336</p>
@@ -119,7 +118,7 @@ export default function ContactUs() {
         {/* Contact Form Section */}
         <form
           onSubmit={handleSubmit}
-          className="flex-1 my-[50px] space-y-3 px-6 md:px-6"
+          className="flex-1 md:my-[50px] space-y-3 px-6 md:px-6"
         >
           <div className="space-y-2 w-full">
             <label htmlFor="f-name" className="block font-medium">
