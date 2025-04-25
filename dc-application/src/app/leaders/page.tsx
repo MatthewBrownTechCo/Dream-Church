@@ -29,7 +29,7 @@ export default function Leaders() {
               className="mx-auto"
             />
           </div>
-          <div className="md:flex-1 flex justify-center flex-col px-[20px] md:px-[80px]">
+          <div className="md:flex-1 flex justify-center flex-col px-[20px] md:px-[80px] py-10">
             <h1 className="text-5xl font-bold">Joshua Brown, Senior Pastor</h1>
             <br />
             <p>
