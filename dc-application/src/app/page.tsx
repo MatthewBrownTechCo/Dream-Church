@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <NavBar />
-      <div className="relative bg-[url('/images/josh-lh-matt-piano-ps.jpg')] bg-cover bg-center md:px-[100px] py-40 md:py-20 sm:py-[200px] text-white">
+      <div className="relative bg-[url('/images/josh-lh-matt-piano-ps.jpg')] bg-cover bg-center md:px-[100px] py-40 md:py-[160px] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center md:text-left py-[50px] z-10 space-y-6">
           <h1 className="text-6xl font-bold md:text-8xl md:font-normal">
@@ -35,9 +35,8 @@ export default function Home() {
       </div>
       <section className="text-center mx-[10%] py-[5%]">
         <h2 className="text-3xl">
-          <b>Dream Church</b> is a family being{" "}
-          <u className="underline underline-offset-4">deeply formed</u> in the
-          love of Jesus and the ways of his Kingdom.
+          <b>Dream Church</b> is a family being <b>deeply formed</b> in the love
+          of Jesus and the ways of his Kingdom.
         </h2>
       </section>
       <div className="flex flex-col md:flex-row items-center md:justify-center py-8 px-1 md:pr-0 md:pt-10 bg-white text-black">
@@ -118,7 +117,7 @@ export default function Home() {
           </h1>
           <p className="text-2xl">hello@dreamcolumbia.com</p>
           <p className="text-2xl">
-            or text 803-567-5336 (
+            {"or text 803-567-5336"} (
             <a
               href="sms:8035675336"
               className="underline underline-offset-4 hover:text-gray-200"
