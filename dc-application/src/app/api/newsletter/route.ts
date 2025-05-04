@@ -6,7 +6,7 @@ export async function POST(req: Request) {
 
     // URL of your Google Apps Script endpoint
     const scriptUrl =
-      "https://script.google.com/macros/s/AKfycbxGkosor0ZMYrDlXnucllgzlcu58j3rzGOw8RRvU3Zg8QG2IGqnlmC8xWqLN_duFXKs/exec";
+      "https://script.google.com/a/macros/dreamcolumbia.com/s/AKfycbyps2Ly04U4Uj8eIpDWgQnLNLfWLcmqdcRdg4zczB-ftIsluJiTWgbVigmQywz7Ml7P/exec";
 
     // Send the email data to Google Apps Script
     const response = await fetch(scriptUrl, {

@@ -71,10 +71,12 @@ const NavBar = () => {
               onClick={() => navigate("/location")}
               className={`px-4 ${getLinkClass([
                 "/location",
+                "/midweek",
                 "/dreamkids",
                 "/serve",
                 "/leaders",
                 "/beliefs",
+                "/baptism",
                 "/contactus",
               ])}`}
             >
