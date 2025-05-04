@@ -49,7 +49,7 @@ export default function Home() {
           <h2 className="mt-[40px] md:text-2xl">
             Other messages can be found on your favorite podcast platforms.
           </h2>
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-20 md:mt-[75px]">
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-10 md:mt-[75px]">
             <div className="text-center">
               <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[80%] md:w-[180px] hover:bg-gray-700 text-white text-2xl font-bold">
                 <a
