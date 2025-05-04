@@ -86,16 +86,21 @@ export default function Prayer() {
       <div className="relative bg-[url('/images/prayer-cross.jpg')] bg-cover bg-center py-[100px] md:py-[200px] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center">
-          <h1 className="text-6xl md:text-8xl font-bold">Prayer</h1>
+          <h1
+            className="text-6xl md:text-8xl font-medium
+          "
+          >
+            Prayer
+          </h1>
         </header>
       </div>
       <div className="bg-white text-center pt-10 px-8 md:px-0">
-        <h1 className="text-5xl md:text-6xl font-bold">
+        <h1 className="text-4xl md:text-6xl font-medium">
           How can we pray for you?
         </h1>
       </div>
       <form onSubmit={handleSubmit} className="pt-[50px] space-y-6 bg-white">
-        <p className="text-center font-bold px-[10%] md:px-[30%]">
+        <p className="text-center font-medium px-[7%] md:px-[30%]">
           You were never meant to walk through life alone. We want to walk with
           you by being a partner in prayer. Let us know how we can pray for you
           below.
@@ -170,7 +175,7 @@ export default function Prayer() {
             name="preferredMethod"
             value={formData.preferredMethod}
             onChange={handleSelectChange}
-            className="w-full px-1 py-2 border border-black"
+            className="w-full px-1 py-2 border border-black bg-white"
             required={true}
           >
             <option value="" disabled>

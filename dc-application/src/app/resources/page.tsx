@@ -10,9 +10,9 @@ export default function Resources() {
       <div className="relative bg-[url('/images/resources-background.jpg')] bg-cover bg-[center_bottom_15%] px-[7%] py-[5%] text-white">
         <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
         <header className="relative text-center py-[80px] z-10">
-          <h1 className="text-6xl md:text-8xl font-bold">Resources</h1>
+          <h1 className="text-6xl md:text-8xl font-medium">Resources</h1>
           <br />
-          <p className="text-3xl md:text-4xl font-bold">
+          <p className="text-3xl md:text-4xl font-medium">
             For our current series, <b>Into the Silent Land</b>
           </p>
         </header>

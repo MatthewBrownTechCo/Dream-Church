@@ -106,7 +106,7 @@ export default function Serve() {
       <div className="relative bg-[url('/images/serving-outside.png')] bg-cover bg-[center_20%] py-[100px] md:py-[200px] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center">
-          <h1 className="text-6xl md:text-8xl font-bold">Serve</h1>
+          <h1 className="text-6xl md:text-8xl font-medium">Serve</h1>
         </header>
       </div>
       <p className="px-[50px] md:px-[300px] text-center mt-[30px] text-xl">

@@ -92,20 +92,20 @@ export default function PlanYourVisit() {
       <div className="relative bg-[url('/images/thanksgiving-table.jpg')] bg-cover bg-center py-[100px] md:py-[200px] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center">
-          <h3 className="md:text-2xl font-bold">
+          <h3 className="text-2xl font-medium">
             At Dream Church, you are <u>family</u>.
           </h3>
           <br />
-          <h1 className="text-6xl md:text-8xl font-bold">Plan Your Visit!</h1>
+          <h1 className="text-6xl md:text-8xl font-medium">Plan Your Visit!</h1>
         </header>
       </div>
       <div className="text-center pt-[50px] px-8 md:px-0 bg-white">
-        <h1 className="text-5xl md:text-6xl font-bold">
+        <h1 className="text-4xl md:text-6xl font-medium">
           We can&apos;t wait to meet you!
         </h1>
       </div>
       <form onSubmit={handleSubmit} className="pt-[50px] space-y-6 bg-white">
-        <p className="text-center font-bold px-[10%] md:px-[30%]">
+        <p className="text-center font-medium px-[10%] md:px-[30%]">
           Visiting a church for the first time can be daunting. We want to help
           make it <u className="underline underline-offset-2">enjoyable</u>!
           Sign up to plan your visit below, and we will have someone reach out
@@ -184,7 +184,7 @@ export default function PlanYourVisit() {
             value={formData.visitDate}
             onChange={handleInputChange}
             placeholder="Choose Date"
-            className="border border-black w-[25%] p-2 text-black"
+            className="border border-black w-[25%] p-2 text-black bg-white"
             required={true}
           />
         </div>
@@ -198,7 +198,7 @@ export default function PlanYourVisit() {
             name="extras"
             value={formData.extras}
             onChange={handleSelectChange}
-            className="w-[25%] px-1 py-2 border border-black"
+            className="w-[25%] px-1 py-2 border border-black bg-white"
             required={true}
           >
             <option value="" disabled>
@@ -222,7 +222,7 @@ export default function PlanYourVisit() {
             name="kids"
             value={formData.kids}
             onChange={handleSelectChange}
-            className="w-[25%] px-1 py-2 border border-black"
+            className="w-[25%] px-1 py-2 border border-black bg-white"
             required={true}
           >
             <option value="" disabled>
@@ -260,7 +260,7 @@ export default function PlanYourVisit() {
             name="heardAbout"
             value={formData.heardAbout}
             onChange={handleSelectChange}
-            className="w-[25%] px-1 py-2 border border-black"
+            className="w-[25%] px-1 py-2 border border-black bg-white"
           >
             <option value="" disabled>
               Select a value

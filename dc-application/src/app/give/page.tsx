@@ -8,7 +8,7 @@ export default function Give() {
     <>
       <NavBar />
       <header className="text-center md:px-[200px] pt-[120px] pb-[80px] bg-white text-black">
-        <h1 className="text-7xl md:text-8xl font-bold">Give</h1>
+        <h1 className="text-6xl md:text-8xl font-medium">Give</h1>
         <br />
         <p className="px-10 md:px-[20%]">
           We believe giving our tithe (10% or more of your pre-tax income) is an

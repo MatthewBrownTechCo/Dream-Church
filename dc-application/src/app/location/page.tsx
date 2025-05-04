@@ -15,12 +15,14 @@ export default function Location() {
       <div className="relative bg-[url('/images/pastor-study-back.jpg')] bg-cover bg-[center_bottom_45%] px-[7%] py-[8%] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center py-[80px] z-10">
-          <h1 className="text-6xl md:text-8xl font-bold">Location and Times</h1>
+          <h1 className="text-6xl md:text-8xl font-medium">
+            Location and Times
+          </h1>
         </header>
       </div>
       <div className="flex flex-col md:flex-row md:items-center text-center bg-white text-black py-10 md:py-0">
         <div className="md:flex-1 space-y-6">
-          <header className="text-5xl md:text-5xl font-bold">
+          <header className="text-5xl md:text-5xl font-medium">
             Sunday Services
           </header>
           <p>
@@ -62,9 +64,9 @@ export default function Location() {
         <div className="relative bg-[url('/images/josh-lh-preach.jpg')] bg-cover bg-center px-[7%] py-[8%] text-white">
           <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
           <header className="relative text-center py-[30px] z-10">
-            <h1 className="text-5xl md:tet-6xl font-bold">What To Expect</h1>
+            <h1 className="text-5xl md:tet-6xl font-medium">What To Expect</h1>
           </header>
-          <div className="relative z-10 text-center px-[5%] md:px-[20%] text-xl">
+          <div className="relative z-10 text-center px-[2%] md:px-[20%] text-xl">
             <p>
               At Dream, you&apos;ll find an immediate sense of belonging! We are
               dedicated to creating a warm, welcoming atmosphere where everyone
@@ -101,7 +103,7 @@ export default function Location() {
           </div>
           <div className="flex justify-center relative mt-[50px] z-10">
             <button
-              className="bg-white text-black border border-white py-[20px] w-[300px] hover:bg-gray-200"
+              className="bg-white text-black border border-white py-[20px] w-[350px] md:w-[300px] hover:bg-gray-200"
               onClick={planYourVisitNavigate}
             >
               <b>Plan Your Visit</b>

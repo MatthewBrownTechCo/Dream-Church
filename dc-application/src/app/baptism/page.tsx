@@ -82,18 +82,18 @@ export default function Baptism() {
       <div className="relative bg-[url('/images/baptism.jpg')] bg-cover bg-center py-[100px] md:py-[200px] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center">
-          <h1 className="text-6xl md:text-8xl font-bold">
+          <h1 className="text-6xl md:text-8xl font-medium">
             Baptism Sign Up Form
           </h1>
         </header>
       </div>
       <div className="text-center pt-[50px] px-8 md:px-0 bg-white">
-        <h1 className="text-3xl md:text-4xl font-bold">
+        <h1 className="text-3xl md:text-4xl font-medium">
           We are so excited to see you take your next step in baptism!
         </h1>
       </div>
       <form onSubmit={handleSubmit} className="pt-[50px] space-y-6 bg-white">
-        <p className="text-center font-bold px-[10%] md:px-[25%]">
+        <p className="text-center px-[10%] md:px-[25%]">
           Baptism is said to be an outward expression of inward transformation.
           While that is very true, we believe that baptism represents us doing
           exactly what Israel did, but in a spiritual sense. We are passing
@@ -180,6 +180,7 @@ export default function Baptism() {
             {loading ? "Submitting..." : "SUBMIT"}
           </button>
         </div>
+        <br />
       </form>
       {message && (
         <p className="text-center bg-white p-4 px-20 md:px-0">{message}</p>

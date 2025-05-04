@@ -229,6 +229,7 @@ const NavBar = () => {
               >
                 Plan Your Visit
               </div>
+              <br />
               <button
                 onClick={() => navigate("/give")}
                 className="mt-6 bg-white text-[rgb(21,31,38)] border border-[rgb(21,31,38)] text-4xl font-bold h-[70px] w-[250px] hover:bg-gray-200"

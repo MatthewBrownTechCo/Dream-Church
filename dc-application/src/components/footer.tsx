@@ -51,7 +51,7 @@ const Footer = () => {
   return (
     <footer className="text-center bg-[rgb(28,28,28)] mt-[50px] text-white p-8">
       <div>
-        <h2 className="text-3xl font-bold">Stay in the loop</h2>
+        <h2 className="text-3xl font-medium">Stay in the loop</h2>
         <br />
         <p className="text-xl">
           Sign up with your email address to receive news and updates from Dream
@@ -126,6 +126,18 @@ const Footer = () => {
       </p>
       <p className="text-xl mt-[60px]">
         <i>&copy; Dream Church Columbia. All rights reserved.</i>
+      </p>
+      <p className="text-base mt-[20px]">
+        <i>
+          Site created by{" "}
+          <a
+            href="https://www.facebook.com/profile.php?id=61564673454795"
+            target="_blank"
+            className="font-bold hover:text-gray-300"
+          >
+            Matthew Brown Tech
+          </a>
+        </i>
       </p>
     </footer>
   );

@@ -18,7 +18,7 @@ export default function Home() {
       <div className="relative bg-[url('/images/josh-lh-matt-piano-ps.jpg')] bg-cover bg-center md:px-[100px] py-40 md:py-[160px] text-white">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <header className="relative text-center md:text-left py-[50px] z-10 space-y-6">
-          <h1 className="text-6xl font-bold md:text-8xl md:font-normal">
+          <h1 className="text-6xl font-medium md:text-8xl md:font-normal">
             Dream Church
           </h1>
           <h2 className="text-2xl">Columbia, South Carolina</h2>
@@ -33,15 +33,15 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <section className="text-center mx-[10%] py-[5%]">
-        <h2 className="text-3xl">
+      <section className="text-center mx-[5%] md:mx-[10%] py-[5%]">
+        <h2 className="md:text-3xl">
           <b>Dream Church</b> is a family being <b>deeply formed</b> in the love
           of Jesus and the ways of his Kingdom.
         </h2>
       </section>
       <div className="flex flex-col md:flex-row items-center md:justify-center py-8 px-1 md:pr-0 md:pt-10 bg-white text-black">
         <section className="text-center md:text-left">
-          <h1 className="text-5xl md:text-7xl font-bold">Latest Message</h1>
+          <h1 className="text-5xl md:text-7xl font-medium">Latest Message</h1>
           <h2 className="mt-[40px] md:text-2xl">
             Check out the latest sermon from Dream Church pastor Joshua Brown
             and other pastors.
@@ -87,19 +87,17 @@ export default function Home() {
         </div>
       </div>
       <section className="text-center py-[100px]">
-        <h1 className="text-6xl font-bold">Our Values</h1>
+        <h1 className="text-5xl md:text-6xl font-medium">Our Values</h1>
         <Accordion />
       </section>
       <section className="relative flex flex-col md:flex-row md:justify-between px-4 md:px-[6%] bg-[url('/images/preservice-christmas.jpg')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <div className="flex justify-center text-center md:text-left flex-col z-10 space-y-8 py-[10%]">
-          <h1 className="text-5xl md:text-7xl font-bold">1633 Main Street</h1>
-          <h1 className="text-5xl md:text-7xl font-bold">Columbia, SC</h1>
+          <h1 className="text-5xl md:text-7xl font-medium">1633 Main Street</h1>
+          <h1 className="text-5xl md:text-7xl font-medium">Columbia, SC</h1>
         </div>
         <div className="space-y-3 pb-8 md:pb-0 md:py-[5%] text-center w-full md:w-[35%] z-10">
-          <h1 className="font-bold text-2xl">
-            <u>Service Times</u>
-          </h1>
+          <h1 className="font-bold text-3xl">Service Times</h1>
           <p className="text-2xl">Sundays at 10 AM EST</p>
           <p className="text-2xl">
             Tuesdays at 6 PM EST (We meet at homes.{" "}
@@ -112,9 +110,7 @@ export default function Home() {
             for more information)
           </p>
           <br />
-          <h1 className="font-bold text-2xl">
-            <u>Contact Us with Questions:</u>
-          </h1>
+          <h1 className="font-bold text-3xl">Contact Us with Questions:</h1>
           <p className="text-2xl">hello@dreamcolumbia.com</p>
           <p className="text-2xl">
             {"or text 803-567-5336"} (
@@ -128,8 +124,8 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="text-center py-[5%] bg-white text-black space-y-8">
-        <h2 className="text-5xl md:text-6xl font-bold">Follow Us Online</h2>
+      <section className="text-center py-[10%] md:py-[5%] bg-white text-black space-y-8">
+        <h2 className="text-4xl md:text-6xl font-medium">Follow Us Online</h2>
         <SocialBtn />
       </section>
       <Footer />
