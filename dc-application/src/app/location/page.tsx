@@ -29,7 +29,7 @@ export default function Location() {
             <b>The Pastor&apos;s Study:</b> 1633 Main Street, Columbia, SC
           </p>
           <p className="underline underline-offset-2">10 AM EST</p>
-          <div className="w-full flex justify-center space-x-4 mt-[75px] text-xl">
+          <div className="w-full flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 mt-[75px] text-xl">
             <div className="text-center">
               <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[200px] hover:bg-gray-700 text-white font-bold">
                 <a
