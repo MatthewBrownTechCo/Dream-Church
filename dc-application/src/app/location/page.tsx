@@ -25,13 +25,13 @@ export default function Location() {
           <header className="text-5xl md:text-5xl font-medium">
             Sunday Services
           </header>
-          <p>
+          <p className="px-4 md:px-0">
             <b>The Pastor&apos;s Study:</b> 1633 Main Street, Columbia, SC
           </p>
           <p className="underline underline-offset-2">10 AM EST</p>
           <div className="w-full flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 mt-[75px] text-xl">
             <div className="text-center">
-              <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[200px] hover:bg-gray-700 text-white font-bold">
+              <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[300px] md:w-[200px] hover:bg-gray-700 text-white font-bold">
                 <a
                   href="https://maps.apple.com/?address=1633%20Main%20St,%20Columbia,%20SC%20%2029201,%20United%20States&ll=34.007368,-81.036660&q=1633%20Main%20St&t=m"
                   target="_blank"
@@ -41,7 +41,7 @@ export default function Location() {
               </button>
             </div>
             <div className="text-center">
-              <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[200px] hover:bg-gray-700 text-white font-bold">
+              <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[300px] md:w-[200px] hover:bg-gray-700 text-white font-bold">
                 <a
                   href="https://maps.app.goo.gl/79jGfKKsBYYwYT8A6"
                   target="_blank"
@@ -64,7 +64,7 @@ export default function Location() {
         <div className="relative bg-[url('/images/josh-lh-preach.jpg')] bg-cover bg-center px-[7%] py-[8%] text-white">
           <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
           <header className="relative text-center py-[30px] z-10">
-            <h1 className="text-5xl md:tet-6xl font-medium">What To Expect</h1>
+            <h1 className="text-5xl md:text-6xl font-medium">What To Expect</h1>
           </header>
           <div className="relative z-10 text-center px-[2%] md:px-[20%] text-xl">
             <p>
@@ -100,14 +100,14 @@ export default function Location() {
               can&apos;t wait to meet you and share this incredible experience
               together!
             </p>
-          </div>
-          <div className="flex justify-center relative mt-[50px] z-10">
-            <button
-              className="bg-white text-black border border-white py-[20px] w-[350px] md:w-[300px] hover:bg-gray-200"
-              onClick={planYourVisitNavigate}
-            >
-              <b>Plan Your Visit</b>
-            </button>
+            <div className="flex justify-center relative mt-[30px] md:mt-[50px] z-10">
+              <button
+                className="bg-white text-black border border-white py-[20px] w-[350px] md:w-[300px] hover:bg-gray-200"
+                onClick={planYourVisitNavigate}
+              >
+                <b>Plan Your Visit</b>
+              </button>
+            </div>
           </div>
         </div>
       </div>
