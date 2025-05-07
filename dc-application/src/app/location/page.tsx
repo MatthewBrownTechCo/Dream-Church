@@ -31,24 +31,24 @@ export default function Location() {
           <p className="underline underline-offset-2">10 AM EST</p>
           <div className="w-full flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 mt-[75px] text-xl">
             <div className="text-center">
-              <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[300px] md:w-[200px] hover:bg-gray-700 text-white font-bold">
-                <a
-                  href="https://maps.apple.com/?address=1633%20Main%20St,%20Columbia,%20SC%20%2029201,%20United%20States&ll=34.007368,-81.036660&q=1633%20Main%20St&t=m"
-                  target="_blank"
-                >
+              <a
+                href="https://maps.apple.com/?address=1633%20Main%20St,%20Columbia,%20SC%20%2029201,%20United%20States&ll=34.007368,-81.036660&q=1633%20Main%20St&t=m"
+                target="_blank"
+              >
+                <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[300px] md:w-[200px] hover:bg-gray-700 text-white font-bold">
                   Apple Maps
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
             <div className="text-center">
-              <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[300px] md:w-[200px] hover:bg-gray-700 text-white font-bold">
-                <a
-                  href="https://maps.app.goo.gl/79jGfKKsBYYwYT8A6"
-                  target="_blank"
-                >
+              <a
+                href="https://maps.app.goo.gl/79jGfKKsBYYwYT8A6"
+                target="_blank"
+              >
+                <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[300px] md:w-[200px] hover:bg-gray-700 text-white font-bold">
                   Google Maps
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
           </div>
         </div>

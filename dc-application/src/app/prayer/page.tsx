@@ -83,8 +83,8 @@ export default function Prayer() {
   return (
     <div className="text-black">
       <NavBar />
-      <div className="relative bg-[url('/images/prayer-cross.jpg')] bg-cover bg-center py-[100px] md:py-[200px] text-white">
-        <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
+      <div className="relative bg-[rgb(28,28,28)] bg-cover bg-center py-[100px] md:py-[200px] text-white">
+        {/* <div className="absolute inset-0 bg-black opacity-70 z-0"></div> */}
         <header className="relative text-center">
           <h1
             className="text-6xl md:text-8xl font-medium

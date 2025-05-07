@@ -11,9 +11,11 @@ export const TextBtn = () => {
 export const TextBtnAlt = () => {
   return (
     <div className="text-center">
-      <button className="bg-black py-[15px] w-[250px] hover:bg-gray-700 text-white font-bold text-xl">
-        <a href="sms:8035675336">Text Us Here</a>
-      </button>
+      <a href="sms:8035675336">
+        <button className="bg-black py-[15px] w-[250px] hover:bg-gray-700 text-white font-bold text-xl">
+          Text Us Here
+        </button>
+      </a>
     </div>
   );
 };

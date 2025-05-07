@@ -51,34 +51,31 @@ export default function Home() {
           </h2>
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-10 md:mt-[75px]">
             <div className="text-center">
-              <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[80%] md:w-[180px] hover:bg-gray-700 text-white text-2xl font-bold">
-                <a
-                  href="https://open.spotify.com/show/37D4UsiIFMv5SUpIQiA4VE"
-                  target="_blank"
-                >
+              <a
+                href="https://open.spotify.com/show/37D4UsiIFMv5SUpIQiA4VE"
+                target="_blank"
+              >
+                <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[80%] md:w-[180px] hover:bg-gray-700 text-white text-2xl font-bold">
                   Spotify
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
             <div className="text-center">
-              <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[80%] md:w-[180px] hover:bg-gray-700 text-white text-2xl font-bold">
-                <a
-                  href="https://podcasts.apple.com/us/podcast/dream-church-with-joshua-brown/id1291957659"
-                  target="_blank"
-                >
+              <a
+                href="https://podcasts.apple.com/us/podcast/dream-church-with-joshua-brown/id1291957659"
+                target="_blank"
+              >
+                <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[80%] md:w-[180px] hover:bg-gray-700 text-white text-2xl font-bold">
                   Apple Podcast
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
             <div className="text-center">
-              <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[80%] md:w-[180px] hover:bg-gray-700 text-white text-2xl font-bold">
-                <a
-                  href="https://www.youtube.com/dreamchurchcola"
-                  target="_blank"
-                >
+              <a href="https://www.youtube.com/dreamchurchcola" target="_blank">
+                <button className="bg-[rgb(28,28,28)] border border-white p-[15px] w-[80%] md:w-[180px] hover:bg-gray-700 text-white text-2xl font-bold">
                   YouTube
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
           </div>
         </section>

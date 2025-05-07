@@ -46,6 +46,15 @@ export default function Leaders() {
               on theological studies. You can find some of his contributions on
               his website below.
             </p>
+            <a
+              href="https://www.joshuabrown.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-white text-black font-bold border border-black py-[15px] w-full md:w-[80%] hover:bg-gray-200 mt-10">
+                Joshua's Website
+              </button>{" "}
+            </a>
           </div>
         </div>
       </section>
