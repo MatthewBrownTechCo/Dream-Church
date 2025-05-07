@@ -52,7 +52,7 @@ export default function Leaders() {
               rel="noopener noreferrer"
             >
               <button className="bg-white text-black font-bold border border-black py-[15px] w-full md:w-[80%] hover:bg-gray-200 mt-10">
-                Joshua's Website
+                Joshua&apos;s Website
               </button>{" "}
             </a>
           </div>
