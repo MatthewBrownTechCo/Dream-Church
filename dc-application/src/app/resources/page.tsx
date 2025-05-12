@@ -51,8 +51,8 @@ export default function Resources() {
             target="_blank"
             className="hover:text-gray-700"
           >
-            “Longings Over Legalism in Your New Year&apos;s Aspirations” by
-            Chuck Degroat
+            &quot;Longings Over Legalism in Your New Year&apos;s
+            Aspirations&quot; by Chuck Degroat
           </a>
         </p>
       </div>
@@ -91,7 +91,8 @@ export default function Resources() {
             target="_blank"
             className="hover:text-gray-700"
           >
-            "Overview of Lectio Divina" by J.I. Packer and Carolyn Nystrom
+            &quot;Overview of Lectio Divina&quot; by J.I. Packer and Carolyn
+            Nystrom
           </a>
         </p>
       </div>
