@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Cormorant_Garamond } from "next/font/google";
 
@@ -28,6 +29,7 @@ export default function RootLayout({
         style={{ letterSpacing: "-0.5px" }}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
