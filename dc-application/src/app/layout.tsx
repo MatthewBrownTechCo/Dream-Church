@@ -2,12 +2,13 @@ import "../styles/globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import { Crimson_Pro } from "next/font/google";
 
-const cormorantGaramond = Cormorant_Garamond({
-  weight: ["400", "700"], // Regular & Bold
+const crimson = Crimson_Pro({
   subsets: ["latin"],
-  display: "swap",
+  weight: ["200", "300"],
+  style: ["normal", "italic"],
+  variable: "--font-crimson",
 });
 
 export const metadata: Metadata = {
@@ -26,8 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cormorantGaramond.className} antialiased bg-[rgb(28,28,28)] text-white text-xl overflow-x-hidden`}
-        style={{ letterSpacing: "-0.5px" }}
+        className={`${crimson.className} antialiased bg-[rgb(28,28,28)] text-white text-xl overflow-x-hidden`}
       >
         {children}
         <Analytics />
