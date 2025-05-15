@@ -33,7 +33,7 @@ export const POST = async (req: Request) => {
 
     // Google Apps Script Web App URL
     const scriptUrl =
-      "https://script.google.com/macros/s/AKfycbwxR3bV6qZ53I0K4CHA5eo4VAqb2oFP_7Mksx9UizdnyT6-c7ER1Bcitvgu3bsX0ow7Mg/exec"; // Replace with your Apps Script URL
+      "https://script.google.com/macros/s/AKfycbxA24GO4j6kLTRL3xK7_6E4H0cYumjHBUc7E6QDzeuW_u7N7spsgONfffAnAh6U8-hwyg/exec"; // Replace with your Apps Script URL
 
     // Forward the form data to the Google Apps Script
     const response = await fetch(scriptUrl, {
