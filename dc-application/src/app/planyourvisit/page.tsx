@@ -282,8 +282,8 @@ export default function PlanYourVisit() {
             {loading ? "Submitting..." : "SUBMIT"}
           </button>
         </div>
+        {message && <p className="text-center mt-4">{message}</p>}
       </form>
-      {message && <p className="text-center mt-4">{message}</p>}
       <Footer />
     </div>
   );
