@@ -283,7 +283,7 @@ export default function PlanYourVisit() {
           </button>
         </div>
       </form>
-      {message && <p className="bg-white text-center mt-4">{message}</p>}
+      {message && <p className="bg-white text-center pt-2">{message}</p>}
       <Footer />
     </div>
   );
