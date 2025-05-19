@@ -37,7 +37,7 @@ export default function Home() {
           of Jesus and the ways of his Kingdom.
         </h2>
       </section>
-      <div className="flex flex-col md:flex-row items-center md:justify-center py-8 px-3 md:pr-0 md:pt-10 bg-white text-black">
+      <div className="flex flex-col md:flex-row items-center md:justify-center py-8 px-8 md:pr-0 md:pt-10 bg-white text-black">
         <section className="text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-medium">Latest Message</h1>
           <h2 className="mt-[40px] md:text-2xl">
