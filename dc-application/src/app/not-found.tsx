@@ -14,11 +14,11 @@ export default function NotFound() {
         <h2 className="relative text-[50px] md:text-[100px] py-5 md:py-10">
           Not Found
         </h2>
-        <a href="/" rel="noopener noreferrer">
+        <Link href="/" rel="noopener noreferrer">
           <button className="relative text-black bg-white border border-white p-[15px] w-[50%] md:w-[180px] hover:bg-gray-200 text-2xl font-bold mt-8">
             Home
           </button>
-        </a>
+        </Link>
       </main>
 
       <Footer />
