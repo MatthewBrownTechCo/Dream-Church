@@ -16,7 +16,7 @@ export default function NotFound() {
           Not Found
         </h2>
         <Link href="/" rel="noopener noreferrer">
-          <button className="relative text-black bg-white border border-white p-[15px] w-[50%] md:w-[180px] hover:bg-gray-200 text-2xl font-bold mt-8">
+          <button className="relative text-black bg-white border border-white p-[15px] w-[50%] md:w-[180px] hover:bg-gray-200 hover:cursor-pointer text-2xl font-bold mt-8">
             Home
           </button>
         </Link>
