@@ -6,7 +6,9 @@ import Image from "next/image";
 import instagram from "../../../public/logos/instagram.png";
 import facebook from "../../../public/logos/facebooklogo.png";
 import youtube from "../../../public/logos/youtube-app-white-icon.webp";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+declare const grecaptcha: any;
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -36,9 +38,23 @@ export default function ContactUs() {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    console.log("Injecting reCAPTCHA script");
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`;
+    script.async = true;
+    script.onload = () => console.log("reCAPTCHA script loaded");
+    document.body.appendChild(script);
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+
+    const token = await grecaptcha.execute(
+      process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
+      { action: "submit" }
+    );
 
     try {
       const response = await fetch("/api/contactus", {
@@ -46,7 +62,10 @@ export default function ContactUs() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          token,
+        }),
       });
 
       const data = await response.json();

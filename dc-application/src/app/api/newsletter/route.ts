@@ -2,7 +2,35 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
-    const { fName, lName, email } = await req.json(); // Parse incoming JSON from the request
+    const { fName, lName, email, token } = await req.json(); // Parse incoming JSON from the request
+
+    if (!token) {
+      return NextResponse.json(
+        { success: false, message: "reCAPTCHA token missing" },
+        { status: 400 }
+      );
+    }
+
+    // Verify reCAPTCHA token
+    const recaptchaResponse = await fetch(
+      "https://www.google.com/recaptcha/api/siteverify",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`,
+      }
+    );
+
+    const recaptchaData = await recaptchaResponse.json();
+
+    if (!recaptchaData.success || recaptchaData.score < 0.5) {
+      return NextResponse.json(
+        { success: false, message: "reCAPTCHA verification failed" },
+        { status: 403 }
+      );
+    }
 
     // URL of your Google Apps Script endpoint
     const scriptUrl =

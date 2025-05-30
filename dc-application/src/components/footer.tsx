@@ -1,10 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import instagram from "../../public/logos/instagram.png";
 import facebook from "../../public/logos/facebooklogo.png";
 import youtube from "../../public/logos/youtube-app-white-icon.webp";
+
+declare const grecaptcha: any;
 
 const Footer = () => {
   const [fName, setfName] = useState("");
@@ -13,9 +15,23 @@ const Footer = () => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    console.log("Injecting reCAPTCHA script");
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`;
+    script.async = true;
+    script.onload = () => console.log("reCAPTCHA script loaded");
+    document.body.appendChild(script);
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+
+    const token = await grecaptcha.execute(
+      process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
+      { action: "submit" }
+    );
 
     // Retrieves api middleware to bypass CORS
     const scriptUrl = "/api/newsletter";
@@ -26,7 +42,7 @@ const Footer = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ fName, lName, email }),
+        body: JSON.stringify({ fName, lName, email, token }),
       });
 
       const data = await response.json();

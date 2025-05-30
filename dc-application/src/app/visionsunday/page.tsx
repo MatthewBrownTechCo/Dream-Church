@@ -1,7 +1,6 @@
 "use client";
 
 import Footer from "../../components/footer";
-import Link from "next/link";
 import NavBar from "../../components/navbar";
 import { useRouter } from "next/navigation";
 

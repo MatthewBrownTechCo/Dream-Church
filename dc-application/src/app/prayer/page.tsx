@@ -1,8 +1,10 @@
 "use client";
 
 import Footer from "../../components/footer";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "../../components/navbar";
+
+declare const grecaptcha: any;
 
 export default function Prayer() {
   const [formData, setFormData] = useState({
@@ -41,9 +43,23 @@ export default function Prayer() {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    console.log("Injecting reCAPTCHA script");
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`;
+    script.async = true;
+    script.onload = () => console.log("reCAPTCHA script loaded");
+    document.body.appendChild(script);
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+
+    const token = await grecaptcha.execute(
+      process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
+      { action: "submit" }
+    );
 
     try {
       const response = await fetch("/api/prayer", {
@@ -51,7 +67,10 @@ export default function Prayer() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          token,
+        }),
       });
 
       const data = await response.json();
@@ -210,13 +229,13 @@ export default function Prayer() {
           <button
             type="submit"
             disabled={loading}
-            className="bg-transparent border border-black py-[15px] w-[80%] md:w-[20%] hover:bg-gray-100 mb-10"
+            className="bg-transparent border border-black py-[15px] w-[80%] md:w-[20%] hover:bg-gray-100"
           >
             {loading ? "Submitting..." : "SUBMIT"}
           </button>
         </div>
       </form>
-      {message && <p className="text-center mt-4">{message}</p>}
+      {message && <p className="text-center py-5 bg-white">{message}</p>}
       <Footer />
     </div>
   );
