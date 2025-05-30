@@ -8,7 +8,9 @@ import facebook from "../../../public/logos/facebooklogo.png";
 import youtube from "../../../public/logos/youtube-app-white-icon.webp";
 import { useEffect, useState } from "react";
 
-declare const grecaptcha: any;
+/// <reference types="grecaptcha" />
+
+declare const grecaptcha: ReCaptchaV2.ReCaptcha;
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({

@@ -4,7 +4,9 @@ import Footer from "../../components/footer";
 import React, { useEffect, useState } from "react";
 import NavBar from "../../components/navbar";
 
-declare const grecaptcha: any;
+/// <reference types="grecaptcha" />
+
+declare const grecaptcha: ReCaptchaV2.ReCaptcha;
 
 export default function Baptism() {
   const [formData, setFormData] = useState({

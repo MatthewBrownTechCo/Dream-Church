@@ -2,13 +2,13 @@
 
 import Footer from "../../components/footer";
 import NavBar from "../../components/navbar";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 export default function VisionSunday() {
-  const router = useRouter();
+  // const router = useRouter();
 
-  const giveNavigate = () => router.push("/give");
-  const shepherdsWayNavigate = () => router.push("/shepherdsway");
+  // const giveNavigate = () => router.push("/give");
+  // const shepherdsWayNavigate = () => router.push("/shepherdsway");
 
   return (
     <>

@@ -6,7 +6,9 @@ import instagram from "../../public/logos/instagram.png";
 import facebook from "../../public/logos/facebooklogo.png";
 import youtube from "../../public/logos/youtube-app-white-icon.webp";
 
-declare const grecaptcha: any;
+/// <reference types="grecaptcha" />
+
+declare const grecaptcha: ReCaptchaV2.ReCaptcha;
 
 const Footer = () => {
   const [fName, setfName] = useState("");

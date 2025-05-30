@@ -1,109 +1,111 @@
 "use client";
 
 import Footer from "../../components/footer";
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import NavBar from "../../components/navbar";
 
-declare const grecaptcha: any;
+// /// <reference types="grecaptcha" />
+
+// declare const grecaptcha: ReCaptchaV2.ReCaptcha;
 
 export default function ShepherdsWay() {
-  const [formData, setFormData] = useState({
-    fname: "",
-    lname: "",
-    email: "",
-    phone: "",
-    visitDate: "",
-    extras: "",
-    kids: "",
-    message: "",
-    heardAbout: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   fname: "",
+  //   lname: "",
+  //   email: "",
+  //   phone: "",
+  //   visitDate: "",
+  //   extras: "",
+  //   kids: "",
+  //   message: "",
+  //   heardAbout: "",
+  // });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+  // const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prev) => ({
+  //     ...prev,
+  //     [name]: value,
+  //   }));
+  // };
 
-  const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+  // const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prev) => ({
+  //     ...prev,
+  //     [name]: value,
+  //   }));
+  // };
 
-  const handleTextAreaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+  // const handleTextAreaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prev) => ({
+  //     ...prev,
+  //     [name]: value,
+  //   }));
+  // };
 
-  const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
+  // const [message, setMessage] = useState("");
+  // const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    console.log("Injecting reCAPTCHA script");
-    const script = document.createElement("script");
-    script.src = `https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`;
-    script.async = true;
-    script.onload = () => console.log("reCAPTCHA script loaded");
-    document.body.appendChild(script);
-  }, []);
+  // useEffect(() => {
+  //   console.log("Injecting reCAPTCHA script");
+  //   const script = document.createElement("script");
+  //   script.src = `https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`;
+  //   script.async = true;
+  //   script.onload = () => console.log("reCAPTCHA script loaded");
+  //   document.body.appendChild(script);
+  // }, []);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setLoading(true);
 
-    const token = await grecaptcha.execute(
-      process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
-      { action: "submit" }
-    );
+  //   const token = await grecaptcha.execute(
+  //     process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
+  //     { action: "submit" }
+  //   );
 
-    try {
-      const response = await fetch("/api/shepherdsway", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ...formData,
-          token,
-        }),
-      });
+  //   try {
+  //     const response = await fetch("/api/shepherdsway", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         ...formData,
+  //         token,
+  //       }),
+  //     });
 
-      const data = await response.json();
+  //     const data = await response.json();
 
-      if (data.success) {
-        setMessage(
-          "Form sent successfully! We will get in touch with you soon."
-        );
-        setFormData({
-          // Reset form data after submission
-          fname: "",
-          lname: "",
-          email: "",
-          phone: "",
-          visitDate: "",
-          extras: "",
-          kids: "",
-          message: "",
-          heardAbout: "",
-        });
-      } else {
-        setMessage("Oops! Something went wrong. Please try again.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      setMessage("An error occurred. Please try again later.");
-    } finally {
-      setLoading(false);
-    }
-  };
+  //     if (data.success) {
+  //       setMessage(
+  //         "Form sent successfully! We will get in touch with you soon."
+  //       );
+  //       setFormData({
+  //         // Reset form data after submission
+  //         fname: "",
+  //         lname: "",
+  //         email: "",
+  //         phone: "",
+  //         visitDate: "",
+  //         extras: "",
+  //         kids: "",
+  //         message: "",
+  //         heardAbout: "",
+  //       });
+  //     } else {
+  //       setMessage("Oops! Something went wrong. Please try again.");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error:", error);
+  //     setMessage("An error occurred. Please try again later.");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   return (
     <div className="text-black">

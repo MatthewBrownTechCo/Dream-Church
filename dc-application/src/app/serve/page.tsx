@@ -4,7 +4,9 @@ import Footer from "../../components/footer";
 import NavBar from "../../components/navbar";
 import React, { useEffect, useState } from "react";
 
-declare const grecaptcha: any;
+/// <reference types="grecaptcha" />
+
+declare const grecaptcha: ReCaptchaV2.ReCaptcha;
 
 export default function Serve() {
   const [formData, setFormData] = useState<{
