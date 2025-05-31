@@ -14,7 +14,7 @@ export default function VisionSunday() {
   return (
     <>
       <NavBar />
-      {/* <div className="relative bg-[url('/images/visionsunday.jpeg')] bg-cover bg-top md:bg-fixed px-[7%] py-[20%] md:py-[10%] text-white">
+      <div className="relative bg-[url('/images/visionsunday.jpeg')] bg-cover bg-top md:bg-fixed px-[7%] py-[20%] md:py-[10%] text-white">
         <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
         <header className="relative text-center py-[80px] z-10">
           <h1 className="text-6xl md:text-8xl font-medium">Vision Sunday</h1>
@@ -25,7 +25,7 @@ export default function VisionSunday() {
         </header>
       </div>
 
-      <div className="relative bg-[url('/images/prayer-hands.jpg')] bg-cover bg-center md:bg-[position:0_10%] text-center py-16 space-y-10 md:px-0">
+      {/* <div className="relative bg-[url('/images/prayer-hands.jpg')] bg-cover bg-center md:bg-[position:0_10%] text-center py-16 space-y-10 md:px-0">
         <div className="absolute inset-0 bg-black opacity-80 z-0"></div>
         <h2 className="relative text-5xl md:text-5xl">
           <b>21 Days of Prayer</b>
