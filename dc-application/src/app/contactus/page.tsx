@@ -112,6 +112,7 @@ export default function ContactUs() {
             <a
               href="https://www.instagram.com/dreamchurchcola/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Image
                 src={instagram}
@@ -119,14 +120,22 @@ export default function ContactUs() {
                 className="h-7 w-auto object-contain"
               />
             </a>
-            <a href="https://www.facebook.com/dreamchurchcola" target="_blank">
+            <a
+              href="https://www.facebook.com/dreamchurchcola"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src={facebook}
                 alt="Facebook Logo"
                 className="h-8 w-auto object-contain"
               />
             </a>
-            <a href="https://www.youtube.com/@dreamchurchcola" target="_blank">
+            <a
+              href="https://www.youtube.com/@dreamchurchcola"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src={youtube}
                 alt="YouTube Logo"

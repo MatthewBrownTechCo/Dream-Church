@@ -91,6 +91,7 @@ const NavBar = () => {
                 "/leaders",
                 "/beliefs",
                 "/baptism",
+                "/resources",
                 "/contactus",
               ].map((path) => (
                 <div
@@ -107,6 +108,7 @@ const NavBar = () => {
                   {path === "/leaders" && "Leaders"}
                   {path === "/beliefs" && "Beliefs"}
                   {path === "/baptism" && "Baptism"}
+                  {path === "/resources" && "Resources"}
                   {path === "/contactus" && "Contact Us"}
                 </div>
               ))}
@@ -120,10 +122,10 @@ const NavBar = () => {
             Live Stream
           </div>
           <div
-            onClick={() => navigate("/resources")}
-            className={`px-4 ${getLinkClass("/resources")}`}
+            onClick={() => navigate("/visionsunday")}
+            className={`px-4 ${getLinkClass("/visionsunday")}`}
           >
-            Resources
+            Vision Sunday
           </div>
           <div
             onClick={() => navigate("/prayer")}
@@ -206,10 +208,10 @@ const NavBar = () => {
                 Live Stream
               </div>
               <div
-                onClick={() => navigate("/resources")}
-                className={`text-4xl ${getLinkClass("/resources")}`}
+                onClick={() => navigate("/visionsunday")}
+                className={`text-4xl ${getLinkClass("/visionsunday")}`}
               >
-                Resources
+                Vision Sunday
               </div>
               <div
                 onClick={() => navigate("/prayer")}
@@ -293,6 +295,12 @@ const NavBar = () => {
                 className={`text-4xl ${getLinkClass("/baptism")}`}
               >
                 Baptism
+              </div>
+              <div
+                onClick={() => navigate("/resources")}
+                className={`text-4xl ${getLinkClass("/resources")}`}
+              >
+                Resources
               </div>
               <div
                 onClick={() => navigate("/contactus")}

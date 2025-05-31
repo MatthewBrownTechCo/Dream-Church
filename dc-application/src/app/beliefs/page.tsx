@@ -7,8 +7,8 @@ export default function Beliefs() {
   return (
     <>
       <NavBar />
-      <div className="relative text-black bg-[url('/images/josh-outside-teach.jpg')] bg-cover bg-center md:px-[70px] py-[120px]">
-        <div className="absolute inset-0 bg-white opacity-75 z-0"></div>
+      <div className="relative text-black bg-[url('/images/josh-lh-preach.jpg')] bg-cover bg-[position:0_35%] bg-no-repeat md:px-[70px] py-[120px]">
+        <div className="absolute inset-0 bg-white opacity-70 z-0"></div>
         <header className="relative text-center z-10 space-y-10">
           <h1 className="text-8xl font-medium">Beliefs</h1>
           <h2 className="text-xl px-6 md:px-[350px]">
